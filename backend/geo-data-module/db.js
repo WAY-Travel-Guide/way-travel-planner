@@ -1,4 +1,5 @@
 
+//Возможно лишний файл для подключения к бд
 const mongoose = require('mongoose');
 
 async function connectDB() {
