@@ -5,3 +5,12 @@ html, body, #root {
   padding: 0;
   box-sizing: border-box;
 }
+
+.map-container {
+  width: 100%;
+  max-width: 800px; /* Ограничиваем ширину карты */
+  height: 400px; /* Фиксированная высота */
+  margin: 20px auto; /* Центрируем карту */
+  border: 2px solid #28a745; /* Зелёная рамка в стиле вашей страницы */
+  border-radius: 8px; /* Скругленные углы */
+}
