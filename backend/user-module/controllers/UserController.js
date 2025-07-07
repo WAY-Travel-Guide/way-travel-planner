@@ -104,6 +104,40 @@ class UserController {
             res.status(500).json(error);
         }
     }
+
+    /*
+    * @function deleteUser
+    * @brief Удаляет пользователя.
+    * @param req HTTP-запрос
+    * @param res HTTP-ответ
+    */
+    async deleteUser(req, res) {
+        try {
+            const { login, password } = req.body;
+            console.log("POST /api/deluser:", req.body);
+
+            // Проверка наличия логина и пароля в запросе
+            if (!login || !password) {
+                return res.status(400).json({ success: false, message: "Логин и пароль обязательны" });
+            }
+
+            // Ищем пользователя с заданным логином и паролем в базе
+            const user = await User.findOne({ login, password });
+
+            if (user) {
+                await User.deleteOne( {login, password} );
+                return res.json("Пользователь успешно удален.");
+            }
+            else {
+                return res.json("Пользователя нет в системе.");
+            }
+            
+        } catch (error) {
+            // Логируем ошибку и отправляем ответ с ошибкой сервера
+            console.log(error);
+            res.status(500).json(error);
+        }
+    }
 }
 
 // Экспортируем экземпляр контроллера

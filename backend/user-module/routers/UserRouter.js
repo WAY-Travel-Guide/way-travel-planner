@@ -32,5 +32,11 @@ UserRouter.post('/register', UserController.registerUser);
 */
 UserRouter.get('/users', UserController.getAllUsers);
 
+/*
+* @route GET /deluser
+* @brief Маршрут для удаления пользователя.
+*/
+UserRouter.post('/deluser', UserController.deleteUser);
+
 // Экспортируем роутер пользователей для использования в основном приложении
 export default UserRouter;
