@@ -1,58 +1,74 @@
-import express from "express";
-import bodyParser from "body-parser";
-import cors from "cors";
-import { checkUser } from "../user-service/user_auth.js";
-import { registerUser } from "../user-service/user_register.js";
+/*
+* @file index.js
+* @brief Точка входа для запуска модуля серверного API.
+*        Производит подключение к MongoDB, настройку middleware и регистрацию маршрутов.
+*/
 
-const app = express();
+import express from "express";                                // Импортируем Express для создания HTTP-сервера
+import cors from "cors";                                      // Импортируем CORS для разрешения запросов с фронтенда
+import mongoose from "mongoose";                              // Импортируем Mongoose для работы с MongoDB
+import UserRouter from "../user-module/routers/UserRouter.js"; // Импортируем роутер пользователей
 
-// Middleware
-app.use(cors()); // Разрешить запросы с фронтенда
-app.use(bodyParser.json());
+/*
+* @const mongoUrl
+* @brief Строка подключения к MongoDB (Atlas или локальная).
+*        Можно использовать переменные окружения для безопасности.
+*/
+const mongoUrl = "mongodb+srv://admin:swVrPjebFNhahbMz@cluster-way-planner.rk99vsx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Way-planner";
+// const mongoUrl = "mongodb://localhost:27017/user_login"; // Пример локального подключения
 
-// Маршрут для авторизации
-app.post("/api/login", async (req, res) => {
-  try {
-    const { login, password } = req.body;
-    console.log("POST /api/login:", req.body);
-
-    // Проверка наличия логина и пароля в запросе
-    if (!login || !password) {
-      return res.status(400).json({ success: false, message: "Логин и пароль обязательны" });
-    }
-
-    // Вызов функции checkUser из user_auth.js
-    const user = await checkUser(login, password);
-
-    if (user) {
-        res.json({ success: true, message: "Вход успешно выполнен", user });
-    } else {
-      res.status(401).json({ success: false, message: "Неверный логин или пароль" });
-    }
-  } catch (error) {
-    console.error("Ошибка авторизации:", error);
-    res.status(500).json({ success: false, message: "Ошибка сервера" });
-  }
-});
-
-// Маршрут для регистрации
-app.post("/api/register", async (req, res) => {
-  try {
-    const { login, password } = req.body;
-    console.log("POST /api/register:", req.body);
-
-    if (!login || !password) {
-      return res.status(400).json({ success: false, message: "Логин и пароль обязательны" });
-    }
-
-    const user = await registerUser(login, password);
-    res.json({ success: true, message: "Регистрация успешно выполнена", user });
-  } catch (error) {
-    console.error("Ошибка регистрации:", error);
-    res.status(400).json({ success: false, message: error.message || "Ошибка регистрации" });
-  }
-});
-
-// Запуск сервера
+/*
+* @const PORT
+* @brief Порт, на котором запускается сервер.
+*/
 const PORT = 5000;
-app.listen(PORT, () => console.log("Server started on port " + PORT));
+
+/*
+* @function startWebAPI
+* @brief Асинхронная функция для старта веб-сервера и подключения к базе данных.
+*/
+async function startWebAPI() {
+  try {
+    /*
+    * Логируем состояние подключения к MongoDB через события
+    */
+    mongoose.connection
+      .on("connecting",   () => console.log("→ Mongoose: connecting"))
+      .on("connected",    () => console.log("→ Mongoose: connected"))
+      .on("error",        err => console.error("→ Mongoose error:", err))
+      .on("disconnected", () => console.log("→ Mongoose: disconnected"));
+
+    /*
+    * Подключаемся к MongoDB с параметрами таймаута и буферизации
+    */
+    await mongoose.connect(mongoUrl, {
+      serverSelectionTimeoutMS: 5000,
+      bufferCommands:          false,
+    });
+
+    // Включаем отладочный режим для Mongoose (все запросы будут логироваться)
+    mongoose.set("debug", true);
+
+    console.log("MongoDB успешно подключён");
+
+    // Создаём экземпляр приложения Express
+    const app = express();
+
+    // Подключаем middleware CORS для поддержки запросов с других доменов
+    app.use(cors());
+    // Подключаем middleware для парсинга JSON в теле запросов
+    app.use(express.json());
+    // Регистрируем маршруты пользователей по префиксу /api
+    app.use('/api', UserRouter);
+
+    // Запускаем сервер на указанном порту
+    app.listen(PORT, () => console.log("Server started on port " + PORT));
+  }
+  catch (error) {
+    // Логируем ошибку при старте сервера
+    console.log(error);
+  }
+}
+
+// Запускаем функцию старта сервера, ловим возможные ошибки
+startWebAPI().catch(console.error);
