@@ -6,6 +6,8 @@
 
 import { Router } from "express";                        // Импортируем Router из Express
 import UserController from "../controllers/UserController.js"; // Импортируем контроллер пользователей
+import authMiddleware from "../middleware/authMiddleware.js";
+import roleMiddleware from "../middleware/roleMiddleware.js";
 
 /*
 * @const UserRouter
@@ -27,10 +29,22 @@ UserRouter.post('/login', UserController.checkUser);
 UserRouter.post('/register', UserController.registerUser);
 
 /*
-* @route GET /users
-* @brief Маршрут для получения списка всех пользователей.
+* @route   GET /users
+* @brief   Маршрут для получения списка всех пользователей.
+* @access  Только для пользователей с ролью "Admin" (доступ защищён JWT и middleware ролей)
+*
+* @middleware
+*   - roleMiddleware(['Admin']) — проверяет, что у пользователя есть роль 'Admin' (JWT обязателен)
+*
+* @controller
+*   - UserController.getAllUsers — возвращает массив всех пользователей из базы данных
 */
-UserRouter.get('/users', UserController.getAllUsers);
+UserRouter.get(
+  '/users',
+  roleMiddleware(['Admin']), // Middleware для проверки роли
+  UserController.getAllUsers // Контроллер для обработки запроса
+);
+
 
 /*
 * @route GET /deluser

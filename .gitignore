@@ -17,3 +17,6 @@ pnpm-lock.yaml
 # Игнорировать папки dist и build (сборка)
 dist/
 build/
+
+# игнорировать изменения во фронте
+frontend/

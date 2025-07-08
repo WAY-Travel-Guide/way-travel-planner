@@ -5,7 +5,32 @@
 */
 
 import User from "../models/User.js";  // Импортируем модель пользователя
+import Role from "../models/Role.js";
 import mongoose from "mongoose";       // Импортируем mongoose для работы с состоянием подключения
+import jwt from "jsonwebtoken";
+import bcrypt from "bcryptjs";
+import { secret } from "./config.js";
+
+const generateAccessToken = (id, roles) => {
+    /*
+    * @function generateAccessToken
+    * @brief Генерирует JWT-токен для авторизации пользователя.
+    * @param id     - Идентификатор пользователя (user._id)
+    * @param roles  - Массив ролей пользователя (например, ['Admin', 'User'])
+    * @returns      - Подписанный JWT-токен, действительный 24 часа
+    *
+    * @details
+    *   - В payload токена кладутся id и roles пользователя.
+    *   - Токен подписывается секретным ключом (secret).
+    *   - Токен используется для защиты маршрутов и проверки прав доступа.
+    */
+    const payload = {
+        id,
+        roles
+    };
+
+    return jwt.sign(payload, secret, {expiresIn: "24h"});
+}
 
 /*
 * @class UserController
@@ -34,18 +59,28 @@ class UserController {
 
             // Проверяем, существует ли уже пользователь с таким логином
             const existingUser = await User.findOne({ login });
-
             // Если найден, выбрасываем ошибку
             if (existingUser) {
                 throw new Error("Пользователь с таким логином уже существует");
             }
 
+            /*
+            * ХЕШИРОВАНИЕ ПАРОЛЯ (bcrypt)
+            *
+            * - Никогда не сохраняем пароль в базе в открытом виде!
+            * - С помощью bcrypt генерируется защищённый хэш пароля.
+            * - Параметр "7" — это число "кругов" (cost factor), влияет на сложность вычисления.
+            * - hashPassword будет сохранён в базе вместо исходного пароля.
+            */
+            const hashPassword = bcrypt.hashSync(password, 7);
+            const userRole = await Role.findOne({value: "User"});
+
             // Создаем и сохраняем нового пользователя
-            const newUser = new User({ login, password });
+            const newUser = new User({ login, password:hashPassword, roles: [userRole.value] });
             await newUser.save();
 
             // Отправляем успешный ответ
-            res.json({ success: true, message: "Регистрация успешно выполнена", newUser });
+            return res.json({ success: true, message: "Регистрация успешно выполнена", newUser });
         } catch (error) {
             // Логируем ошибку и отправляем ответ с ошибкой
             console.error("Ошибка регистрации:", error);
@@ -71,11 +106,40 @@ class UserController {
             }
 
             // Ищем пользователя с заданным логином и паролем в базе
-            const user = await User.findOne({ login, password });
+            const user = await User.findOne({ login });
+            if (!user) {
+                return res.status(400).json({succes: false, message: "Пользователь с таким логином не найден."});
+            }
+
+            /*
+            * ПРОВЕРКА ПАРОЛЯ ПРИ АВТОРИЗАЦИИ
+            *
+            * - Пользователь ищется по логину (user = await User.findOne({ login }))
+            * - Пароль не сравнивается напрямую, а сверяется через bcrypt.compareSync:
+            *   - password        — введённый пароль пользователя
+            *   - user.password   — захешированный пароль из базы
+            * - bcrypt.compareSync возвращает true, если пароль совпадает с хэшем.
+            */
+            const validPassword = bcrypt.compareSync(password, user.password);
+            if (!validPassword) {
+                return res.status(400).json({success: false, message: "Введен неверный пароль."});
+            }
 
             // Если пользователь найден, авторизация успешна
             if (user) {
-                res.json({ success: true, message: "Вход успешно выполнен", user });
+                /*
+                * СОЗДАНИЕ JWT ПОСЛЕ АВТОРИЗАЦИИ
+                *
+                * - После успешной проверки пароля генерируется JWT-токен.
+                * - В токен помещается user._id и user.roles (payload).
+                * - Токен подписывается секретом и отправляется клиенту для последующих авторизованных запросов.
+                */
+                const token = generateAccessToken(user._id, user.roles);
+                res.json({
+                    success: true,
+                    message: "Вход успешно выполнен",
+                    token,
+                });
             } else {
                 // Если не найден, отправляем ошибку авторизации
                 res.status(401).json({ success: false, message: "Неверный логин или пароль" });
@@ -97,6 +161,13 @@ class UserController {
         try {
             // Получаем всех пользователей из базы данных
             const users = await User.find();
+
+            // Сохранение ролей в схеме Role
+            // const userRole = new Role();
+            // const adminRole = new Role({value: "Admin"});
+            // await userRole.save();
+            // await adminRole.save();
+
             return res.json(users);
         } catch (error) {
             // Логируем ошибку и отправляем ответ с ошибкой сервера

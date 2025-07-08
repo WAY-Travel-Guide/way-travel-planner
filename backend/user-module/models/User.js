@@ -13,7 +13,8 @@ import mongoose from "mongoose"; // Импортируем mongoose для со�
 */
 const userSchema = new mongoose.Schema({ 
     login: { type: String, required: true, unique: true },    // Логин пользователя, уникальный и обязательный
-    password: { type: String, required: true }                // Пароль пользователя, обязательный
+    password: { type: String, required: true },               // Пароль пользователя, обязательный
+    roles: [{type: String, ref: 'Role'}]                      // Роль пользователя: администратор или обычный пользователь
 });
 
 /*
