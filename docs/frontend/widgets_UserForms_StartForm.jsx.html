@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>widgets/UserForms/StartForm.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">widgets/UserForms/StartForm.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Приветственная форма для старта работы с сервисом.
+ * Показывает кнопки и описание, возвращает на главную через отдельный компонент.
+ *
+ * @description
+ * StartForm — React-компонент с приветственным текстом, коротким описанием сервиса и кнопкой "Приступим".
+ * Используется на странице пользователя для мотивации к началу работы с маршрутом.
+ * Подключает кастомные кнопки и ссылку "На главную" через ToHomeLogoButton.
+ *
+ * @module StartForm
+ */
+
+import React from 'react';
+import OrangeButton from '../../shared/ui/OrangeButton/OrangeButton.jsx';
+import ToHomeLogoButton from "../ReturnToHome/ToHome.jsx";
+import './StartForm.css';
+
+/**
+ * @typedef {Object} StartFormProps
+ * @property {string} [userName] - Имя пользователя (опционально, может быть не использовано).
+ */
+
+/**
+ * Приветственная форма для начала работы пользователя.
+ *
+ * @param {StartFormProps} props   - Свойства компонента (userName).
+ * @returns {JSX.Element}          - Контейнер с приветственным текстом и кнопкой.
+ */
+const StartForm = function ({ userName }) {
+    return (
+        &lt;div className="start-form">
+            {/* Кнопка возврата на главную */}
+            &lt;ToHomeLogoButton />
+            &lt;div className='start-title'>НАЧНЕМ ПУТЕШЕСТВИЕ&lt;/div>
+            &lt;div className='start-desciption'>
+                Наш сервис поможет составить маршрут, на основе Ваших предпочтений, бюджета и количества дней отдыха. Мы ценим каждого нашего пользователя и заботимся о Вашем комфорте, поэтому также учитываем индивидуальные особенности
+            &lt;/div>
+            &lt;OrangeButton style={{ }}>
+                Приступим
+            &lt;/OrangeButton>
+            &lt;div className="start-bottom-text">Команда «WAY» желает Вам хорошего отдыха!&lt;/div>
+        &lt;/div>
+    );
+};
+
+export default StartForm;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

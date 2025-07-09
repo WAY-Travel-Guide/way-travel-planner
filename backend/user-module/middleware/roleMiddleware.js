@@ -1,6 +1,6 @@
 /**
- * @file roleMiddleware.js
- * @brief Express-middleware для проверки JWT и наличия нужных ролей у пользователя.
+ * @fileoverview roleMiddleware.js
+ * @description Express-middleware для проверки JWT и наличия нужных ролей у пользователя.
  *
  * @param {Array<string>} roles - Список ролей, которым разрешён доступ к маршруту (например, ['Admin', 'Moderator']).
  * @returns {function} Middleware-функция для Express.

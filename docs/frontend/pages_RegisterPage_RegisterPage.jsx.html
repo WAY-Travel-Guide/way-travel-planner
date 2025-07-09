@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>pages/RegisterPage/RegisterPage.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">pages/RegisterPage/RegisterPage.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Компонент страницы регистрации пользователя.
+ * Содержит форму регистрации и визуальный виджет PictureSwapper.
+ * Реализует всю логику регистрации, валидацию и обработку ошибок.
+ *
+ * @description
+ * RegisterPage — React-компонент страницы регистрации. Хранит локальное состояние логина, пароля, подтверждения и сообщения.
+ * Выполняет базовую валидацию, отправляет запрос на API, обрабатывает результат,
+ * вызывает onLogin при успешной регистрации и выполняет редирект в профиль пользователя.
+ * Визуально состоит из формы регистрации и секции с картинкой.
+ *
+ * @module RegisterPage
+ */
+
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import RegisterForm from "../../widgets/RegisterForm/RegisterForm.jsx";
+import PictureSwapper from "../../widgets/PictureSwap/PictureSwapper.jsx";
+import "./RegisterPage.css";
+
+/**
+ * @typedef {Object} RegisterPageProps
+ * @property {Function} onLogin - Callback для обработки успешной регистрации и автоматического входа.
+ */
+
+/**
+ * Страница регистрации пользователя.
+ * Реализует валидацию полей, обработку ошибок, работу с API и автоматический вход.
+ *
+ * @param {RegisterPageProps} props   - Свойства компонента (onLogin).
+ * @returns {JSX.Element}             - Верстка страницы регистрации с формой и картинкой.
+ */
+function RegisterPage({ onLogin }) {
+  /** @type {[string, Function]} */
+  const [login, setLogin] = useState("");
+  /** @type {[string, Function]} */
+  const [password, setPassword] = useState("");
+  /** @type {[string, Function]} */
+  const [confirmPassword, setConfirmPassword] = useState("");
+  /** @type {[string, Function]} */
+  const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
+
+  /**
+   * Обработчик регистрации пользователя.
+   * Выполняет базовую валидацию, отправляет POST-запрос на /api/register, обрабатывает ответ.
+   *
+   * @async
+   * @returns {Promise&lt;void>}
+   */
+  const handleRegister = async () => {
+    setMsg("");
+    if (!login || !password || !confirmPassword) {
+      setMsg("Все поля обязательны");
+      return;
+    }
+    if (password !== confirmPassword) {
+      setMsg("Пароли не совпадают");
+      return;
+    }
+    if (password.length &lt; 4) {
+      setMsg("Пароль должен содержать минимум 4 символа");
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ login, password }),
+      });
+      const data = await res.json();
+
+      if (data.success &amp;&amp; data.token) {
+        /**
+         * Объект пользователя после регистрации.
+         * @type {{id: string, login: string, name: string, token: string}}
+         */
+        const userData = {
+          id: data.id,
+          login: login,
+          name: login,
+          token: data.token,
+        };
+        onLogin(userData);
+        navigate(`/user/${data.id}`);
+      } else {
+        setMsg(data.message || "Ошибка авторизации");
+      }
+    } catch (error) {
+      setMsg("Ошибка сервера");
+    }
+  };
+
+  return (
+    /**
+     * Основной контейнер страницы регистрации.
+     * Секция формы регистрации (RegisterForm) и секция виджета PictureSwapper.
+     */
+    &lt;div className="register-page">
+      &lt;div className="reg-form-section">
+        &lt;RegisterForm
+          login={login}
+          setLogin={setLogin}
+          password={password}
+          setPassword={setPassword}
+          setConfirmPassword={setConfirmPassword}
+          msg={msg}
+          handleRegister={handleRegister}
+        />
+      &lt;/div>
+      &lt;div className="reg-picture-swapper-section">
+        &lt;PictureSwapper />
+      &lt;/div>
+    &lt;/div>
+  )
+}
+
+export default RegisterPage;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

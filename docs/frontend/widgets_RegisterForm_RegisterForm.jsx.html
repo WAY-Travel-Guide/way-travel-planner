@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>widgets/RegisterForm/RegisterForm.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">widgets/RegisterForm/RegisterForm.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Форма регистрации нового пользователя.
+ * Содержит поля для логина, пароля и подтверждения пароля, кнопку регистрации и ссылку на авторизацию.
+ *
+ * @description
+ * RegisterForm — React-компонент для регистрации пользователя.
+ * Показывает поля ввода логина, пароля и подтверждения пароля, кнопку регистрации и возможное сообщение об ошибке.
+ * Использует кастомные компоненты Input, BlueButton, кнопку возврата на главную (ToHomeLogoButton).
+ *
+ * @module RegisterForm
+ */
+
+import React from 'react';
+import Input from '../../shared/ui/Input/Input.jsx';
+import BlueButton from '../../shared/ui/BlueButton/BlueButton.jsx';
+import ToHomeLogoButton from "../ReturnToHome/ToHome.jsx";
+import './RegisterForm.css';
+
+/**
+ * @typedef {Object} RegisterFormProps
+ * @property {string} login                         - Текущее значение поля логина.
+ * @property {function(string)} setLogin            - Setter для поля логина.
+ * @property {string} password                      - Текущее значение поля пароля.
+ * @property {function(string)} setPassword         - Setter для поля пароля.
+ * @property {string} confirmPassword               - Текущее значение поля подтверждения пароля.
+ * @property {function(string)} setConfirmPassword  - Setter для поля подтверждения пароля.
+ * @property {string} msg                           - Сообщение об ошибке или статусе.
+ * @property {function} handleRegister              - Callback для отправки формы регистрации.
+ */
+
+/**
+ * Форма регистрации.
+ *
+ * @param {RegisterFormProps} props   - Свойства компонента (login, setLogin, password, setPassword, confirmPassword, setConfirmPassword, msg, handleRegister).
+ * @returns {JSX.Element}             - Форма регистрации с полями, кнопкой и ссылкой.
+ */
+const RegisterForm = function ({ login, setLogin, password, setPassword, confirmPassword, setConfirmPassword, msg, handleRegister }) {
+    return (
+        &lt;div className="reg-form">
+            {/* Кнопка возврата на главную */}
+            &lt;ToHomeLogoButton />
+            &lt;h1 className='reg-title'>Добро пожаловать!&lt;/h1>
+
+            {/* Поле ввода логина */}
+            &lt;Input
+                type="text"
+                value={login}
+                onChange={(e) => setLogin(e.target.value)}
+                placeholder="Логин"
+                style={{  }}
+            />
+
+            {/* Поле ввода пароля */}
+            &lt;Input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Пароль"
+                style={{  }}
+            />
+
+            {/* Поле подтверждения пароля */}
+            &lt;Input
+                type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Подтвердите пароль"
+                style={{  }}
+            />
+
+            {/* Сообщение об ошибке или статусе */}
+            {msg &amp;&amp; &lt;div className="reg-error-msg">{msg}&lt;/div>}
+
+            {/* Кнопка регистрации */}
+            &lt;BlueButton onClick={handleRegister} style={{ }}>
+                Регистрация
+            &lt;/BlueButton>
+
+            {/* Нижний текст со ссылкой на авторизацию */}
+            &lt;div className="bottom-text">
+                Уже есть аккаунт?
+                &lt;a href="/login">Авторизуйтесь сейчас!&lt;/a>
+            &lt;/div>
+        &lt;/div>
+    );
+};
+
+export default RegisterForm;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

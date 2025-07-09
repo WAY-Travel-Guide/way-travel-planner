@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>widgets/LoginForm/LoginForm.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">widgets/LoginForm/LoginForm.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Форма авторизации пользователя.
+ * Отображает поля логина и пароля, кнопку входа и ссылку на регистрацию.
+ *
+ * @description
+ * LoginForm — React-компонент для авторизации пользователя.
+ * Содержит элементы ввода логина и пароля, кнопку входа, обработку ошибок и переход на регистрацию.
+ * Использует кастомные компоненты Input, BlueButton и кнопку возврата на главную.
+ *
+ * @module LoginForm
+ */
+
+import React from 'react';
+import Input from '../../shared/ui/Input/Input.jsx';
+import BlueButton from '../../shared/ui/BlueButton/BlueButton.jsx';
+import ToHomeLogoButton from "../ReturnToHome/ToHome.jsx";
+import './LoginForm.css';
+
+/**
+ * @typedef {Object} LoginFormProps
+ * @property {string} login           - Текущее значение поля логина.
+ * @property {function(string)} setLogin     - Setter для поля логина.
+ * @property {string} password        - Текущее значение поля пароля.
+ * @property {function(string)} setPassword  - Setter для поля пароля.
+ * @property {string} msg             - Сообщение об ошибке или информационное сообщение.
+ * @property {function} handleLogin   - Callback для отправки формы логина.
+ */
+
+/**
+ * Форма логина.
+ *
+ * @param {LoginFormProps} props   - Свойства компонента (login, setLogin, password, setPassword, msg, handleLogin).
+ * @returns {JSX.Element}          - Форма логина с полями, кнопкой и ссылками.
+ */
+const LoginForm = function ({ login, setLogin, password, setPassword, msg, handleLogin }) {
+  return (
+    &lt;div className="login-form">
+      {/* Кнопка возврата на главную */}
+      &lt;ToHomeLogoButton />
+      &lt;h1 className='title'>С возвращением!&lt;/h1>
+
+      {/* Поле ввода логина */}
+      &lt;Input
+        type="text"
+        value={login}
+        onChange={(e) => setLogin(e.target.value)}
+        placeholder="Логин"
+        style={{  }}
+      />
+
+      {/* Поле ввода пароля */}
+      &lt;Input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Пароль"
+        style={{  }}
+      />
+
+      {/* Сообщение об ошибке или статусе */}
+      {msg &amp;&amp; &lt;div className="error-msg">{msg}&lt;/div>}
+
+      {/* Ссылка "Забыли пароль?" */}
+      &lt;div className="forgot">Забыли пароль?&lt;/div>
+
+      {/* Кнопка входа */}
+      &lt;BlueButton onClick={handleLogin} style={{ }}>
+        Войти
+      &lt;/BlueButton>
+
+      {/* Нижний текст со ссылкой на регистрацию */}
+      &lt;div className="bottom-text">
+        Еще не зарегистрированы?
+        &lt;a href="/register">Зарегистрируйтесь сейчас!&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  );
+};
+
+export default LoginForm;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

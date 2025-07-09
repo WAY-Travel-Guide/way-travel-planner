@@ -17,7 +17,8 @@
 }
 
 .start-form .start-title {
-    width: 2vw;
+    margin-top: 10%;
+    padding-left: 5vw;
     width: 100%;
     text-align: center;
     
@@ -29,7 +30,7 @@
 }
 
 .start-form .start-desciption {
-    width: 2vw;
+    padding-left: 5vw;
     width: 100%;
     font-size: 2rem;
 
@@ -41,9 +42,7 @@
 }
 
 .start-form .start-bottom-text {
-    width: 489px;
-    height: 74px;
-    
+    margin-top: 10%;
     width: 100%;
     text-align: center;
 

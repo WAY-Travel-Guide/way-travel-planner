@@ -1,6 +1,6 @@
 /**
- * @file authMiddleware.js
- * @brief Express-middleware для проверки JWT-токена (авторизации пользователя).
+ * @fileoverview authMiddleware.js
+ * @description Express-middleware для проверки JWT-токена (авторизации пользователя).
  *
  * @description
  * - Проверяет наличие заголовка Authorization: Bearer <JWT>.

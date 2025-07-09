@@ -1,8 +1,8 @@
-/*
-* @file UserController.js
-* @brief Контроллер для обработки запросов, связанных с пользователями.
-*        Реализует регистрацию, авторизацию и получение списка пользователей.
-*/
+/**
+ * @fileoverview UserController.js
+ * @description Контроллер для обработки запросов, связанных с пользователями.
+ *        Реализует регистрацию, авторизацию и получение списка пользователей.
+ */
 
 import User from "../models/User.js";  // Импортируем модель пользователя
 import Role from "../models/Role.js";
@@ -11,10 +11,9 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import { secret } from "./config.js";
 
-const generateAccessToken = (id, roles) => {
-    /*
+/**
     * @function generateAccessToken
-    * @brief Генерирует JWT-токен для авторизации пользователя.
+    * @description Генерирует JWT-токен для авторизации пользователя.
     * @param id     - Идентификатор пользователя (user._id)
     * @param roles  - Массив ролей пользователя (например, ['Admin', 'User'])
     * @returns      - Подписанный JWT-токен, действительный 24 часа
@@ -24,6 +23,7 @@ const generateAccessToken = (id, roles) => {
     *   - Токен подписывается секретным ключом (secret).
     *   - Токен используется для защиты маршрутов и проверки прав доступа.
     */
+const generateAccessToken = (id, roles) => {
     const payload = {
         id,
         roles
@@ -32,15 +32,15 @@ const generateAccessToken = (id, roles) => {
     return jwt.sign(payload, secret, {expiresIn: "24h"});
 }
 
-/*
+/**
 * @class UserController
-* @brief Класс-контроллер для управления пользователями через REST API.
+* @description Класс-контроллер для управления пользователями через REST API.
 */
 class UserController {
 
-    /*
+    /**
     * @function registerUser
-    * @brief Регистрирует нового пользователя.
+    * @description Регистрирует нового пользователя.
     * @param req HTTP-запрос (ожидается login и password в теле)
     * @param res HTTP-ответ
     */
@@ -95,9 +95,9 @@ class UserController {
         }
     }
 
-    /*
+    /**
     * @function checkUser
-    * @brief Проверяет логин и пароль пользователя (авторизация).
+    * @description Проверяет логин и пароль пользователя (авторизация).
     * @param req HTTP-запрос (login и password в теле)
     * @param res HTTP-ответ
     */
@@ -160,9 +160,9 @@ class UserController {
         }
     }
 
-    /*
+    /**
     * @function getAllUsers
-    * @brief Получает список всех пользователей.
+    * @description Получает список всех пользователей.
     * @param req HTTP-запрос
     * @param res HTTP-ответ
     */
@@ -185,9 +185,9 @@ class UserController {
         }
     }
 
-    /*
+    /**
     * @function deleteUser
-    * @brief Удаляет пользователя.
+    * @description Удаляет пользователя.
     * @param req HTTP-запрос
     * @param res HTTP-ответ
     */

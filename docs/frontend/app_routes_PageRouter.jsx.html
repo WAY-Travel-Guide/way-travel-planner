@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>app/routes/PageRouter.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">app/routes/PageRouter.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Компонент маршрутизации страниц приложения.
+ * Определяет публичные и защищённые маршруты, связывает страницы с соответствующими props.
+ *
+ * @description
+ * PageRouter — фронтовый роутер, использующий react-router-dom для организации переходов между страницами.
+ * В зависимости от маршрута рендерит LoginPage, RegisterPage, HomePage или UserPage, передавая необходимые props.
+ * Оборачивает приложение в &lt;BrowserRouter>.
+ *
+ * @module PageRouter
+ */
+
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import LoginPage from "../../pages/LoginPage/LoginPage.jsx";
+import UserPage from "../../pages/UserPage/UserPage.jsx";
+import HomePage from "../../pages/HomePage/HomePage";
+import RegisterPage from "../../pages/RegisterPage/RegisterPage.jsx";
+
+/**
+ * @typedef {Object} PageRouterProps
+ * @property {Object|null} user           - Объект пользователя или null, если пользователь не авторизован.
+ * @property {Function} handleLogin       - Функция-обработчик входа, вызывается при успешной авторизации.
+ * @property {Function} handleLogout      - Функция-обработчик выхода пользователя.
+ */
+
+/**
+ * Компонент маршрутизации. Определяет, какой компонент страницы отобразить по текущему URL.
+ *
+ * @param {PageRouterProps} props - Свойства компонента.
+ * @returns {JSX.Element} JSX-дерево роутера для приложения.
+ */
+const PageRouter = function({ user, handleLogin, handleLogout }) {
+    return (
+        /**
+         * Оборачивает все маршруты в BrowserRouter для поддержки истории переходов.
+         * Маршруты:
+         * - "/login"     — страница авторизации (LoginPage)
+         * - "/register"  — страница регистрации (RegisterPage)
+         * - "/"          — главная страница (HomePage)
+         * - "/user/:id"  — страница профиля пользователя (UserPage)
+         */
+        &lt;BrowserRouter>
+            &lt;div>
+                &lt;Routes>
+                    {/* Страница входа. onLogin пробрасывается для дальнейшей авторизации. */}
+                    &lt;Route path="/login" element={&lt;LoginPage onLogin={handleLogin} />} />
+                    
+                    {/* Страница регистрации. onLogin пробрасывается для автоматического входа после регистрации. */}
+                    &lt;Route path="/register" element={&lt;RegisterPage onLogin={handleLogin} />} />
+                    
+                    {/* Главная страница. Передаём user и onLogout для отображения профиля и выхода. */}
+                    &lt;Route path="/" element={&lt;HomePage user={user} onLogout={handleLogout} />} />
+                    
+                    {/* Страница пользователя. Передаём user для отображения информации о текущем пользователе. */}
+                    &lt;Route path="/user/:id" element={&lt;UserPage user={user} />} />
+                &lt;/Routes>
+            &lt;/div>
+        &lt;/BrowserRouter>
+    )
+}
+
+export default PageRouter;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

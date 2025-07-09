@@ -1,6 +1,6 @@
-/*
-* @file UserRouter.js
-* @brief Роутер для обработки HTTP-запросов, связанных с пользователями.
+/**
+* @fileoverview UserRouter.js
+* @description Роутер для обработки HTTP-запросов, связанных с пользователями.
 *        Включает маршруты авторизации, регистрации и получения списка пользователей.
 */
 
@@ -9,28 +9,28 @@ import UserController from "../controllers/UserController.js"; // Импорти
 import authMiddleware from "../middleware/authMiddleware.js";
 import roleMiddleware from "../middleware/roleMiddleware.js";
 
-/*
+/**
 * @const UserRouter
-* @brief Экземпляр роутера Express для маршрутов пользователей.
+* @description Экземпляр роутера Express для маршрутов пользователей.
 */
 const UserRouter = new Router();
 
-/*
+/**
 * @route POST /login
-* @brief Маршрут для авторизации пользователя.
+* @description Маршрут для авторизации пользователя.
 *        Обрабатывает запросы на вход (логин).
 */
 UserRouter.post('/login', UserController.checkUser);
 
-/*
+/**
 * @route POST /register
-* @brief Маршрут для регистрации нового пользователя.
+* @description Маршрут для регистрации нового пользователя.
 */
 UserRouter.post('/register', UserController.registerUser);
 
-/*
+/**
 * @route   GET /users
-* @brief   Маршрут для получения списка всех пользователей.
+* @description   Маршрут для получения списка всех пользователей.
 * @access  Только для пользователей с ролью "Admin" (доступ защищён JWT и middleware ролей)
 *
 * @middleware
@@ -45,10 +45,9 @@ UserRouter.get(
   UserController.getAllUsers // Контроллер для обработки запроса
 );
 
-
-/*
+/**
 * @route GET /deluser
-* @brief Маршрут для удаления пользователя.
+* @description Маршрут для удаления пользователя.
 */
 UserRouter.post('/deluser', UserController.deleteUser);
 

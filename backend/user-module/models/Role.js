@@ -1,23 +1,23 @@
-/*
-* @file Role.js
-* @brief Модель роли пользователя для MongoDB/Mongoose.
+/**
+* @fileoverview Role.js
+* @description Модель роли пользователя для MongoDB/Mongoose.
 *        Описывает структуру и ограничения коллекции users.
 */
 
 import mongoose from "mongoose"; // Импортируем mongoose для создания схемы и модели
 
-/*
-* @const userSchema
-* @brief Схема пользователя.
+/**
+* @const roleSchema
+* @description Схема пользователя.
 *        Определяет поля login (уникальный, обязательный) и password (обязательный).
 */
-const roleSchema = new mongoose.Schema({ 
+const roleSchema = new mongoose.Schema({
     value: { type: String, unique: true, default: "User" }
 });
 
-/*
-* @const User
-* @brief Модель пользователя на основе схемы userSchema.
+/**
+* @const Role
+* @description Модель пользователя на основе схемы userSchema.
 *        Используется для взаимодействия с коллекцией users в базе данных.
 *        Проверка на существование модели позволяет избежать ошибки переопределения при hot-reload.
 */

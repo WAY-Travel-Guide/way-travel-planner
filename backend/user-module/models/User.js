@@ -1,14 +1,14 @@
-/*
-* @file User.js
-* @brief Модель пользователя для MongoDB/Mongoose.
+/**
+* @fileoverview User.js
+* @description Модель пользователя для MongoDB/Mongoose.
 *        Описывает структуру и ограничения коллекции users.
 */
 
 import mongoose from "mongoose"; // Импортируем mongoose для создания схемы и модели
 
-/*
+/**
 * @const userSchema
-* @brief Схема пользователя.
+* @description Схема пользователя.
 *        Определяет поля login (уникальный, обязательный) и password (обязательный).
 */
 const userSchema = new mongoose.Schema({ 
@@ -17,9 +17,9 @@ const userSchema = new mongoose.Schema({
     roles: [{type: String, ref: 'Role'}]                      // Роль пользователя: администратор или обычный пользователь
 });
 
-/*
+/**
 * @const User
-* @brief Модель пользователя на основе схемы userSchema.
+* @description Модель пользователя на основе схемы userSchema.
 *        Используется для взаимодействия с коллекцией users в базе данных.
 *        Проверка на существование модели позволяет избежать ошибки переопределения при hot-reload.
 */
