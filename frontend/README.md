@@ -1,6 +1,6 @@
 # WAY Frontend – User Interface
 
-![WAY Logo](frontend/public/images/github-logo.png)
+![WAY Logo](public/images/github-logo.png)
 
 ## 📦 Описание
 
