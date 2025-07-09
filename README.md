@@ -1,6 +1,6 @@
 # WAY – Smart Travel Route Planner for Russia
 
-![WAY Logo](frontend\src\assets\logo-homepage.svg)
+![WAY Logo](frontend/public/images/github-logo.png)
 
 **WAY** — это платформа для автоматического подбора индивидуальных маршрутов путешествий по России с учетом предпочтений пользователя: даты, тип транспорта, бюджет, цели поездки (семейный отдых, природа, культурные объекты и т.д.).
 
@@ -19,6 +19,7 @@ way-travel-planner/
 ├── .gitignore        # Глобальный gitignore
 ├── README.md         # Этот файл (главное описание проекта)
 └── ...
+```
 
 ## 🚀 Основные модули
 -frontend/ — одностраничное приложение (SPA) на React, Vite, OpenLayers (карты).
@@ -28,20 +29,22 @@ way-travel-planner/
 
 ## ⚙️ Запуск
 
--Backend
-```plaintext
-    cd backend/webapi
-    npm install
-    npm start
+Backend
 
+```plaintext
+cd backend/webapi
+npm install
+npm start
+```
 ---
 
--Frontend
-```plaintext
-    cd frontend
-    npm install
-    npm run dev
+Frontend
 
+```plaintext
+cd frontend
+npm install
+npm run dev
+```
 
 ## 🧩 Ключевые технологии
 -Node.js, Express.js — сервер, REST API, middleware
