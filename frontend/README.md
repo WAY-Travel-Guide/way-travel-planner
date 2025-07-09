@@ -1,6 +1,6 @@
 # WAY Frontend – User Interface
 
-![WAY Logo](frontend\src\assets\logo-homepage.svg)
+![WAY Logo](frontend/public/images/github-logo.png)
 
 ## 📦 Описание
 
