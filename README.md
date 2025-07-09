@@ -34,7 +34,7 @@ Backend
 ```plaintext
 cd backend/webapi
 npm install
-npm start
+npm run dev
 ```
 ---
 
