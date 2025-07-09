@@ -1,0 +1,66 @@
+.reg-form {
+    font-family: 'SuisseInt-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Центрируем все дочерние элементы */
+    justify-content: center;     /* Центр по вертикали (если нужно) */
+
+    width: 56vw;                 /* 2/3 экрана */
+    height: 100vh;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-right: -6vh;
+    gap: 40px;
+}
+
+.reg-title {
+    font-family: 'SuisseInt-Regular', sans-serif;
+    width: 489px;
+    height: 74px;
+
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.reg-form .bottom-text {
+    margin-top: -12px;
+    font-size: 14px;
+    color: #555;
+}
+
+.reg-form .bottom-text a {
+    color: #0C2461;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.reg-form .error-msg {
+    margin-top: -40px;
+    color: #0C2461;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.reg-form-corner-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+@font-face {
+    font-family: 'SuisseInt-Regular';
+    src: url("/fonts/SuisseIntl-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -80,7 +80,14 @@ class UserController {
             await newUser.save();
 
             // Отправляем успешный ответ
-            return res.json({ success: true, message: "Регистрация успешно выполнена", newUser });
+            const token = generateAccessToken(newUser._id, newUser.roles);
+            return res.json({
+            success: true,
+            message: "Регистрация успешно выполнена",
+            id: newUser._id,
+            login: newUser.login,
+            token
+            });
         } catch (error) {
             // Логируем ошибку и отправляем ответ с ошибкой
             console.error("Ошибка регистрации:", error);
@@ -135,9 +142,11 @@ class UserController {
                 * - Токен подписывается секретом и отправляется клиенту для последующих авторизованных запросов.
                 */
                 const token = generateAccessToken(user._id, user.roles);
-                res.json({
+                return res.json({
                     success: true,
                     message: "Вход успешно выполнен",
+                    id: user._id,
+                    login: user.login,
                     token,
                 });
             } else {

@@ -14,7 +14,7 @@ import UserRouter from "../user-module/routers/UserRouter.js"; // Импорти
 * @brief Строка подключения к MongoDB (Atlas или локальная).
 *        Можно использовать переменные окружения для безопасности.
 */
-const mongoUrl = "mongodb+srv://admin:swVrPjebFNhahbMz@cluster-way-planner.rk99vsx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Way-planner";
+const mongoUrl = "mongodb+srv://admin:RS7duwPQ9Sb6vxij@cluster-way-planner.rk99vsx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Way-planner";
 // const mongoUrl = "mongodb://localhost:27017/user_login"; // Пример локального подключения
 
 /*

@@ -1,0 +1,22 @@
+.login-page {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Левая часть — форма */
+.form-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Правая часть — блок с картинкой */
+.picture-swapper-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
