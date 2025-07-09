@@ -1,6 +1,6 @@
 # WAY Backend – Сервис маршрутизации и управления пользователями
 
-![WAY Logo](frontend\src\assets\logo-homepage.svg)
+![WAY Logo](frontend/public/images/github-logo.png)
 
 ## 🛠️ Архитектура и модули
 
