@@ -1,12 +1,27 @@
-# React + Vite
+# WAY Frontend – User Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![WAY Logo](frontend\src\assets\logo-homepage.svg)
 
-Currently, two official plugins are available:
+## 📦 Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Фронтенд WAY — это современное одностраничное приложение (SPA) на **React** с использованием **Vite** и интеграцией с OpenLayers для визуализации маршрутов на интерактивной карте.  
+Пользователь может пройти регистрацию, авторизоваться, получить персональный маршрут, просмотреть его на карте и скачать PDF.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Структура
+
+```plaintext
+frontend/
+├── public/           # Статические файлы (иконки, логотипы, картинки, manifest)
+├── src/
+│   ├── assets/       # Локальные изображения и ресурсы
+│   ├── components/   # Переиспользуемые компоненты и страницы (LoginPage, RegisterPage, UserPage и др.)
+│   ├── shared/       # Общие UI-элементы (кнопки, инпуты и др.)
+│   ├── widgets/      # Крупные виджеты: формы, карусель, главная, профили
+│   ├── App.jsx       # Главный компонент с роутингом и глобальным стейтом
+│   ├── index.js      # Точка входа для фронта
+│   └── ...           # Стили, хуки, утилиты
+├── package.json      # Зависимости и скрипты фронта
+├── vite.config.js    # Конфигурация сборщика Vite
+└── ...
