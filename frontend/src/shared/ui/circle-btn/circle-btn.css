@@ -1,0 +1,25 @@
+:root {
+  /* Можно переопределить в любом месте приложения */
+    --dot-color: #fdfdfd;
+}
+
+.circle-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--dot-color);
+    cursor: pointer;
+    box-shadow: rgb(0,0,0,0.1);
+}
+
+.btn-label {
+    font-size: 1rem;
+    font-family: 'SuisseInt-startular', sans-serif;
+    font-weight: 500;
+}
+
+
+.circle-button.active {
+    box-shadow: rgb(12, 36, 97, 1);
+}
+

@@ -1,0 +1,23 @@
+.step-scroller-wrapper {
+  display: flex;
+  
+}
+
+.step-content-container {
+  height: 100vh;
+  
+  padding-top: 10%;
+  padding-left: 10%;
+  transition: transform 0.5s ease;
+}
+
+.step-controls {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* кружки поверх линии */
+.step-controls > button {
+  margin: 1.5rem;          /* отступы между кнопками */
+}

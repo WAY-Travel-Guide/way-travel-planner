@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "docdash": "^2.0.2"
+    "docdash": "^2.0.2",
+    "vite-plugin-svgr": "^4.3.0"
+  },
+  "dependencies": {
+    "ol": "^10.6.1"
   }
 }

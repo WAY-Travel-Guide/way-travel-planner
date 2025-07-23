@@ -1,0 +1,41 @@
+.step-form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: start;
+
+    gap: 5vh;
+    width: 100%;
+}
+
+.step-title {
+    font-size: 4rem;
+    color: rgb(23, 59, 151);
+    font-weight: 600;
+}
+
+.step-description {
+    font-size: 2rem;
+    color: #686666;
+    font-weight: 600;
+}
+
+.step-button {
+    margin-top: 10%;
+}
+
+.step-bottom-text {
+    margin-top: 10%;
+
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: #686666;
+}
+
+.map-step {
+    display: flex;
+    bottom: 20%;
+}
+
+
+

@@ -1,0 +1,1 @@
+export { fetchPlaces } from './api/placesAPI.js';

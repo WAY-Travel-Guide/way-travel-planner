@@ -1,0 +1,16 @@
+.start-form {
+    position: relative;      /* чтобы потом абсолютные элементы внутри ссылались на этот контейнер */
+    font-family: 'SuisseInt-startular', sans-serif;
+    width: 56vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-right: -6vh;
+
+}

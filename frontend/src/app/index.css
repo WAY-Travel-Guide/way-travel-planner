@@ -6,10 +6,9 @@ html, body, #root {
   box-sizing: border-box;
 }
 
-.map-container {
-  width: 100%;
-  max-width: 800px; /* Ограничиваем ширину карты */
-  height: 400px; /* Фиксированная высота */
-  margin: 20px auto; /* Центрируем карту */
-  border-radius: 8px; /* Скругленные углы */
+@font-face {
+    font-family: 'SuisseInt-Regular';
+    src: url("/fonts/SuisseIntl-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }

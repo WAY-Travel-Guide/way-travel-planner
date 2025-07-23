@@ -12,10 +12,10 @@
  */
 
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import LoginPage from "../../pages/LoginPage/LoginPage.jsx";
-import UserPage from "../../pages/UserPage/UserPage.jsx";
-import HomePage from "../../pages/HomePage/HomePage";
-import RegisterPage from "../../pages/RegisterPage/RegisterPage.jsx";
+import { LoginPage } from "../../pages/";
+import { UserPage } from "../../pages/";
+import { HomePage } from "../../pages/";
+import { RegisterPage } from "../../pages/";
 
 /**
  * @typedef {Object} PageRouterProps

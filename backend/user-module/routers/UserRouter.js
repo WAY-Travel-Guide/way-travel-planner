@@ -6,7 +6,7 @@
 
 import { Router } from "express";                        // Импортируем Router из Express
 import UserController from "../controllers/UserController.js"; // Импортируем контроллер пользователей
-import authMiddleware from "../middleware/authMiddleware.js";
+//import authMiddleware from "../middleware/authMiddleware.js";
 import roleMiddleware from "../middleware/roleMiddleware.js";
 
 /**

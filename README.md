@@ -32,8 +32,9 @@ way-travel-planner/
 Backend
 
 ```plaintext
-cd backend/webapi
+cd backend
 npm install
+npm install mongoose
 npm start
 ```
 ---
@@ -43,6 +44,7 @@ Frontend
 ```plaintext
 cd frontend
 npm install
+npm install ol
 npm run dev
 ```
 
