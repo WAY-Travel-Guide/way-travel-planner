@@ -21,3 +21,5 @@ build/
 # игнорим все node_modules в любом месте
 node_modules
 
+.env
+

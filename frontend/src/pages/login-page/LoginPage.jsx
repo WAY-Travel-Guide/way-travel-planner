@@ -48,26 +48,29 @@ const LoginPage = function ({ onLogin }) {
    * @returns {Promise<void>}
    */
   const handleLogin = async () => {
+    if (!login || !password) {
+      setMsg("Все поля обязательны");
+      return;
+    }
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch('/api/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ login, password }),
       });
-      const data = await res.json();
+      const res_body = await res.json();
 
-      if (data.success && data.token) {
-        /** @type {{id: string, login: string, name: string, token: string}} */
+      if (res_body.success && res_body.data.token) {
         const userData = {
-          id: data.id,
+          id: res_body.data.id,
           login: login,
           name: login,
-          token: data.token,
+          token: res_body.data.token,
         };
         onLogin(userData);
-        navigate(`/user/${data.id}`);
+        navigate(`/user/${res_body.data.id}`);
       } else {
-        setMsg(data.message || "Ошибка авторизации");
+        setMsg(res_body.error || "Ошибка авторизации");
       }
     } catch (error) {
       setMsg('Ошибка сервера. Попробуйте позже.');
@@ -91,7 +94,7 @@ const LoginPage = function ({ onLogin }) {
           handleLogin={handleLogin}
         />
       </div>
-      <div className="pictur-swapper-section">
+      <div className="picture-swapper-section">
         <PictureSwapper />
       </div>
     </div>

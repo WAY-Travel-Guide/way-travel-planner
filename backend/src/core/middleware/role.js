@@ -18,14 +18,14 @@
  */
 
 import jwt from "jsonwebtoken";
-import { secret } from "../controllers/config.js";
+import config from "../../config/index.js";
 
 /**
  * @function roleMiddleware
  * @param {Array<string>} roles - Массив разрешённых ролей
  * @returns {function} Express middleware для проверки ролей пользователя через JWT
  */
-export default function (roles) {
+const roleMiddleware = function (roles) {
     return function (req, res, next) {
         // Пропускаем preflight-запросы CORS
         if (req.method === "OPTIONS") {
@@ -46,7 +46,7 @@ export default function (roles) {
             }
 
             // Декодируем и проверяем токен
-            const decoded = jwt.verify(token, secret);
+            const decoded = jwt.verify(token, config.secret);
             // console.log("decoded JWT:", decoded);
 
             const { roles: userRoles } = decoded;
@@ -72,3 +72,5 @@ export default function (roles) {
         }
     }
 }
+
+export { roleMiddleware };

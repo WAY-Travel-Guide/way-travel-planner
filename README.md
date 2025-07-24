@@ -34,8 +34,8 @@ Backend
 ```plaintext
 cd backend
 npm install
-npm install mongoose
-npm start
+npm install mongoose dotenv sequelize pg pg-hstore nodemon winston joi
+npm run dev
 ```
 ---
 

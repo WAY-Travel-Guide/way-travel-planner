@@ -65,28 +65,25 @@ function RegisterPage({ onLogin }) {
     }
 
     try {
-      const res = await fetch("/api/register", {
+      const res = await fetch("/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ login, password }),
       });
-      const data = await res.json();
+      const res_body = await res.json();
+      console.log(res_body);
 
-      if (data.success && data.token) {
-        /**
-         * Объект пользователя после регистрации.
-         * @type {{id: string, login: string, name: string, token: string}}
-         */
+      if (res_body.success && res_body.data.token) {
         const userData = {
-          id: data.id,
+          id: res_body.data.id,
           login: login,
           name: login,
-          token: data.token,
+          token: res_body.data.token,
         };
         onLogin(userData);
-        navigate(`/user/${data.id}`);
+        navigate(`/user/${res_body.data.id}`);
       } else {
-        setMsg(data.message || "Ошибка авторизации");
+        setMsg(res_body.error || "Не удалось зарегистрироваться");
       }
     } catch (error) {
       setMsg("Ошибка сервера");
