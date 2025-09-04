@@ -1,22 +1,17 @@
 import React from "react";
-import { DefaultInput } from '../../shared';
 import { DefaultButton } from '../../shared';
-import { ToHomeButton } from "../../shared";
-import { MapConstructor } from '../mapView/';
-import "./StepsArray.css";
+import "./Introduction.css";
 
-const steps = [
-    {
-        id: 0,
-        content: (props) => (
-            <div className="step-form">
-                <div className='step-title'>НАЧНЕМ ПУТЕШЕСТВИЕ</div>
-                <div className='step-description'>
+const Introduction = () => {
+    return (
+            <div className="introduction-form">
+                <div className='introduction-title'>НАЧНЕМ ПУТЕШЕСТВИЕ</div>
+                <div className='introduction-description'>
                     Наш сервис поможет составить маршрут, на основе Ваших предпочтений,
                     бюджета и количества дней отдыха. Мы ценим каждого нашего пользователя
                     и заботимся о Вашем комфорте, поэтому также учитываем индивидуальные особенности
                 </div>
-                <div className="step-button">
+                <div className="introduction-button">
                     <DefaultButton style={{
                         onClick: {},
                         bgColor: "#B95700",
@@ -27,20 +22,11 @@ const steps = [
                         Маршрут
                     </DefaultButton>
                 </div>
-                <div className="step-bottom-text">
+                <div className="introduction-bottom-text">
                     Команда «WAY» желает Вам хорошего отдыха!
                 </div>
             </div>
         )
-    },
-    {
-        id: 1,
-        content: (props) => (
-            <div className="map-constructor">
-                <MapConstructor />
-            </div>
-        )
-    },
-];
+};
 
-export default steps;
+export { Introduction };

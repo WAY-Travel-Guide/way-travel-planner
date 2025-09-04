@@ -21,6 +21,8 @@ import './RegisterForm.css';
  * @typedef {Object} RegisterFormProps
  * @property {string} login                         - Текущее значение поля логина.
  * @property {function(string)} setLogin            - Setter для поля логина.
+ * @property {string} email                         - Текущее значение поля email.
+ * @property {function(string)} setEmail            - Setter для поля email.
  * @property {string} password                      - Текущее значение поля пароля.
  * @property {function(string)} setPassword         - Setter для поля пароля.
  * @property {string} confirmPassword               - Текущее значение поля подтверждения пароля.
@@ -35,7 +37,7 @@ import './RegisterForm.css';
  * @param {RegisterFormProps} props   - Свойства компонента (login, setLogin, password, setPassword, confirmPassword, setConfirmPassword, msg, handleRegister).
  * @returns {JSX.Element}             - Форма регистрации с полями, кнопкой и ссылкой.
  */
-const RegisterForm = function ({ login, setLogin, password, setPassword, confirmPassword, setConfirmPassword, msg, handleRegister }) {
+const RegisterForm = function ({ login, setLogin, email, setEmail, password, setPassword, confirmPassword, setConfirmPassword, msg, handleRegister }) {
     return (
         <div className="reg-form">
             {/* Кнопка возврата на главную */}
@@ -48,6 +50,15 @@ const RegisterForm = function ({ login, setLogin, password, setPassword, confirm
                 value={login}
                 onChange={(e) => setLogin(e.target.value)}
                 placeholder="Логин"
+                style={{  }}
+            />
+
+            {/* Поле ввода email */}
+            <DefaultInput
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
                 style={{  }}
             />
 

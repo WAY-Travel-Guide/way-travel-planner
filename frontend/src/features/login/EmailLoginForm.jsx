@@ -1,14 +1,14 @@
 /**
  * @fileoverview
- * Форма авторизации пользователя.
- * Отображает поля логина и пароля, кнопку входа и ссылку на регистрацию.
+ * Форма авторизации пользователя через email.
+ * Отображает поля email и пароля, кнопку входа и ссылку на регистрацию.
  *
  * @description
- * LoginForm — React-компонент для авторизации пользователя.
- * Содержит элементы ввода логина и пароля, кнопку входа, обработку ошибок и переход на регистрацию.
+ * EmailLoginForm — React-компонент для авторизации пользователя через email.
+ * Содержит элементы ввода email и пароля, кнопку входа, обработку ошибок и переход на регистрацию.
  * Использует кастомные компоненты Input, BlueButton и кнопку возврата на главную.
  *
- * @module LoginForm
+ * @module EmailLoginForm
  */
 
 import React from 'react';
@@ -18,9 +18,9 @@ import { ToHomeButton } from "../../shared";
 import './LoginForm.css';
 
 /**
- * @typedef {Object} LoginFormProps
- * @property {string} login           - Текущее значение поля логина.
- * @property {function(string)} setLogin     - Setter для поля логина.
+ * @typedef {Object} EmailLoginFormProps
+ * @property {string} email           - Текущее значение поля email.
+ * @property {function(string)} setEmail     - Setter для поля email.
  * @property {string} password        - Текущее значение поля пароля.
  * @property {function(string)} setPassword  - Setter для поля пароля.
  * @property {string} msg             - Сообщение об ошибке или информационное сообщение.
@@ -28,24 +28,24 @@ import './LoginForm.css';
  */
 
 /**
- * Форма логина.
+ * Форма логина через email.
  *
- * @param {LoginFormProps} props   - Свойства компонента (login, setLogin, password, setPassword, msg, handleLogin).
+ * @param {EmailLoginFormProps} props   - Свойства компонента (email, setEmail, password, setPassword, msg, handleLogin).
  * @returns {JSX.Element}          - Форма логина с полями, кнопкой и ссылками.
  */
-const LoginForm = function ({ login, setLogin, password, setPassword, msg, handleLogin }) {
+const EmailLoginForm = function ({ email, setEmail, password, setPassword, msg, handleLogin }) {
   return (
     <div className="login-form">
       {/* Кнопка возврата на главную */}
       <ToHomeButton />
-      <h1 className='title'>С возвращением!</h1>
+      <h1 className='title'>Вход через email</h1>
 
-      {/* Поле ввода логина */}
+      {/* Поле ввода email */}
       <DefaultInput
         type="text"
-        value={login}
-        onChange={(e) => setLogin(e.target.value)}
-        placeholder="Логин"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email"
         style={{  }}
       />
 
@@ -83,13 +83,13 @@ const LoginForm = function ({ login, setLogin, password, setPassword, msg, handl
         <a href="/register">Зарегистрируйтесь сейчас!</a>
       </div>
       
-      {/* Ссылка на вход через email */}
+      {/* Ссылка на обычный вход */}
       <div className="bottom-text" >
-        Войти через электронную почту?
-        <a href="/login-email">Нажмите здесь!</a>
+        Войти через логин?
+        <a href="/login">Нажмите здесь!</a>
       </div>
     </div>
   );
 };
 
-export { LoginForm };
+export { EmailLoginForm };

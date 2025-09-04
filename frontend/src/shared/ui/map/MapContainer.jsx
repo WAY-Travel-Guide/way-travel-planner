@@ -25,7 +25,7 @@ const MapContainer = function({ children, center = [44.5133, 48.7071], zoom = 12
 
     return (
         <div className="map-container" ref={mapRef}>
-        {children /* сюда сверху можно подложить свои слои */}
+            {children}
         </div>
     );
 }

@@ -110,7 +110,7 @@ function UserPage({ user }) {
       </div>
 
       <div className="user-form-section">
-        <UserForm userName={user?.name} />
+        <UserForm />
       </div>
       <div className="user-picture-swapper-section">
         <PictureSwapper />

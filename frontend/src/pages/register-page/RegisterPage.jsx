@@ -35,6 +35,8 @@ function RegisterPage({ onLogin }) {
   /** @type {[string, Function]} */
   const [login, setLogin] = useState("");
   /** @type {[string, Function]} */
+  const [email, setEmail] = useState("");
+  /** @type {[string, Function]} */
   const [password, setPassword] = useState("");
   /** @type {[string, Function]} */
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -51,10 +53,18 @@ function RegisterPage({ onLogin }) {
    */
   const handleRegister = async () => {
     setMsg("");
-    if (!login || !password || !confirmPassword) {
+    if (!login || !email || !password || !confirmPassword) {
       setMsg("Все поля обязательны");
       return;
     }
+    
+    // Валидация email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setMsg("Введите корректный email");
+      return;
+    }
+    
     if (password !== confirmPassword) {
       setMsg("Пароли не совпадают");
       return;
@@ -68,7 +78,7 @@ function RegisterPage({ onLogin }) {
       const res = await fetch("/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ login, password }),
+        body: JSON.stringify({ login, email, password }),
       });
       const res_body = await res.json();
       console.log(res_body);
@@ -77,6 +87,7 @@ function RegisterPage({ onLogin }) {
         const userData = {
           id: res_body.data.id,
           login: login,
+          email: email,
           name: login,
           token: res_body.data.token,
         };
@@ -100,8 +111,11 @@ function RegisterPage({ onLogin }) {
         <RegisterForm
           login={login}
           setLogin={setLogin}
+          email={email}
+          setEmail={setEmail}
           password={password}
           setPassword={setPassword}
+          confirmPassword={confirmPassword}
           setConfirmPassword={setConfirmPassword}
           msg={msg}
           handleRegister={handleRegister}

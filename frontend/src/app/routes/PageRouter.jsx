@@ -6,13 +6,14 @@
  * @description
  * PageRouter — фронтовый роутер, использующий react-router-dom для организации переходов между страницами.
  * В зависимости от маршрута рендерит LoginPage, RegisterPage, HomePage или UserPage, передавая необходимые props.
- * Оборачивает приложение в <BrowserRouter>.
+ * Содержит только Routes компонент (BrowserRouter находится в App.jsx).
  *
  * @module PageRouter
  */
 
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { LoginPage } from "../../pages/";
+import { EmailLoginPage } from "../../pages/";
 import { UserPage } from "../../pages/";
 import { HomePage } from "../../pages/";
 import { RegisterPage } from "../../pages/";
@@ -33,30 +34,29 @@ import { RegisterPage } from "../../pages/";
 const PageRouter = function({ user, handleLogin, handleLogout }) {
     return (
         /**
-         * Оборачивает все маршруты в BrowserRouter для поддержки истории переходов.
+         * Рендерит все маршруты приложения.
          * Маршруты:
          * - "/login"     — страница авторизации (LoginPage)
          * - "/register"  — страница регистрации (RegisterPage)
          * - "/"          — главная страница (HomePage)
          * - "/user/:id"  — страница профиля пользователя (UserPage)
          */
-        <BrowserRouter>
-            <div>
-                <Routes>
-                    {/* Страница входа. onLogin пробрасывается для дальнейшей авторизации. */}
-                    <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
+        <Routes>
+            {/* Страница входа. onLogin пробрасывается для дальнейшей авторизации. */}
+            <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
                     
-                    {/* Страница регистрации. onLogin пробрасывается для автоматического входа после регистрации. */}
-                    <Route path="/register" element={<RegisterPage onLogin={handleLogin} />} />
+            {/* Страница входа через email. onLogin пробрасывается для дальнейшей авторизации. */}
+            <Route path="/login-email" element={<EmailLoginPage onLogin={handleLogin} />} />
                     
-                    {/* Главная страница. Передаём user и onLogout для отображения профиля и выхода. */}
-                    <Route path="/" element={<HomePage user={user} onLogout={handleLogout} />} />
+            {/* Страница регистрации. onLogin пробрасывается для автоматического входа после регистрации. */}
+            <Route path="/register" element={<RegisterPage onLogin={handleLogin} />} />
                     
-                    {/* Страница пользователя. Передаём user для отображения информации о текущем пользователе. */}
-                    <Route path="/user/:id" element={<UserPage user={user} />} />
-                </Routes>
-            </div>
-        </BrowserRouter>
+            {/* Главная страница. Передаём user и onLogout для отображения профиля и выхода. */}
+            <Route path="/" element={<HomePage user={user} onLogout={handleLogout} />} />
+                    
+            {/* Страница пользователя. Передаём user для отображения информации о текущем пользователе. */}
+            <Route path="/user/:id" element={<UserPage user={user} />} />
+        </Routes>
     )
 }
 

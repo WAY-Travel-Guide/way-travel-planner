@@ -30,6 +30,10 @@ const connectMongoDB = async () => {
 const sequelize = new Sequelize(config.postgresUri, {
     dialect: 'postgres',
     logging: (msg) => logger.debug(msg), // Логирование SQL-запросов
+    define: {
+        timestamps: true,
+        underscored: true
+    }
 });
 
 const connectPostgres = async () => {
