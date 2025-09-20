@@ -1,0 +1,66 @@
+.user-options-form {
+    font-family: 'SuisseInt-startular', sans-serif;
+    position: absolute;
+    right: 1.5rem;
+    top: 6rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: start;
+}
+
+.user-options-form .user-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #173b97;
+    text-align: left;
+}
+
+.user-options-item {
+    font-family: 'SuisseInt-startular', sans-serif;
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid rgb(12, 36, 97);
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: rgb(12, 36, 97);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.user-options-item:hover {
+    color: #fff;
+    background-color: rgb(12, 36, 97);
+    box-shadow: 0px 0px 30px rgba(23, 59, 151, 0.2);
+    transform: translateY(-2px);
+}
+
+.user-options-item:disabled {
+    pointer-events: none;
+}
+
+.user-options-item:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

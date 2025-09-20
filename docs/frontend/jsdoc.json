@@ -1,0 +1,15 @@
+{
+    "source": {
+        "include": ["./frontend/src/shared", "./frontend/src/pages", "./frontend/src/app", "./frontend/src/widgets"],
+        "exclude": ["node_modules"]
+    },
+    "opts": {
+        "destination": "./docs/frontend",
+        "recurse": true,
+        "template": "node_modules/docdash"
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+    }
+}

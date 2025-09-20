@@ -1,0 +1,161 @@
+2025-07-24 16:31:49 [31merror[39m: Error creating place: PlaceModel.create is not a function
+2025-07-24 17:17:25 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:19:51 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:26:48 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:37:00 [31merror[39m: Error logging in user: user_data is not defined
+2025-07-24 17:41:51 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:41:53 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:42:08 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:43:24 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:43:53 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:44:35 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:45:14 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:45:46 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:46:32 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:48:01 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:48:24 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-07-24 17:48:37 [31merror[39m: Error logging in user: Пользователь с таким логином не найден
+2025-07-24 18:25:11 [31merror[39m: Error logging in user: Пользователь с таким логином не найден
+2025-07-24 18:25:37 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:25:43 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:25:43 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:25:46 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:25:47 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:33 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:34 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:35 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:35 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:36 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:38 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:26:43 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:37 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:38 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:39 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:39 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:40 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:42 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:27:44 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:14 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:16 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:21 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:26 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:27 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:27 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:28 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:28 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:28 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:28 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:29 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:29 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:32 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:39 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:28:59 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:29:00 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:29:00 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:29:01 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:29:02 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:07 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:08 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:13 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:14 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:14 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:15 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:16 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:17 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:18 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:20 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:27 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:28 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:28 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:29 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:31 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:31 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:32 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:32 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:32 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:33 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:33 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:30:34 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:31:08 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:31:09 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:31:23 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:31:30 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:31:31 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:31:34 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:32:41 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:32:42 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:32:43 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:32:44 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:32:51 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:01 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:01 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:02 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:02 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:03 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:03 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:03 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:03 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:04 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:05 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:06 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:07 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:07 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:07 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:20 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:20 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:22 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:22 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:23 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:24 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:26 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:26 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:30 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:34 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:34 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:35 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:35 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:36 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:36 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:37 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:37 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:37 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:37 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:38 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:38 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:38 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:39 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:40 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:40 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:40 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:41 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:41 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:41 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:41 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:41 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:42 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:43 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 18:33:43 [31merror[39m: Error logging in user: Введён неверный пароль
+2025-07-24 19:56:02 [31merror[39m: Error logging in user: Пользователь с таким логином не найден
+2025-08-09 01:28:00 [31merror[39m: PostgreSQL connection error: 
+2025-09-02 17:58:23 [31merror[39m: Error in GET /api/places/list: err is not defined
+2025-09-02 17:59:46 [31merror[39m: Error fetching places: Cannot read properties of undefined (reading 'split')
+2025-09-02 17:59:46 [31merror[39m: Error in GET /api/places/list: Invalid status code: {}. Status code must be an integer.
+2025-09-02 18:24:43 [31merror[39m: Error fetching places: Cannot read properties of undefined (reading 'split')
+2025-09-02 18:24:43 [31merror[39m: Error in GET /api/places/list: Invalid status code: {}. Status code must be an integer.
+2025-09-02 18:26:14 [31merror[39m: Error fetching places: Cannot read properties of undefined (reading 'split')
+2025-09-02 18:26:14 [31merror[39m: Error in GET /api/places/list: Invalid status code: {}. Status code must be an integer.
+2025-09-02 18:30:39 [31merror[39m: Error fetching places: Cannot read properties of undefined (reading 'split')
+2025-09-02 18:30:39 [31merror[39m: Error in GET /api/places/list: Invalid status code: {}. Status code must be an integer.
+2025-09-02 18:35:03 [31merror[39m: Error fetching places: столбец "id" не существует
+2025-09-02 18:35:03 [31merror[39m: Error in GET /api/places/list?bounds=44.5,48.6,44.6,48.7: Invalid status code: {"name":"SequelizeDatabaseError","parent":{"length":221,"name":"error","severity":"ОШИБКА","code":"42703","hint":"Возможно, предполагалась ссылка на столбец \"Place.gid\".","position":"8","file":"parse_relation.c","line":"3732","routine":"errorMissingColumn","sql":"SELECT \"id\", \"name\", \"tags\", ST_AsGeoJSON(geom) AS \"geometry\" FROM \"osm_volgograd\" AS \"Place\" WHERE ST_Within(geom, ST_MakeEnvelope(44.5, 48.6, 44.6, 48.7, 4326));"},"original":{"length":221,"name":"error","severity":"ОШИБКА","code":"42703","hint":"Возможно, предполагалась ссылка на столбец \"Place.gid\".","position":"8","file":"parse_relation.c","line":"3732","routine":"errorMissingColumn","sql":"SELECT \"id\", \"name\", \"tags\", ST_AsGeoJSON(geom) AS \"geometry\" FROM \"osm_volgograd\" AS \"Place\" WHERE ST_Within(geom, ST_MakeEnvelope(44.5, 48.6, 44.6, 48.7, 4326));"},"sql":"SELECT \"id\", \"name\", \"tags\", ST_AsGeoJSON(geom) AS \"geometry\" FROM \"osm_volgograd\" AS \"Place\" WHERE ST_Within(geom, ST_MakeEnvelope(44.5, 48.6, 44.6, 48.7, 4326));","parameters":{}}. Status code must be an integer.
+2025-09-02 18:55:25 [31merror[39m: Error fetching places: minLon is not defined
+2025-09-02 18:55:25 [31merror[39m: Error in GET /api/places/list: Invalid status code: {}. Status code must be an integer.
+2025-09-03 00:34:14 [31merror[39m: MongoDB connection error: Server selection timed out after 5000 ms
+2025-09-03 01:19:53 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-09-03 01:20:00 [31merror[39m: Error sending confirmation email to lit.pk.05@gmail.com: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2493b6ce20dsm113794525ad.92 - gsmtp
+2025-09-03 01:20:00 [31merror[39m: Failed to send confirmation email: Не удалось отправить письмо подтверждения
+2025-09-03 01:20:00 [31merror[39m: Error registering user: Пользователь с таким логином уже существует
+2025-09-03 19:19:07 [31merror[39m: Error logging in user: Пользователь с таким логином не найден
+2025-09-03 19:19:08 [31merror[39m: Error logging in user: Пользователь с таким логином не найден
+2025-09-03 20:57:10 [31merror[39m: Error logging in user: Введён неверный пароль

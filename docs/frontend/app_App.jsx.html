@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>app/App.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">app/App.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Главный компонент приложения (App). Отвечает за хранение состояния пользователя,
+ * обработку входа/выхода и инициализацию роутинга. Использует React hooks и компонент PageRouter.
+ *
+ * @description
+ * App — основной React-компонент фронтенда. При загрузке пытается восстановить пользователя
+ * из localStorage. Передаёт методы авторизации и выхода дочернему роутеру.
+ * Все маршруты, защищённые и публичные, реализуются внутри PageRouter.
+ *
+ * @module App
+ */
+
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Router } from "react-router-dom";
+import PageRouter from "./routes/PageRouter";
+
+/**
+ * Главный компонент приложения, реализующий базовую логику авторизации пользователя,
+ * хранение и восстановление данных пользователя из localStorage, а также маршрутизацию.
+ *
+ * @function
+ * @returns {JSX.Element} Корневой компонент приложения, содержащий логику аутентификации и передачи props дочерним компонентам.
+ */
+function App() {
+  /**
+   * @typedef {Object} User
+   * @property {string} [id]        - Идентификатор пользователя (опционально)
+   * @property {string} [login]     - Логин пользователя (опционально)
+   * @property {string} [token]     - JWT или иной токен (опционально)
+   * @property {any}     [...]      - Прочие свойства в зависимости от реализации
+   */
+
+  /** @type {[User|null, Function]} */
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    /**
+     * При первом рендере проверяет наличие данных пользователя в localStorage.
+     * Если данные валидны, восстанавливает пользователя.
+     * Если данные некорректны, очищает localStorage.
+     */
+    const savedUser = localStorage.getItem("user");
+    // Проверяем, что строка реально валидная!
+    if (savedUser &amp;&amp; savedUser !== "undefined") {
+      try {
+        setUser(JSON.parse(savedUser));
+        console.log("Loaded user from localStorage:", JSON.parse(savedUser));
+      } catch (e) {
+        console.warn("Некорректный user в localStorage:", savedUser);
+        setUser(null);
+        localStorage.removeItem("user");
+      }
+    }
+  }, []);
+
+  /**
+   * Обработчик успешного входа пользователя.
+   *
+   * @param {User} userData - Данные пользователя, полученные после авторизации.
+   */
+  const handleLogin = (userData) => {
+    console.log("handleLogin called with:", userData); // Отладка
+    setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
+  };
+
+  /**
+   * Обработчик выхода пользователя из системы.
+   * Очищает состояние и localStorage.
+   */
+  const handleLogout = () => {
+    console.log("handleLogout called"); // Отладка
+    setUser(null);
+    localStorage.removeItem("user");
+  };
+
+  return (
+    /**
+     * Рендерит компонент маршрутизации страниц.
+     * @see PageRouter
+     * @param {User|null} user - Текущий пользователь или null.
+     * @param {Function} handleLogin - Метод для входа.
+     * @param {Function} handleLogout - Метод для выхода.
+     */
+    &lt;PageRouter user={user} handleLogin={handleLogin} handleLogout={handleLogout} />
+  );
+}
+
+export default App;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

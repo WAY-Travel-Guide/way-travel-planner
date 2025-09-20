@@ -1,0 +1,15 @@
+{
+    "source": {
+        "include": ["./backend/webapi", "./backend/user-module"],
+        "exclude": ["node_modules"]
+    },
+    "opts": {
+        "destination": "./docs/backend",
+        "recurse": true,
+        "template": "node_modules/docdash"
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+    }
+}

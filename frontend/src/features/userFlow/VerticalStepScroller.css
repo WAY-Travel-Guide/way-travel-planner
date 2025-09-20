@@ -1,0 +1,63 @@
+.step-scroller-wrapper {
+  display: flex;
+}
+
+.step-content-container {
+  height: 100vh;
+  padding-top: 10%;
+  padding-left: 10%;
+  transition: transform 0.5s ease;
+}
+
+.step-controls {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Базовые стили для индикаторов */
+.step-controls > button {
+  margin: 1.5rem;
+  cursor: default;
+  pointer-events: none;
+  border: 2px solid #ccc;
+  background: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Активный индикатор */
+.step-controls > button.active {
+  transform: scale(1.3);
+  border-color: #B95700;
+  background: #B95700;
+  box-shadow: 0 0 10px rgba(185, 87, 0, 0.3);
+}
+
+/* Неактивные индикаторы */
+.step-controls > button:not(.active) {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+/* Анимация при переходе */
+.step-controls > button {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.step-controls > button.active {
+  animation: activePulse 2s infinite;
+}
+
+@keyframes activePulse {
+  0% { transform: scale(1.3); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1.3); }
+}

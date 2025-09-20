@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>widgets/PictureSwap/PictureSwapper.jsx - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-App.html">App</a><ul class='methods'><li data-type='method'><a href="module-App.html#~App">App</a></li></ul></li><li><a href="module-BlueButton.html">BlueButton</a><ul class='methods'><li data-type='method'><a href="module-BlueButton.html#~BlueButton">BlueButton</a></li></ul></li><li><a href="module-HomePage.html">HomePage</a><ul class='methods'><li data-type='method'><a href="module-HomePage.html#~HomePage">HomePage</a></li></ul></li><li><a href="module-HomeWidget.html">HomeWidget</a><ul class='methods'><li data-type='method'><a href="module-HomeWidget.html#~HomeWidget">HomeWidget</a></li></ul></li><li><a href="module-LoginForm.html">LoginForm</a><ul class='methods'><li data-type='method'><a href="module-LoginForm.html#~LoginForm">LoginForm</a></li></ul></li><li><a href="module-LoginHeader.html">LoginHeader</a><ul class='methods'><li data-type='method'><a href="module-LoginHeader.html#~LoginHeader">LoginHeader</a></li></ul></li><li><a href="module-LoginPage.html">LoginPage</a><ul class='methods'><li data-type='method'><a href="module-LoginPage.html#~LoginPage">LoginPage</a></li></ul></li><li><a href="module-OrangeButton.html">OrangeButton</a><ul class='methods'><li data-type='method'><a href="module-OrangeButton.html#~OrangeButton">OrangeButton</a></li></ul></li><li><a href="module-PageRouter.html">PageRouter</a><ul class='methods'><li data-type='method'><a href="module-PageRouter.html#~PageRouter">PageRouter</a></li></ul></li><li><a href="module-PictureSwapper.html">PictureSwapper</a><ul class='methods'><li data-type='method'><a href="module-PictureSwapper.html#~PictureSwapper">PictureSwapper</a></li></ul></li><li><a href="module-RegisterForm.html">RegisterForm</a><ul class='methods'><li data-type='method'><a href="module-RegisterForm.html#~RegisterForm">RegisterForm</a></li></ul></li><li><a href="module-RegisterPage.html">RegisterPage</a><ul class='methods'><li data-type='method'><a href="module-RegisterPage.html#~RegisterPage">RegisterPage</a></li></ul></li><li><a href="module-StartForm.html">StartForm</a><ul class='methods'><li data-type='method'><a href="module-StartForm.html#~StartForm">StartForm</a></li></ul></li><li><a href="module-ToHome.html">ToHome</a><ul class='methods'><li data-type='method'><a href="module-ToHome.html#~ToHome">ToHome</a></li></ul></li><li><a href="module-UserOptions.html">UserOptions</a><ul class='methods'><li data-type='method'><a href="module-UserOptions.html#~UserOptions">UserOptions</a></li></ul></li><li><a href="module-UserPage.html">UserPage</a><ul class='methods'><li data-type='method'><a href="module-UserPage.html#~UserPage">UserPage</a></li></ul></li><li><a href="module-index.html">index</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">widgets/PictureSwap/PictureSwapper.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileoverview
+ * Карусель картинок и информации (PictureSwapper) для страниц авторизации, регистрации и профиля.
+ * Позволяет листать слайды с фотографиями, описаниями и названиями городов.
+ * Добавляет анимацию и визуальные стрелки для навигации.
+ *
+ * @description
+ * PictureSwapper — React-компонент, реализующий слайдер (carousel) с изображениями, подписями и описаниями.
+ * Предназначен для визуального оформления страниц и привлечения внимания пользователя.
+ * Слайды пролистываются стрелками, плавно анимируются при смене.
+ * В верхней части есть быстрые ссылки: "Отзывы", "Контакты", "Помощь".
+ *
+ * @module PictureSwapper
+ */
+
+import React, { useState, useRef, useEffect } from "react";
+import "./PictureSwapper.css";
+
+import LeftArrow from "../../assets/left.svg";
+import RightArrow from "../../assets/right.svg";
+
+/**
+ * Список слайдов для карусели.
+ * @type {Array&lt;{city: string, label: string, description: string, image: string}>}
+ */
+const slides = [
+    {
+        city: "Москва",
+        label: "Популярно",
+        description: "5-дневный гид",
+        image: "/images/advert1.jpg"
+    },
+    {
+        city: "Санкт-Петербург",
+        label: "Историческое",
+        description: "3-дневный маршрут",
+        image: "/images/advert2.jpg"
+    },
+    {
+        city: "Казань",
+        label: "Национальное",
+        description: "Уикенд в столице Татарстана",
+        image: "/images/advert3.jpg"
+    }
+];
+
+/**
+ * Карусель с картинками, подписями и стрелками навигации.
+ *
+ * @returns {JSX.Element} Вёрстка слайдера с анимацией, стрелками и подписями.
+ */
+const PictureSwapper = function () {
+    /** @type {[number, Function]} Индекс текущего слайда */
+    const [index, setIndex] = useState(0);
+    /** @type {[string, Function]} Направление анимации ("left" или "right") */
+    const [direction, setDirection] = useState("right");
+    /** @type {[number, Function]} Ключ для fade-анимации */
+    const [fadeKey, setFadeKey] = useState(0);
+    /** @type {React.RefObject&lt;HTMLDivElement>} */
+    const formRef = useRef(null);
+
+    /**
+     * Переключает на следующий слайд.
+     */
+    const nextSlide = () => {
+        setDirection("right");
+        setIndex((prev) => (prev + 1) % slides.length);
+        setFadeKey(prev => prev + 1);
+    };
+
+    /**
+     * Переключает на предыдущий слайд.
+     */
+    const prevSlide = () => {
+        setDirection("left");
+        setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+        setFadeKey(prev => prev + 1);
+    };
+
+    /** @type {{city: string, label: string, description: string, image: string}} */
+    const current = slides[index];
+
+    return (
+        &lt;div className="form">
+            {/* Верхние быстрые ссылки */}
+            &lt;div className="top-links">
+                &lt;span>Отзывы →&lt;/span>
+                &lt;span>Контакты →&lt;/span>
+                &lt;span>Помощь →&lt;/span>
+            &lt;/div>
+
+            {/* Окно слайдера с плавным переходом между слайдами */}
+            &lt;div className="carousel-window">
+                &lt;div className="carousel-track" style={{ transform: `translateX(-${index * 100}%)` }}>
+                {slides.map((slide, i) => (
+                    &lt;div className="carousel-slide" key={i} style={{ backgroundImage: `url(${slide.image})` }} />
+                ))}
+                &lt;/div>
+            &lt;/div>
+
+            {/* Содержимое текущего слайда с fade-анимацией */}
+            &lt;div className="slide-content fade-in" key={fadeKey}>
+                &lt;div className="label">{current.label}&lt;/div>
+                &lt;div className="description">{current.description}&lt;/div>
+                &lt;div className="city">{current.city}&lt;/div>
+            &lt;/div>
+
+            {/* Стрелки навигации */}
+            &lt;div className="arrows">
+                &lt;img src={LeftArrow} className="arrow" onClick={prevSlide} />
+                &lt;img src={RightArrow} className="arrow" onClick={nextSlide} />
+            &lt;/div>
+        &lt;/div>
+    );
+};
+
+export default PictureSwapper;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Jul 09 2025 19:25:31 GMT+0300 (Москва, стандартное время) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

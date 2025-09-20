@@ -1,0 +1,44 @@
+.start-form {
+    position: relative;      /* чтобы потом абсолютные элементы внутри ссылались на этот контейнер */
+    font-family: 'SuisseInt-startular', sans-serif;
+    width: 56vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-right: -6vh;
+
+}
+
+/* Контейнер */
+.step-content-container {
+    height: 100vh;              /* высота окна */
+    overflow-y: auto;           /* вертикальная прокрутка */
+    scroll-snap-type: y mandatory; /* "прилипание" секций */
+    scroll-behavior: smooth;    /* плавная прокрутка */
+    scrollbar-width: none; /* Firefox */
+}
+
+.step-content-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Каждая секция */
+.step-section {
+    height: 100vh;              /* секция = высота окна */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;   /* секция встаёт к началу при скролле */
+}
+
+.map-constructor {
+    margin-top: 10vh;
+    position: relative;
+}
+

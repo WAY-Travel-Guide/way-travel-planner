@@ -1,0 +1,55 @@
+.introduction-form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: start;
+
+    gap: 5vh;
+    width: 100%;
+}
+
+.introduction-title {
+    font-size: 4rem;
+    color: rgb(23, 59, 151);
+    font-weight: 600;
+}
+
+.introduction-description {
+    font-size: 2rem;
+    color: #686666;
+    font-weight: 600;
+}
+
+.introduction-button {
+    margin-top: 10%;
+}
+
+.introduction-bottom-text {
+    margin-top: 10%;
+
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: #686666;
+}
+
+.map-introduction {
+    display: flex;
+    bottom: 20%;
+}
+
+.map-constructor {
+    margin-top: 10vh;
+    position: relative;
+}
+
+.map-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+
+
