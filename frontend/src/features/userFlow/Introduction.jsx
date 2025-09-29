@@ -24,28 +24,22 @@ const Introduction = () => {
                     }}>
                         Маршрут
                     </DefaultButton> {/*Кнопка маршрут*/}
-
-
-
-
-
-                    <DefaultSwitcher
-                        checked = {onChange}
-                        onChange={(e) => setChange(e.target.checked)} 
-                        style={{
-                            onBg: '#ff4444',
-                            offBg: '#666',
-                            handleSize: 12,
-                            width: 60,
-                            height: 35
-                        }}
-                    >
-                    </DefaultSwitcher>
                 </div>
                 <div className="introduction-bottom-text">
                     Команда «WAY» желает Вам хорошего отдыха!
                 </div>
+                
+                <div className="simple-button">
+                    <DefaultSwitcher
+                        checked = {onChange}
+                        onChange={(e) => setChange(e.target.checked)} 
+                        style={{
+                        }}
+                    />
+                    
             </div>
+            </div>
+            
         )
 };
 

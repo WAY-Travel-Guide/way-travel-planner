@@ -569,3 +569,87 @@
 2025-09-24 16:45:24 [33mwarn[39m: MongoDB: disconnected
 2025-09-24 16:50:08 [33mwarn[39m: MongoDB: disconnected
 2025-09-25 08:27:48 [31merror[39m: MongoDB connection error: querySrv ECONNREFUSED _mongodb._tcp.cluster-way-planner.rk99vsx.mongodb.net
+2025-09-29 12:36:06 [32minfo[39m: PostgreSQL connected successfully
+2025-09-29 12:36:11 [32minfo[39m: MongoDB connected successfully
+2025-09-29 12:36:11 [32minfo[39m: All databases initialized successfully
+2025-09-29 12:36:11 [32minfo[39m: Server is running on port 5000
+2025-09-29 12:36:18 [32minfo[39m: User logged in: admin
+2025-09-29 12:41:29 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 13:34:07 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 13:34:26 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 13:55:19 [32minfo[39m: User logged in: admin
+2025-09-29 13:55:41 [32minfo[39m: User logged in: admin
+2025-09-29 13:55:49 [32minfo[39m: User logged in: admin
+2025-09-29 13:56:43 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 14:03:11 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:23 [31merror[39m: Error logging in user: getaddrinfo ENOTFOUND ac-jwm5vvr-shard-00-00.rk99vsx.mongodb.net
+2025-09-29 14:03:25 [31merror[39m: Error logging in user: getaddrinfo ENOTFOUND ac-jwm5vvr-shard-00-00.rk99vsx.mongodb.net
+2025-09-29 14:04:04 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 14:04:19 [31merror[39m: Error logging in user: read ECONNRESET
+2025-09-29 14:04:22 [32minfo[39m: User logged in: admin
+2025-09-29 14:04:22 [32minfo[39m: User logged in: admin
+2025-09-29 14:04:22 [32minfo[39m: User logged in: admin
+2025-09-29 14:04:22 [32minfo[39m: User logged in: admin
+2025-09-29 14:04:23 [32minfo[39m: User logged in: admin
+2025-09-29 14:04:23 [32minfo[39m: User logged in: admin
+2025-09-29 14:05:38 [32minfo[39m: User logged in: admin
+2025-09-29 14:06:16 [32minfo[39m: User logged in: admin
+2025-09-29 14:07:47 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 14:16:24 [32minfo[39m: User logged in: admin
+2025-09-29 14:16:24 [32minfo[39m: User logged in: admin
+2025-09-29 14:20:17 [32minfo[39m: User logged in: admin
+2025-09-29 14:22:21 [32minfo[39m: User logged in: admin
+2025-09-29 14:24:38 [32minfo[39m: User logged in: admin
+2025-09-29 14:26:41 [32minfo[39m: User logged in: admin
+2025-09-29 14:38:09 [32minfo[39m: User logged in: admin
+2025-09-29 14:43:10 [32minfo[39m: User logged in: admin
+2025-09-29 14:45:54 [32minfo[39m: User logged in: admin
+2025-09-29 14:50:19 [32minfo[39m: User logged in: admin
+2025-09-29 14:53:49 [32minfo[39m: User logged in: admin
+2025-09-29 17:09:00 [32minfo[39m: PostgreSQL connected successfully
+2025-09-29 17:09:01 [32minfo[39m: MongoDB connected successfully
+2025-09-29 17:09:01 [32minfo[39m: All databases initialized successfully
+2025-09-29 17:09:01 [32minfo[39m: Server is running on port 5000
+2025-09-29 17:09:02 [32minfo[39m: User logged in: admin
+2025-09-29 17:14:22 [32minfo[39m: User logged in: admin
+2025-09-29 17:19:29 [32minfo[39m: User logged in: admin
+2025-09-29 17:20:13 [32minfo[39m: User logged in: admin
+2025-09-29 17:21:42 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 18:17:36 [32minfo[39m: User logged in: admin
+2025-09-29 18:17:37 [32minfo[39m: User logged in: admin
+2025-09-29 18:18:16 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 18:43:12 [32minfo[39m: User logged in: admin
+2025-09-29 18:43:12 [32minfo[39m: User logged in: admin
+2025-09-29 18:55:22 [32minfo[39m: User logged in: admin
+2025-09-29 18:58:52 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:22 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 19:23:25 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:25 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:23:26 [32minfo[39m: User logged in: admin
+2025-09-29 19:30:05 [32minfo[39m: User logged in: admin
+2025-09-29 19:31:13 [32minfo[39m: User logged in: admin
+2025-09-29 19:46:48 [32minfo[39m: User logged in: admin
+2025-09-29 19:58:30 [32minfo[39m: User logged in: admin
+2025-09-29 19:59:17 [32minfo[39m: User logged in: admin
+2025-09-29 20:01:48 [32minfo[39m: User logged in: admin

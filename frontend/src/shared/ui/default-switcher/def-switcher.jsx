@@ -1,16 +1,17 @@
 import React from 'react';
 import './def-switcher.css';
 
-/**
- * Простой переключатель с твоими стилями
- * 
- * @param {boolean} checked - Включен или выключен
- * @param {function} onChange - Функция при изменении
- */
-const DefaultSwitcher = function({ 
-    checked = false, 
-    onChange 
-}) {
+const DefaultSwitcher = function({ checked = false, onChange, style = {} }) {
+    const { tsbgColor, afterShadow, chAfterBgColor, chTsBgColor } = style;
+
+
+    const vars = {
+        ...(tsbgColor      && { '--tsbg-color': tsbgColor }),
+        ...(afterShadow    && { '--after-color': afterShadow }),
+        ...(chAfterBgColor && { '--ch-after-bg-color': chAfterBgColor }),
+        ...(chTsBgColor    && { '--ch-ts-bg-color': chTsBgColor }),
+    };
+
     const handleChange = (e) => {
         if (onChange) {
             onChange(e);
@@ -18,15 +19,21 @@ const DefaultSwitcher = function({
     };
 
     return (
-        <label className="switcher">
+        <>
             <input
+                id="checkboxInput"
                 type="checkbox"
                 checked={checked}
                 onChange={handleChange}
-                className="switcher-input"
             />
-            <span className="switcher-visual"></span>
-        </label>
+            <label
+                htmlFor="checkboxInput"
+                className="toggleSwitch"
+                style={vars}
+            >
+                <span className="slider" />
+            </label>
+        </>
     );
 }
 

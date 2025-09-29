@@ -162,3 +162,18 @@
 2025-09-24 13:07:53 [31merror[39m: Error logging in user: Введён неверный пароль
 2025-09-24 13:07:56 [31merror[39m: Error logging in user: Введён неверный пароль
 2025-09-25 08:27:48 [31merror[39m: MongoDB connection error: querySrv ECONNREFUSED _mongodb._tcp.cluster-way-planner.rk99vsx.mongodb.net
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:16 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:21 [31merror[39m: Error logging in user: connection <monitor> to 159.41.2.94:27017 timed out
+2025-09-29 14:03:23 [31merror[39m: Error logging in user: getaddrinfo ENOTFOUND ac-jwm5vvr-shard-00-00.rk99vsx.mongodb.net
+2025-09-29 14:03:25 [31merror[39m: Error logging in user: getaddrinfo ENOTFOUND ac-jwm5vvr-shard-00-00.rk99vsx.mongodb.net
+2025-09-29 14:04:19 [31merror[39m: Error logging in user: read ECONNRESET
