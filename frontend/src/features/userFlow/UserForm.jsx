@@ -6,13 +6,13 @@ import './UserForm.css';
 
 const UserForm = () => {
     const steps = [
-        { id: "intro", content: <Introduction /> },
-        { id: "map", content: <MapConstructor /> }
+        { id: "intro", content: <Introduction /> }, // вступительные слова и кнопка маршрут
+        { id: "map", content: <MapConstructor /> } // неработающее построение карты
     ];
     
     return (
         <div className="start-form">
-            <ToHomeButton />
+            <ToHomeButton />{/* Кнопка в левом верхнем углу для выхода в главное меню*/}
             
             <div className="step-content-container">
                 {steps.map((step, index) => (

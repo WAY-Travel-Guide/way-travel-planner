@@ -96,25 +96,30 @@ function UserPage({ user }) {
      * - user-picture-swapper-section: виджет для смены картинки.
      */
     <div className="user-page">
+      {/*div целиком описывает левый верхний кружок*/}
       <div
         className="user-menu-wrapper"
+        // открытие-закрытие выпадающего меню в зависимости от наведения мыши
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <img
+        onMouseLeave={handleMouseLeave}>
+        <img                              // иконка пользователя UserButton - просто svg-картинка
           src={UserButton}
           alt="Пользователь"
-          className="start-user-corner-button"
-        />
-        {shouldShowMenu  && <UserOptions userName={user?.name} />}
+          className="start-user-corner-button"/>
+
+        {shouldShowMenu  && <UserOptions userName={user?.name} />}{/*Выпадающее окно пользователя (профиль, история, выход)*/}
       </div>
 
+      {/* Вступление,неработающая карта, кнопка выхода в главное меню*/}
       <div className="user-form-section">
         <UserForm />
       </div>
+
+      {/* Переключатель картинок в правом верхнем углу*/}
       <div className="user-picture-swapper-section">
         <PictureSwapper />
       </div>
+
     </div>
   );
 }

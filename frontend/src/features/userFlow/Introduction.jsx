@@ -1,8 +1,10 @@
-import React from "react";
-import { DefaultButton } from '../../shared';
+import UseState, { useState } from "react";
+import { DefaultButton, DefaultSwitcher } from '../../shared';
 import "./Introduction.css";
 
 const Introduction = () => {
+    const [onChange, setChange] = useState(false);
+
     return (
             <div className="introduction-form">
                 <div className='introduction-title'>НАЧНЕМ ПУТЕШЕСТВИЕ</div>
@@ -12,6 +14,7 @@ const Introduction = () => {
                     и заботимся о Вашем комфорте, поэтому также учитываем индивидуальные особенности
                 </div>
                 <div className="introduction-button">
+                    {/* Переопределение стиля стандартной кнопки*/}
                     <DefaultButton style={{
                         onClick: {},
                         bgColor: "#B95700",
@@ -20,7 +23,24 @@ const Introduction = () => {
                         textColorBefore: "#B95700",
                     }}>
                         Маршрут
-                    </DefaultButton>
+                    </DefaultButton> {/*Кнопка маршрут*/}
+
+
+
+
+
+                    <DefaultSwitcher
+                        checked = {onChange}
+                        onChange={(e) => setChange(e.target.checked)} 
+                        style={{
+                            onBg: '#ff4444',
+                            offBg: '#666',
+                            handleSize: 12,
+                            width: 60,
+                            height: 35
+                        }}
+                    >
+                    </DefaultSwitcher>
                 </div>
                 <div className="introduction-bottom-text">
                     Команда «WAY» желает Вам хорошего отдыха!

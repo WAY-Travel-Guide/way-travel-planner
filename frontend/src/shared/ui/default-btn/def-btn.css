@@ -50,7 +50,7 @@
   
 }
 
-/* обычный hover */
+/* обычный hover(поведение при наведении) */
 .button:hover {
   color: var(--btn-text-color);
   box-shadow: inset 0 -100px 0 0 var(--btn-color);
