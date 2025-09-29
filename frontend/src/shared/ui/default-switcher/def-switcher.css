@@ -5,7 +5,7 @@
 }
 
 :root{
-  --tsbg-color:"#000000";
+  --tsbg-color:#000000;
   --after-color:rgba(8, 8, 8, 0.26);
   --ch-after-bg-color:white;          /*cirlce color*/
   --ch-ts-bg-color: rgb(148, 118, 255); /* background color after*/
@@ -18,13 +18,10 @@
   position: relative;
   width: 50px;
   height: 30px;
-  background-color: var(--tsbg-color); /* Черный фон до нажатия */
+  background-color: var(--tsbg-color) !important; /* Черный фон до нажатия */
   border-radius: 20px;
   cursor: pointer;
   transition-duration: 0.2s;
-}
-.slider{
-  background-color: black;
 }
 
 .toggleSwitch::after {
@@ -36,17 +33,17 @@
   background-color: transparent;
   border-radius: 50%;
   transition-duration: .2s;
-  box-shadow: 5px 2px 7px var(--after-color); /*как переменная */
+  box-shadow: 5px 2px 7px var(--after-color)!important; /*как переменная */
   border: 5px solid white;
 }
 
 #checkboxInput:checked+.toggleSwitch::after {
   transform: translateX(100%);
   transition-duration: .2s;
-  background-color: var(--ch-after-bg-color); /*как переменная*/
+  background-color: var(--ch-after-bg-color)!important; /*как переменная*/
 }
 /* Switch background change */
 #checkboxInput:checked+.toggleSwitch {
-  background-color: var(--ch-ts-bg-color);/*как переменная*/
+  background-color: var(--ch-ts-bg-color)!important;/*как переменная*/
   transition-duration: .2s;
 }

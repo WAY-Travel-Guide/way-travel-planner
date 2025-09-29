@@ -653,3 +653,5 @@
 2025-09-29 19:58:30 [32minfo[39m: User logged in: admin
 2025-09-29 19:59:17 [32minfo[39m: User logged in: admin
 2025-09-29 20:01:48 [32minfo[39m: User logged in: admin
+2025-09-29 20:08:33 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 20:16:33 [33mwarn[39m: MongoDB: disconnected

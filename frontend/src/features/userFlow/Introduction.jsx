@@ -3,8 +3,6 @@ import { DefaultButton, DefaultSwitcher } from '../../shared';
 import "./Introduction.css";
 
 const Introduction = () => {
-    const [onChange, setChange] = useState(false);
-
     return (
             <div className="introduction-form">
                 <div className='introduction-title'>НАЧНЕМ ПУТЕШЕСТВИЕ</div>
@@ -28,16 +26,6 @@ const Introduction = () => {
                 <div className="introduction-bottom-text">
                     Команда «WAY» желает Вам хорошего отдыха!
                 </div>
-                
-                <div className="simple-button">
-                    <DefaultSwitcher
-                        checked = {onChange}
-                        onChange={(e) => setChange(e.target.checked)} 
-                        style={{
-                        }}
-                    />
-                    
-            </div>
             </div>
             
         )

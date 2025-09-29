@@ -31,7 +31,6 @@ const DefaultSwitcher = function({ checked = false, onChange, style = {} }) {
                 className="toggleSwitch"
                 style={vars}
             >
-                <span className="slider" />
             </label>
         </>
     );
