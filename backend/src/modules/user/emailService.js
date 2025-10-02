@@ -2,20 +2,23 @@ import nodemailer from 'nodemailer';
 import { logger } from '../../core/logger.js';
 import config from '../../config/index.js';
 
+
 class EmailService {
     constructor() {
         // Настройка транспорта для отправки email
         this.transporter = nodemailer.createTransport({
-            service: 'gmail', // Можно изменить на другой сервис
+            host: 'smtp.mail.ru', // host используем mail.ru
+            port: 465,
+            secure: true, // использовать SSL
             auth: {
-                user: process.env.EMAIL_USER || 'your-email@gmail.com',
-                pass: process.env.EMAIL_PASS || 'your-app-password'
+            user: process.env.EMAIL_USER, //логин от почты
+            pass: process.env.EMAIL_PASS //пароль от почты (пароль специальный)
             }
         });
     }
 
     /**
-     * Отправляет письмо с подтверждением email
+     * Отправляет письмо с подтверждением emailб
      * @param {string} email - Email пользователя
      * @param {string} token - Токен подтверждения
      * @param {string} username - Имя пользователя
