@@ -13,7 +13,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { HomeWidget } from '../../widgets/';
+import { HomeWidget,Header} from '../../widgets/';
 import "./HomePage.css";
 
 /**

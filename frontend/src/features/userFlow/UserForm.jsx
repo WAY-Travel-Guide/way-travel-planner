@@ -8,6 +8,7 @@ const UserForm = () => {
     const steps = [
         { id: "intro", content: <Introduction /> }, // вступительные слова и кнопка маршрут
         { id: "map", content: <MapConstructor /> } // неработающее построение карты
+        
     ];
     
     return (

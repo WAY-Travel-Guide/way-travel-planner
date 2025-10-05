@@ -1,0 +1,66 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 4rem; /* ~64px на дефолте, но растёт при зуме/тексте*/
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-sizing: border-box;
+
+    display: flex; /* Добавляем flex для всего header, чтобы align работал */
+    align-items: center; /* Вертикальный центр по содержимому */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%; /* Полная ширина контейнера */
+    height: 100%; /* Наследует от parent min-height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 1.5rem; /* rem — масштабируется с root */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-logo h1 {
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav-list li {
+    margin: 0;
+}
+
+.header-nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.header-nav-list a:hover {
+    color: #ccc;
+}
+

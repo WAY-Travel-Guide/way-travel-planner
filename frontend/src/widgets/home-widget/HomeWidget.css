@@ -1,20 +1,26 @@
 .home-widget {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw;               /* Ширина элемента равна 100% ширины окна браузера (viewport width) */
+    height: 100vh;              /* Высота элемента равна 100% высоты окна браузера (viewport height) */
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex;              /* Включает flex-контейнер для гибкого расположения дочерних элементов */
+    flex-direction: column;     /* Располагает дочерние элементы в колонку (вертикально) */
+    
+    align-items: center;        /* Выравнивает дочерние элементы по горизонтали (поперечной оси) по центру */
+    justify-content: center;    /* Выравнивает дочерние элементы по вертикали (главной оси) по центру */
 
-    text-align: center;
-    color: white;
+    /* у лого нет текста (все в картинке) */
+    /*text-align: left;*/
+    /* не реагирует */
+    /*color: white;*/
 
-    padding: 2rem;
-    box-sizing: border-box;
+    /* Внутренние отступы со всех сторон 2rem */
+    /*padding: 2rem;*/
+    
+    /* Включает padding и border в общую ширину/высоту элемента */
+    /*box-sizing: border-box;*/
 }
 
 .home-logo {
-    width: 900px;
-    margin-bottom: 1.5rem;
+    width: 900px;               /* Ширина логотипа 900 пикселей */
+    margin-bottom: 1.5 rem;      /* Внешний отступ снизу 1.5rem (для создания промежутка между лого и следующим элементом) */
 }

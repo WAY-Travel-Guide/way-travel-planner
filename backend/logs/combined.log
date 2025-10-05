@@ -655,3 +655,58 @@
 2025-09-29 20:01:48 [32minfo[39m: User logged in: admin
 2025-09-29 20:08:33 [33mwarn[39m: MongoDB: disconnected
 2025-09-29 20:16:33 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 21:50:20 [32minfo[39m: PostgreSQL connected successfully
+2025-09-29 21:50:24 [32minfo[39m: MongoDB connected successfully
+2025-09-29 21:50:24 [32minfo[39m: All databases initialized successfully
+2025-09-29 21:50:24 [32minfo[39m: Server is running on port 5000
+2025-09-29 21:50:28 [32minfo[39m: User logged in: admin
+2025-09-29 21:51:24 [32minfo[39m: User logged in: admin
+2025-09-29 22:01:10 [32minfo[39m: User logged in: admin
+2025-09-29 22:39:32 [33mwarn[39m: MongoDB: disconnected
+2025-09-29 22:47:15 [32minfo[39m: PostgreSQL connected successfully
+2025-09-29 22:47:16 [32minfo[39m: MongoDB connected successfully
+2025-09-29 22:47:16 [32minfo[39m: All databases initialized successfully
+2025-09-29 22:47:16 [32minfo[39m: Server is running on port 5000
+2025-10-02 12:47:05 [32minfo[39m: PostgreSQL connected successfully
+2025-10-02 12:47:05 [32minfo[39m: MongoDB connected successfully
+2025-10-02 12:47:05 [32minfo[39m: All databases initialized successfully
+2025-10-02 12:47:05 [32minfo[39m: Server is running on port 5000
+2025-10-02 12:47:07 [32minfo[39m: User logged in: admin
+2025-10-02 13:26:07 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:28:27 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:31:43 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:34:02 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:35:09 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:37:26 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:39:02 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:39:46 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:40:07 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:41:24 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:43:57 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:46:01 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:47:48 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:49:22 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:50:23 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:52:09 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:54:42 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:56:15 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:58:06 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 13:59:09 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:03:19 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:03:22 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:03:44 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:06:36 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:08:32 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:09:42 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:10:34 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:12:19 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:13:14 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:17:06 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:18:38 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 14:19:08 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 17:17:28 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 18:31:22 [33mwarn[39m: MongoDB: disconnected
+2025-10-02 19:26:41 [32minfo[39m: PostgreSQL connected successfully
+2025-10-02 19:26:42 [32minfo[39m: MongoDB connected successfully
+2025-10-02 19:26:42 [32minfo[39m: All databases initialized successfully
+2025-10-02 19:26:42 [32minfo[39m: Server is running on port 5000

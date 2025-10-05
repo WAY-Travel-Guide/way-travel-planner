@@ -90,16 +90,7 @@ const LoginForm = function ({ login, setLogin, password, setPassword, msg, handl
       <div className="bottom-text" >
         Войти через электронную почту?
         <a href="/login-email">Нажмите здесь!</a>
-      </div>
-
-    <DefaultSwitcher
-      checked = {onChange}
-      onChange={(e) => setChange(e.target.checked)} 
-      style={{}}>
-
-      </DefaultSwitcher>
-                    
-            
+      </div>    
     </div>
   );
 };
