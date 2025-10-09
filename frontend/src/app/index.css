@@ -1,14 +1,14 @@
 html, body, #root {
-  min-height: 100vh;  
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden; 
-  overflow-y: auto;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;              /*высота браузера*/ 
+  width: 100vw;               /*ширина браузера*/
+  margin: 0;                  /*внешние отступы*/
+  padding: 0;                 /*внутренние отступы*/
+  box-sizing: border-box;     /*размер только в рамках ширины*/
+  overflow-x: hidden;         /*прячем горизонтальный скроллер*/
+  overflow-y: hidden;         /*прячем вертикальный скроллер*/
+  display: flex;              /*расположение элементов внутри браузера*/
+  align-items: center;        /*расположение относительно поперечной оси*/
+  justify-content: center;    /*расположение относительно основной(горизонтальной оси)*/
 }
 
 @font-face {

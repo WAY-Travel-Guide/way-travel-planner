@@ -50,13 +50,21 @@ const slides = [
  * @returns {JSX.Element} Вёрстка слайдера с анимацией, стрелками и подписями.
  */
 const PictureSwapper = function () {
+
     /** @type {[number, Function]} Индекс текущего слайда */
+
     const [index, setIndex] = useState(0);
+
     /** @type {[string, Function]} Направление анимации ("left" или "right") */
+
     const [direction, setDirection] = useState("right");
+
     /** @type {[number, Function]} Ключ для fade-анимации */
+
     const [fadeKey, setFadeKey] = useState(0);
+
     /** @type {React.RefObject<HTMLDivElement>} */
+    
     const formRef = useRef(null);
 
     /**

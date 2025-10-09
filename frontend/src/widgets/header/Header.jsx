@@ -1,18 +1,34 @@
 import React from 'react';
 import './Header.css';
+import Exit from "../../assets/exit.svg";
+import History from "../../assets/time-past.svg";
+import Person from "../../assets/user.svg";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="header-logo">
-          <h1>Твой Логотип</h1> {/* Или img */}
-        </div>
         <nav className="header-nav">
           <ul className="header-nav-list">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li>
+              <a className='menu-items'> Отзывы</a>
+            </li>
+            <li>
+              <a className='menu-items'> Контакты</a>
+            </li>
+            <li>
+              <a className='menu-items'> Помощь</a>
+            </li>
+            <li className="header-spacer"></li>
+            <li>
+                <img src={Exit} alt="Главная" className="header-nav-icon" />
+            </li>
+            <li>
+                <img src={History} alt="О нас" className="header-nav-icon" />
+            </li>
+            <li>
+                <img src={Person} alt="Контакты" className="header-nav-icon" />
+            </li>
           </ul>
         </nav>
       </div>
