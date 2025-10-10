@@ -60,7 +60,7 @@ const HomePage = function ({ user, onLogout }) {
     <div className="homepage">
       {/*<Header></Header>*/}
       {/*<HomeWidget user={user} onLogout={onLogout}/>*/}
-      <TileBackground /*slides = {slides}*/></TileBackground>
+      <TileBackground slides = {slides}></TileBackground>
     </div>
   );
 }
