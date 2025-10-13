@@ -56,7 +56,7 @@ class UserController {
 
     async confirmEmail(req, res) {
         try {
-            const { token } = req.params;
+            const { token } = req.query;
             const result = await userService.confirmEmail(token);
             sendSuccess(res, result);
         } catch (err) {

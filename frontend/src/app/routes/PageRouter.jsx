@@ -17,6 +17,7 @@ import { EmailLoginPage } from "../../pages/";
 import { UserPage } from "../../pages/";
 import { HomePage } from "../../pages/";
 import { RegisterPage } from "../../pages/";
+import { ConfirmEmailPage } from "../../pages/confirm-email/ConfirmEmailPage";
 
 /**
  * @typedef {Object} PageRouterProps
@@ -56,6 +57,11 @@ const PageRouter = function({ user, handleLogin, handleLogout }) {
                     
             {/* Страница пользователя. Передаём user для отображения информации о текущем пользователе. */}
             <Route path="/user/:id" element={<UserPage user={user} />} />
+
+            {/* Страница подтверждения email. */}
+            <Route path="/confirm-email" element={<ConfirmEmailPage />} />
+
+            
         </Routes>
     )
 }

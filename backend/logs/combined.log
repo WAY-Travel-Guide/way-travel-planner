@@ -520,3 +520,103 @@
 2025-09-03 21:48:13 [32minfo[39m: Server is running on port 5000
 2025-09-03 22:11:15 [33mwarn[39m: MongoDB: disconnected
 2025-09-04 12:56:53 [33mwarn[39m: MongoDB: disconnected
+2025-10-13 08:42:44 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 08:42:45 [32minfo[39m: MongoDB connected successfully
+2025-10-13 08:42:45 [32minfo[39m: All databases initialized successfully
+2025-10-13 08:42:45 [32minfo[39m: Server is running on port 5000
+2025-10-13 08:43:33 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 08:43:33 [32minfo[39m: MongoDB connected successfully
+2025-10-13 08:43:33 [32minfo[39m: All databases initialized successfully
+2025-10-13 08:43:33 [32minfo[39m: Server is running on port 5000
+2025-10-13 11:40:25 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 11:40:26 [32minfo[39m: MongoDB connected successfully
+2025-10-13 11:40:26 [32minfo[39m: All databases initialized successfully
+2025-10-13 11:40:26 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:38:08 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:38:09 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:38:09 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:38:09 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:39:39 [32minfo[39m: Confirmation email sent to: robert.ogannisian2015@yandex.ru
+2025-10-13 12:39:39 [32minfo[39m: Registered user: robert13102025 with email: robert.ogannisian2015@yandex.ru
+2025-10-13 12:44:01 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:44:04 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:44:04 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:44:04 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:44:39 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:44:39 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:44:39 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:44:39 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:54:25 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:54:25 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:54:25 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:54:25 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:54:55 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:54:56 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:54:56 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:54:56 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:55:08 [32minfo[39m: Email confirmed for user: robert13102025
+2025-10-13 12:55:08 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 12:56:29 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:56:32 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:56:33 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:56:33 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:56:33 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:56:34 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:56:35 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:56:35 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:56:35 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:58:12 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 12:58:13 [32minfo[39m: MongoDB connected successfully
+2025-10-13 12:58:13 [32minfo[39m: All databases initialized successfully
+2025-10-13 12:58:13 [32minfo[39m: Server is running on port 5000
+2025-10-13 12:58:19 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 12:58:19 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 12:59:13 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 12:59:13 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 12:59:13 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 12:59:13 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:05:24 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:05:25 [32minfo[39m: MongoDB connected successfully
+2025-10-13 13:05:25 [32minfo[39m: All databases initialized successfully
+2025-10-13 13:05:25 [32minfo[39m: Server is running on port 5000
+2025-10-13 13:06:34 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:06:35 [32minfo[39m: MongoDB connected successfully
+2025-10-13 13:06:35 [32minfo[39m: All databases initialized successfully
+2025-10-13 13:06:35 [32minfo[39m: Server is running on port 5000
+2025-10-13 13:07:07 [32minfo[39m: Confirmation email sent to: robert.ogannisian2015@yandex.ru
+2025-10-13 13:07:07 [32minfo[39m: Registered user: robobob123123123 with email: robert.ogannisian2015@yandex.ru
+2025-10-13 13:07:27 [32minfo[39m: Email confirmed for user: robobob123123123
+2025-10-13 13:07:27 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:09:55 [32minfo[39m: User logged in: robobob123123123
+2025-10-13 13:10:39 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:10:39 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:10:52 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:10:52 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:11:05 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:11:06 [32minfo[39m: MongoDB connected successfully
+2025-10-13 13:11:06 [32minfo[39m: All databases initialized successfully
+2025-10-13 13:11:06 [32minfo[39m: Server is running on port 5000
+2025-10-13 13:33:32 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:33:49 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:33:51 [32minfo[39m: MongoDB connected successfully
+2025-10-13 13:33:51 [32minfo[39m: All databases initialized successfully
+2025-10-13 13:33:51 [32minfo[39m: Server is running on port 5000
+2025-10-13 13:34:44 [32minfo[39m: Confirmation email sent to: robert.ogannisian2015@yandex.ru
+2025-10-13 13:34:44 [32minfo[39m: Registered user: 12345678 with email: robert.ogannisian2015@yandex.ru
+2025-10-13 13:35:01 [32minfo[39m: Email confirmed for user: 12345678
+2025-10-13 13:35:01 [31merror[39m: Error confirming email: Неверный токен подтверждения
+2025-10-13 13:45:04 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:45:06 [32minfo[39m: MongoDB connected successfully
+2025-10-13 13:45:06 [32minfo[39m: All databases initialized successfully
+2025-10-13 13:45:06 [32minfo[39m: Server is running on port 5000
+2025-10-13 13:45:28 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 13:45:29 [32minfo[39m: MongoDB connected successfully
+2025-10-13 13:45:29 [32minfo[39m: All databases initialized successfully
+2025-10-13 13:45:29 [32minfo[39m: Server is running on port 5000
+2025-10-13 13:49:04 [31merror[39m: Error registering user: Пользователь с таким email уже существует
+2025-10-13 13:49:17 [32minfo[39m: Confirmation email sent to: mofrmofr99@gmail.com
+2025-10-13 13:49:17 [32minfo[39m: Registered user: 246326315 with email: mofrmofr99@gmail.com
+2025-10-13 14:08:06 [32minfo[39m: PostgreSQL connected successfully
+2025-10-13 14:08:09 [32minfo[39m: MongoDB connected successfully
+2025-10-13 14:08:09 [32minfo[39m: All databases initialized successfully
+2025-10-13 14:08:09 [32minfo[39m: Server is running on port 5000

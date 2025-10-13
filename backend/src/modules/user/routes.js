@@ -21,7 +21,7 @@ userRoutes.get('/', roleMiddleware(['Admin']), userController.getAllUsers);
 userRoutes.post('/delete', roleMiddleware(['Admin']), validateDeleteUser, userController.deleteUser);
 
 // GET /api/users/confirm-email/:token - Подтверждение email
-userRoutes.get('/confirm-email/:token', userController.confirmEmail);
+userRoutes.get('/confirm-email', userController.confirmEmail);
 
 // POST /api/users/request-password-reset - Запрос восстановления пароля
 userRoutes.post('/request-password-reset', userController.requestPasswordReset);
