@@ -3,6 +3,7 @@ import './Header.css';
 import Exit from "../../assets/exit.svg";
 import History from "../../assets/time-past.svg";
 import Person from "../../assets/user.svg";
+import Logo from "../../../public/way-minilogo.svg"
 
 const Header = () => {
   return (
@@ -10,6 +11,9 @@ const Header = () => {
       <div className="header-container">
         <nav className="header-nav">
           <ul className="header-nav-list">
+            <li>
+              <img src={Logo} alt="Лого" className = "minilogo"/>
+            </li>
             <li>
               <a className='menu-items'> Отзывы</a>
             </li>

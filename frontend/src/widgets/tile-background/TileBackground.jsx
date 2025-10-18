@@ -79,35 +79,35 @@ const TileBackground = ({ slides = [], duration = 7000 }) => {
   };
 
   // Если слайдов нет — показываем заглушку
-  if (!slides.length) return <div className="story-carousel">Нет слайдов</div>;
+  if (!slides.length) return <div className="homestory-carousel">Нет слайдов</div>;
 
   // Деструктурируем текущий слайд
   const { image, label, description } = slides[current];
 
   return (
-    <div className="story-carousel">
+    <div className="homestory-carousel">
       {/* ======= Основной слайд ======= */}
       <div
-        className="story-background"
+        className="homestory-background"
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="story-overlay">
+        <div className="homestory-overlay">
           <h2>{label}</h2>
           <p>{description}</p>
         </div>
       </div>
 
       {/* ======= Прогресс-бары ======= */}
-          <div className="progress-bars">
+          <div className="homeprogress-bars">
       {slides.map((_, i) => (
         <div
           key={i}
-          className="progress-bar"
+          className="homeprogress-bar"
           onClick={() => setCurrent(i)} //  добавили кликабельность
           style={{ cursor: "pointer" }} //  чтобы видно было, что элемент кликабельный
         >
           <div
-            className={`progress-fill ${
+            className={`homeprogress-fill ${
               i < current
                 ? "filled"
                 : i === current

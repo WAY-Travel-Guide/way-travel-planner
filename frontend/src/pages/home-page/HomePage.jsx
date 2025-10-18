@@ -14,7 +14,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { HomeWidget,Header,TileBackground} from '../../widgets/';
-/*import "./HomePage.css";*/
+import "./HomePage.css";
 
 /**
  * @typedef {Object} HomePageProps
@@ -58,7 +58,7 @@ const HomePage = function ({ user, onLogout }) {
      * @see HomeWidget
      */
     <div className="homepage">
-      {/*<Header></Header>*/}
+      <Header></Header>
       {/*<HomeWidget user={user} onLogout={onLogout}/>*/}
       <TileBackground slides = {slides}></TileBackground>
     </div>
