@@ -1,7 +1,7 @@
 .story-carousel {
   position: relative;
-  width: 400px;
-  height: 700px;
+  width: 1400px;
+  height: 650px;
   border-radius: 20px;
   overflow: hidden;
   margin: 2rem auto;
@@ -29,19 +29,22 @@
 
 .progress-bars {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   display: flex;
-  gap: 5px;
+  gap: 8px; /* промежуток между полосками */
   z-index: 5;
+  justify-content: space-between; /* равномерное распределение по всей ширине */
+  padding: 0 20px; /* небольшой отступ от краёв */
+  box-sizing: border-box;
 }
 
 .progress-bar {
-  flex: 1;
+  flex: 1; /* каждая полоса занимает равную долю */
   height: 4px;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -79,29 +82,5 @@
 .nav.left { left: 10px; }
 .nav.right { right: 10px; }
 
-/*Код с хорошим мастабированием, но несовпадающим размером окна
-Оставляю на будущее, воможно пригодится
-/*
-.form-wrapper {
-  position: relative;
-  width: clamp(400px, 60vw, 1000px);
-  aspect-ratio: 16 / 9;
-  margin: 5vh auto;
-  border-radius: 2rem;
-  overflow: hidden;
-  mask-image: radial-gradient(circle, white 99%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, white 99%, transparent 100%);
-}
 
-.form-background {
-  position: absolute;
-  top: -2%;
-  left: -2%;
-  width: 104%;
-  height: 104%;
-  background: url('../../../public/images/bg1.jpg') center / cover no-repeat;
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
-  will-change: transform;
-}
-*/
+
