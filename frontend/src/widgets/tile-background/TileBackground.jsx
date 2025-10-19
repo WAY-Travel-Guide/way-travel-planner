@@ -9,6 +9,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./TileBackground.css";
 import BackgroundImage from "../../../public/images/bg1.jpg"; // Пример фона (можно не использовать)
+import { HomeWidget } from "../home-widget/HomeWidget";
 
 /**
  * Компонент TileBackground
@@ -95,6 +96,7 @@ const TileBackground = ({ slides = [], duration = 7000 }) => {
           <h2>{label}</h2>
           <p>{description}</p>
         </div>
+        <HomeWidget></HomeWidget>
       </div>
 
       {/* ======= Прогресс-бары ======= */}

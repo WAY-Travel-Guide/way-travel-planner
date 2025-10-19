@@ -1,6 +1,6 @@
 .homestory-carousel {
   position: relative;
-  width: min(90vw, 90rem); /* Responsive width: 90% of viewport or max 90rem */
+  width: min(95vw, 95rem); /* Responsive width: 90% of viewport or max 90rem */
   height: min(95vh, 95rem); /* Responsive height: 40% of viewport or max 40rem */
   border-radius: 1.25rem; /* 20px equivalent */
   overflow: hidden;
@@ -22,7 +22,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 2rem;
+  padding: 1.2rem;
   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
   color: #fff;
 }
@@ -81,6 +81,20 @@
 
 .nav.left { left: 0.625rem; } /* 10px equivalent */
 .nav.right { right: 0.625rem; } /* 10px equivalent */
+
+.home-widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  will-change: transform;
+}
 
 /* Responsive breakpoints for better zoom handling */
 @media (max-width: 768px) {

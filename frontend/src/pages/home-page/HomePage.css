@@ -6,6 +6,6 @@
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-    padding-top: 2rem; /* Updated to match new header height */
+    padding-top: 1.5rem; /* Updated to match new header height */
     overflow-x: hidden;
 }

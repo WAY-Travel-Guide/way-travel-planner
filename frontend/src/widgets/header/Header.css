@@ -14,7 +14,7 @@
 }
 
 .header-container {
-    max-width: 1370px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 0; /* Reduced padding for more compact look */
     width: 100%; 
@@ -40,6 +40,21 @@
     /*opacity: 0.8;
     /*background-color: rgba(0, 0, 0, 0.05); /* Subtle background */
 }
+
+.header-spacer {
+   width: auto;
+  flex: 1 1 auto; /* заполнитель, но адаптивный */
+  min-width: 50rem;   /* чтобы содержимое не ломало верстку */
+}
+.headerhome-widget{
+    width: 5px; /* Slightly smaller icons */
+    height: 5px;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    /*padding: 0.5rem; /* Better click area */
+    /*border-radius: 0.375rem; /* Rounded corners */
+    cursor: pointer;
+}
 .header-nav {
     display: flex;
     align-items: center;
@@ -56,11 +71,6 @@
     align-items: center;
 }
 
-.header-spacer {
-   width: auto;
-  flex: 1 1 auto; /* заполнитель, но адаптивный */
-  min-width: 46rem;   /* чтобы содержимое не ломало верстку */
-}
 
 .header-nav-list a{
     position: relative;

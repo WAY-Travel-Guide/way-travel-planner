@@ -32,7 +32,7 @@ const HomeWidget = function({ user, onLogout }) {
     return (
         <div className="home-widget">
             <HomeLogo className="home-logo" />
-            <LoginHeader />
+            <LoginHeader/>
         </div>
     );
 }

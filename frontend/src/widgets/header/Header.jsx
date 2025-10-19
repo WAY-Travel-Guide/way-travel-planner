@@ -4,6 +4,7 @@ import Exit from "../../assets/exit.svg";
 import History from "../../assets/time-past.svg";
 import Person from "../../assets/user.svg";
 import Logo from "../../../public/way-minilogo.svg"
+import MainLogo from "../../../public/images/github-logo.png"
 
 const Header = () => {
   return (
@@ -24,6 +25,9 @@ const Header = () => {
               <a className='menu-items'> Помощь</a>
             </li>
             <li className="header-spacer"></li>
+            {/*<li>
+              <img src={MainLogo} alt="Основной логотип" className='headerhome-widget'/>
+            </li>*/}
             <li>
                 <img src={Exit} alt="Главная" className="header-nav-icon" />
             </li>
