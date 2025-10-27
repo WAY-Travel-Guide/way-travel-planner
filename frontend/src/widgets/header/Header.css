@@ -1,161 +1,112 @@
+/*рамки хедера*/
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 3rem; /* Lower height - was 2rem */
-    background: rgba(255, 255, 255, 0.95); /* Semi-transparent modern look */
-    backdrop-filter: blur(10px); /* Modern glass effect */
-    z-index: 1000;
-    box-sizing: border-box;
-    display: flex; 
-    align-items: center;
-    transition: all 0.3s ease; /* Smooth transitions */
-}
-
-.header-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 0; /* Reduced padding for more compact look */
-    width: 100%; 
-    height: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.minilogo{
-    width: 40px; /* Slightly smaller icons */
-    height: 40px;
-    transition: all 0.3s ease;
-    margin-top: 0.5rem;
-    /*padding: 0.5rem; /* Better click area */
-    /*border-radius: 0.375rem; /* Rounded corners */
-    cursor: pointer;
-}
-
-.minilogo:hover {
-    transform: scale(1.1); /* Subtle scale effect */
-    /*opacity: 0.8;
-    /*background-color: rgba(0, 0, 0, 0.05); /* Subtle background */
-}
-
-.header-spacer {
-   width: auto;
-  flex: 1 1 auto; /* заполнитель, но адаптивный */
-  min-width: 50rem;   /* чтобы содержимое не ломало верстку */
-}
-.headerhome-widget{
-    width: 5px; /* Slightly smaller icons */
-    height: 5px;
-    transition: all 0.3s ease;
-    margin-top: 0.5rem;
-    /*padding: 0.5rem; /* Better click area */
-    /*border-radius: 0.375rem; /* Rounded corners */
-    cursor: pointer;
-}
-.header-nav {
-    display: flex;
-    align-items: center;
+    position: sticky;                                   /*В будущем пригодится для фиксированного хедера при прокрутке*/  
+    top: 0;  
+    left:0;
+    width: 100%;                                            /* Ширина хедера на всю ширину окна */
+    height: 3rem;                                           /* Высота хедера 3 рем */
+    background-color: transparent;                          /*прозрачный фон*/
+    z-index: 1000;                                          /* Высокий z-index, чтобы хедер был поверх других элементов */
+    margin-bottom: 0.5rem ;                                 /*Отступ снизу*/;
     
 }
-
-
-.header-nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 2rem; /* Increased gap for better spacing */
-    align-items: center;
+/*контейнер внутри хедера*/
+.header-container {
+    box-sizing: border-box;                     /* Включает padding и border в общую ширину/высоту элемента */
+    align-items: center;                        /* Вертикальное выравнивание элементов по центру внутри хедера */
+    text-align: center;
+    transition: all 0.3s ease;                   /* Плавные переходы для эффектов */ 
+    display: flex;                              /* Использует flexbox для расположения содержимого */
+    justify-content: space-between;             /* Распределяет элементы с максимальным пространством между ними */
+    align-items: center;                        /* Вертикальное выравнивание по центру */
 }
-
-
-.header-nav-list a{
-    position: relative;
-    list-style: none;
-    display: block;
-    padding: 1rem 0.75rem; /* Better padding for clickability */
-    margin: 0;
-    cursor: pointer;
-    font-weight: 500; /* Slightly bolder text */
-    font-size: 1.3rem; /* Slightly smaller, more refined */
-    color: #333; /* Better contrast */
-    text-decoration: none;
-    border-radius: 0.375rem; /* Rounded corners */
-    transition: all 0.2s ease; /* Smooth transitions */
-}
-
-.header-nav-list a:hover {
-    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover background */
-    color: #000; /* Darker on hover */
-}
-.header-nav-list a::after{
-    content: '';
-    position: absolute;
-    bottom: 0.25rem; /* Moved up slightly */
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); /* Modern gradient */
+/*------------------------------------------------------------------------------------------------------------*/
+/*маленькое лого в хедере*/
+.minilogo{
+    width: 40px; 
+    height: 40px;
     transition: all 0.3s ease;
-    transform: translateX(-50%); /* Center the line */
+    margin-top: 0.5rem;                         /*отступ сверху для центрирования по вертикали*/
+    cursor: pointer;
 }
-.header-nav-list a:hover::after{
-    width: 80%; /* Animate from center */
+/*эффект при наведении на лого*/
+.minilogo:hover {
+    transform: scale(1.1);                      /*увеличение логотипа при наведении*/
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*пробел между лого и навигацией*/
+.header-spacer {
+   width: 50rem;                                /*ширина пробела между лого и навигацией*/
+  flex: 1 1 auto;                               /* Позволяет пробелу расширяться и сжиматься по мере необходимости */
+  min-width: 0rem;                              /* Минимальная ширина пробела */
 }
 
-/* Стили для иконок */
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*навигация в хедере*/
+.header-nav-list {
+    display: flex;                              /* Использует flexbox для расположения элементов навигации */
+    align-items: center;                        /* Вертикальное выравнивание по центру */
+    list-style: none;                           /* Убирает маркеры списка */
+    margin: 0;                                  /* Убирает внешние отступы */
+    padding: 0;                                 /* Убирает внутренние отступы */                             
+    gap: 2rem;                                  /* Расстояние между элементами навигации */
+    align-items: center;                        /* Вертикальное выравнивание по центру */
+}
+
+/*элементы навигации в хедере*/
+.header-nav-list a{
+    position: relative;                         /* Для позиционирования псевдоэлементов */
+    list-style: none;                           /* Убирает маркеры списка */
+    display: block;                             /* Делает элементы блочными для удобства стилизации */
+    padding: 1rem 0.75rem;                      /* Внутренние отступы сверху/снизу и слева/справа */
+    margin: 0;                                  /* Убирает внешние отступы */
+    cursor: pointer;                            /* Курсор указателя при наведении */
+    font-weight: 500;                           /* Средняя жирность шрифта */
+    font-size: 1.3rem;                          /* Размер шрифта 1.3 рем */
+    color: #333;                              /* Темно-серый цвет текста */
+    text-decoration: none;                      /* Убирает подчеркивание ссылок */
+    border-radius: 0.375rem;                    /* Скругленные углы для эффекта кнопки */
+    transition: all 0.2s ease;                  /* Плавные переходы для эффектов */
+}
+/*эффект при наведении на элементы навигации*/
+.header-nav-list a:hover {
+    background-color: rgba(0, 0, 0, 0.05);     /*легкий серый фон при наведении*/ 
+    color: #000;                                /*темный цвет текста при наведении*/
+}
+/*подчеркивание при наведении на элементы навигации*/
+.header-nav-list a::after{
+    content: '';                                                                    /*пустое содержимое для псевдоэлемента*/
+    position: absolute;                                                             /*абсолютное позиционирование относительно родителя*/
+    bottom: 0.25rem;                                                                /*расположение под текстом*/
+    left: 50%;                                                                      /*центрирование по горизонтали*/
+    width: 0;                                                                       /*начальная ширина подчеркивания 0*/
+    height: 2px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);               /*градиент для подчеркивания*/
+    transition: all 0.3s ease;                                                      /*плавный переход для эффекта*/
+    transform: translateX(-50%);                                                    /*сдвиг для центрирования подчеркивания*/   
+}
+
+/*эффект при наведении на подчеркивание элементов навигации*/
+.header-nav-list a:hover::after{
+    width: 80%;                                                                     /*увеличение ширины подчеркивания при наведении*/
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*иконки навигации в хедере*/
 .header-nav-icon {
-    width: 25px; /* Slightly smaller icons */
+    width: 25px; 
     height: 25px;
     transition: all 0.3s ease;
     margin-top: 0.5rem;
-    /*padding: 0.5rem; /* Better click area */
-    /*border-radius: 0.375rem; /* Rounded corners */
-    cursor: pointer;
+    cursor: pointer;                                                                /*курсор указателя при наведении*/
 }
 
+/*эффект при наведении на иконки навигации*/
 .header-nav-icon:hover {
-    transform: scale(1.1); /* Subtle scale effect */
-    /*opacity: 0.8;
-    /*background-color: rgba(0, 0, 0, 0.05); /* Subtle background */
-}
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-    .header {
-        height: 3rem; /* Even more compact on mobile */
-    }
-    
-    .header-container {
-        padding: 0 1rem;
-    }
-    
-    .header-nav-list {
-        gap: 1rem;
-    }
-    
-    .header-nav-list a {
-        padding: 0.375rem 0.5rem;
-        font-size: 0.875rem;
-    }
-    
-    .header-nav-icon {
-        width: 18px;
-        height: 18px;
-        padding: 0.375rem;
-    }
+    transform: scale(1.1);                                                          /*увеличение иконки при наведении*/
 }
 
-@media (max-width: 480px) {
-    .header-nav-list {
-        gap: 0.5rem;
-    }
-    
-    .header-nav-list a {
-        padding: 0.25rem 0.375rem;
-        font-size: 0.8rem;
-    }
-}
+
+
 

@@ -1,11 +1,11 @@
 .homepage {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    width: 100vw;                     /*ширина браузера*/                                      
+    height: 100vh;                    /*высота браузера*/
+    display: flex;                    /*расположение элементов внутри контейнера*/                  
+    flex-direction: column;           /*расположение элементов в колонку*/   
+    padding-left: 1.25rem;              /*внутренние отступы слева*/
+    padding-right: 1.25rem;             /*внутренние отступы справа*/
     box-sizing: border-box;
-    padding-top: 1.5rem; /* Updated to match new header height */
-    overflow-x: hidden;
+    padding-top: 0.1rem;            /*внутренние отступы сверху*/
+    margin: 0 auto;
 }

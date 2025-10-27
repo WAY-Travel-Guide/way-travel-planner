@@ -10,35 +10,19 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <nav className="header-nav">
-          <ul className="header-nav-list">
-            <li>
+          <div className="header-nav-list">
               <img src={Logo} alt="Лого" className = "minilogo"/>
-            </li>
-            <li>
               <a className='menu-items'> Отзывы</a>
-            </li>
-            <li>
               <a className='menu-items'> Контакты</a>
-            </li>
-            <li>
               <a className='menu-items'> Помощь</a>
-            </li>
             <li className="header-spacer"></li>
             {/*<li>
               <img src={MainLogo} alt="Основной логотип" className='headerhome-widget'/>
             </li>*/}
-            <li>
-                <img src={Exit} alt="Главная" className="header-nav-icon" />
-            </li>
-            <li>
-                <img src={History} alt="О нас" className="header-nav-icon" />
-            </li>
-            <li>
-                <img src={Person} alt="Контакты" className="header-nav-icon" />
-            </li>
-          </ul>
-        </nav>
+            <img src={Exit} alt="Главная" className="header-nav-icon" />      
+            <img src={History} alt="О нас" className="header-nav-icon" />
+            <img src={Person} alt="Контакты" className="header-nav-icon" />
+          </div>
       </div>
     </header>
   );
