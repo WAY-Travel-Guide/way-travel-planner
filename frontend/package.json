@@ -10,11 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "google-auth-library": "^10.4.2",
+    "joi": "^18.0.1",
+    "mongoose": "^8.19.2",
+    "nodemailer": "^7.0.10",
+    "nodemon": "^3.1.10",
     "ol": "^10.6.1",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
-    "styled-components": "^6.1.19"
+    "sequelize": "^6.37.7",
+    "styled-components": "^6.1.19",
+    "winston": "^3.18.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

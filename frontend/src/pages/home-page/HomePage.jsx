@@ -31,22 +31,40 @@ import "./HomePage.css";
 
 const slides = [
     {
+        city: "Волгоград",
+        label: "Историческое",
+        description: "2-дневный гид по городу-герою",
+        image: "/images/slides1-1.jpg"
+    },
+    {
         city: "Москва",
         label: "Популярно",
         description: "5-дневный гид",
-        image: "/images/advert1.jpg"
+        image: "/images/slides1-2.png"
     },
     {
         city: "Санкт-Петербург",
         label: "Историческое",
         description: "3-дневный маршрут",
-        image: "/images/advert2.jpg"
+        image: "/images/slides1-5.jpg"
     },
     {
         city: "Казань",
         label: "Национальное",
         description: "Уикенд в столице Татарстана",
-        image: "/images/advert3.jpg"
+        image: "/images/slides1-6.jpg"
+    },
+    {
+        city: "Калининград",
+        label: "Историческое",
+        description: "Уикенд в сердце янтарного края",
+        image: "/images/slides1-4.jpg"
+    },
+    {
+        city: "Нижний Новгород",
+        label: "Национальное",
+        description: "3-дневный маршрут по столице Поволжья",
+        image: "/images/slides1-3.jpg"
     }
 ];
 const HomePage = function ({ user, onLogout }) {
