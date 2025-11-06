@@ -85,6 +85,19 @@ class GeoDataController {
             return sendError(res, error);
         }
     }
+    async getAllPOIVolgograd(req, res, next) {
+        try {
+            const { longitude, latitude, radius, keysArray } = req.body;
+            logger.info(`Service: getAllPOIVolgograd with params: ${longitude, latitude, radius, keysArray}`);
+        
+        
+            const pois = await geoDataService.getAllPOIVolgograd(longitude, latitude, radius, keysArray);
+            return sendSuccess(res, pois);
+        } catch (error) {
+            logger.error(`Error fetching all POI Volgograd: ${error.message}`);
+            return sendError(res, error);
+        }
+    }
 }
 
 const geoDataController = new GeoDataController();

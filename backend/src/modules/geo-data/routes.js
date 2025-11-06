@@ -10,4 +10,6 @@ geoDataRoutes.get('/list', validateCreatePlace, geoDataController.listPlaces);
 // GET  /api/places/stats        – статистика по точкам в области
 geoDataRoutes.get('/stats', geoDataController.getPlacesStats);
 
+geoDataRoutes.post('/allPOIVolgograd', geoDataController.getAllPOIVolgograd);
+
 export { geoDataRoutes };

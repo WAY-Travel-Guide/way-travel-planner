@@ -5,40 +5,28 @@ import { logger } from '../../core/logger.js';
 class PlaceModel extends Model {}
 
 const attributes = {
-    gid: {
-        type: DataTypes.INTEGER,
+    id: {
+        type: DataTypes.BIGINT,
         primaryKey: true,
-        autoIncrement: true,
+        allowNull: false,
     },
-    // name: {
-    //     type: DataTypes.TEXT,
-    //     allowNull: false,
-    // },
-    // description: {
-    //     type: DataTypes.TEXT,
-    //     allowNull: true,
-    // },
-    // tags: {
-    //     type: DataTypes.ARRAY(DataTypes.TEXT),
-    //     allowNull: true,
-    //     defaultValue: [],
-    // },
-    // properties: {
-    //     type: DataTypes.JSONB,
-    //     allowNull: true,
-    // },
-    // geom: {
-    //     type: DataTypes.GEOMETRY('POINT', 4326),
-    //     allowNull: false,
-    // },
+    tags: {
+        type: DataTypes.HSTORE, // Поддержка hstore для тегов (ключ-значение)
+        allowNull: true,
+    },
+    geom: {
+        type: DataTypes.GEOMETRY('POINT', 4326), // PostGIS point для геолокации
+        allowNull: true,
+    },
 };
 
 const options = {
     sequelize,
-    modelName: 'Place',
-    tableName: 'osm_volgograd',
-    timestamps: true,
+    modelName: 'PlaceModel',
+    tableName: 'nodes',
+    timestamps: false,
     underscored: true,
+    //indexes: { name: 'idx_nodes_geom', using: 'GIST', fields: ['geom'] }, // GIST-индекс для геозапросов
 };
 
 PlaceModel.init(attributes, options);
