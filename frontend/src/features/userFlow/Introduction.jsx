@@ -1,5 +1,5 @@
-import React from "react";
-import { DefaultButton } from '../../shared';
+import UseState, { useState } from "react";
+import { DefaultButton, DefaultSwitcher } from '../../shared';
 import "./Introduction.css";
 
 const Introduction = () => {
@@ -12,6 +12,7 @@ const Introduction = () => {
                     и заботимся о Вашем комфорте, поэтому также учитываем индивидуальные особенности
                 </div>
                 <div className="introduction-button">
+                    {/* Переопределение стиля стандартной кнопки*/}
                     <DefaultButton style={{
                         onClick: {},
                         bgColor: "#B95700",
@@ -20,12 +21,13 @@ const Introduction = () => {
                         textColorBefore: "#B95700",
                     }}>
                         Маршрут
-                    </DefaultButton>
+                    </DefaultButton> {/*Кнопка маршрут*/}
                 </div>
                 <div className="introduction-bottom-text">
                     Команда «WAY» желает Вам хорошего отдыха!
                 </div>
             </div>
+            
         )
 };
 

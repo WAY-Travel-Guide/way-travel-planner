@@ -12,9 +12,11 @@
  */
 
 import React from 'react';
+import UseState, { useState } from "react";
 import { DefaultInput } from '../../shared';
 import { DefaultButton } from '../../shared';
 import { ToHomeButton } from "../../shared";
+import { DefaultSwitcher } from '../../shared';
 import './LoginForm.css';
 
 /**
@@ -34,6 +36,7 @@ import './LoginForm.css';
  * @returns {JSX.Element}          - Форма логина с полями, кнопкой и ссылками.
  */
 const LoginForm = function ({ login, setLogin, password, setPassword, msg, handleLogin }) {
+  const [onChange, setChange] = useState(false);
   return (
     <div className="login-form">
       {/* Кнопка возврата на главную */}
@@ -87,7 +90,7 @@ const LoginForm = function ({ login, setLogin, password, setPassword, msg, handl
       <div className="bottom-text" >
         Войти через электронную почту?
         <a href="/login-email">Нажмите здесь!</a>
-      </div>
+      </div>    
     </div>
   );
 };
