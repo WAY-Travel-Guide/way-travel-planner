@@ -6,7 +6,7 @@
     box-sizing: content-box;               /*включает в ширину и высоту внутренние отступы и границы*/
     padding-top: 0.3rem;                    /*внутренние отступы сверху*/
     margin: 0 auto;
-    scroll-snap-type: y mandatory;          /* делает эффект "залипания" по секциям */
+    /*scroll-snap-type: y mandatory;          /* делает эффект "залипания" по секциям */
     overflow-y: scroll;                     /*вертикальная прокрутка*/
     align-items: stretch;
 }
