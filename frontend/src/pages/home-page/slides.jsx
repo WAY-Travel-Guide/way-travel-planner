@@ -1,3 +1,5 @@
+/*Отдельный компонент для списка слайдов*/
+
 const slides = [
     {
         city: "Волгоград",
@@ -36,3 +38,5 @@ const slides = [
         image: "/images/slides1-3.jpg"
     }
 ];
+
+export {slides};
