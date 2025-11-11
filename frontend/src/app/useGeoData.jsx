@@ -5,7 +5,7 @@ const useGeoData = function(initialData) {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    useEffect(() => { 
+    useEffect(() => {
         const fetchGeoData = async () => {
             try {
                 const res = await fetch('/api/places/allPOIVolgograd', {

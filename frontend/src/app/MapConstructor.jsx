@@ -20,9 +20,16 @@ const INITIAL_DATA = {
 };
 
 const MapConstructor = function () {
+  const initialDataRef = useRef({
+    longitude: 44.0,
+    latitude: 49.5,
+    radius: 300000,
+    keysArray: ['amenity', 'buildings'],
+  });
+
   const popupRef = useRef(null);
   const mapRef = useRef(null);
-  const { geoData, loading, error } = useGeoData(INITIAL_DATA);
+  const { geoData, loading, error } = useGeoData(initialDataRef.current);
 
   useEffect(() => {
     // ждём пока данные загрузятся и refs будут готовы
@@ -108,7 +115,12 @@ map.addLayer(vectorLayer);
       const { longitude, latitude, tags } = point;
       const feature = new Feature({
         geometry: new Point(fromLonLat([longitude, latitude])),
-        name: tags.name || 'у точки нет имени',
+        
+        pointData: {
+          tags: tags || {},
+          longitude,
+          latitude,
+        },
       });
       vectorSource.addFeature(feature);
     });
@@ -137,7 +149,28 @@ map.addLayer(vectorLayer);
         // Если это одиночная точка — показываем popup
         const coordinate = event.coordinate;
         overlay.setPosition(coordinate);
-        popupRef.current.innerHTML = features[0].get('name') || 'Нет данных';
+        const point = features[0].get('pointData');
+
+        let content = '<div style="font-family: sans-serif; font-size: 13px; line-height: 1.4;">';
+
+        // Координаты
+        content += `<div><strong>Координаты:</strong> ${point.latitude.toFixed(6)}, ${point.longitude.toFixed(6)}</div>`;
+
+        // Все tags
+        if (point.tags && Object.keys(point.tags).length > 0) {
+          content += '<div style="margin-top: 6px;"><strong>Теги:</strong></div>';
+          content += '<ul style="margin: 4px 0; padding-left: 18px;">';
+          for (const [key, value] of Object.entries(point.tags)) {
+            content += `<li><strong>${key}:</strong> ${value}</li>`;
+          }
+          content += '</ul>';
+        } else {
+          content += '<div style="margin-top: 6px; color: #666;">Теги отсутствуют</div>';
+        }
+
+        content += '</div>';
+
+        popupRef.current.innerHTML = content;
         popupRef.current.style.display = 'block';
     } else {
         overlay.setPosition(undefined);
