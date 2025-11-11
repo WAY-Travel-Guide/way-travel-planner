@@ -1,4 +1,4 @@
-const slides = [
+export const slides = [
     {
         city: "Волгоград",
         label: "Историческое",
@@ -36,3 +36,5 @@ const slides = [
         image: "/images/slides1-3.jpg"
     }
 ];
+
+export default slides;

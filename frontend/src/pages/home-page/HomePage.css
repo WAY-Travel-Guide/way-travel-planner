@@ -8,4 +8,5 @@
     box-sizing: border-box;
     padding-top: 0.1rem;            /*внутренние отступы сверху*/
     margin: 0 auto;
+    font-family: 'SuisseInt-Regular', sans-serif;
 }
