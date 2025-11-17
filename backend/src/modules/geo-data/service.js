@@ -171,7 +171,7 @@ class GeoDataService {
                 :radius
             )
             AND n.tags ?| ARRAY[:keys]
-            LIMIT 500
+            LIMIT 50
         `; // Используем плейсхолдеры для параметров
 
         const replacements = {

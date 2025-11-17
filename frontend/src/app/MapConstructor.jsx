@@ -7,6 +7,7 @@ import OSM from 'ol/source/OSM';
 import { fromLonLat } from 'ol/proj';
 import Point from 'ol/geom/Point';
 import Feature from 'ol/Feature';
+import LineString from 'ol/geom/LineString';
 import { useGeoData } from './useGeoData.jsx';
 
 import Cluster from 'ol/source/Cluster';
@@ -20,6 +21,7 @@ const INITIAL_DATA = {
 };
 
 const MapConstructor = function () {
+  // Ссылка на начальные данные
   const initialDataRef = useRef({
     longitude: 44.0,
     latitude: 49.5,
@@ -54,51 +56,51 @@ const MapConstructor = function () {
     });
 
     // Обычный источник точек
-const vectorSource = new VectorSource();
+    const vectorSource = new VectorSource();
 
-// Кластерный источник
-const clusterSource = new Cluster({
-  distance: 40,          // расстояние (в пикселях) для объединения точек
-  source: vectorSource,
-});
-
-// Стиль для кластеров
-const clusterStyle = function (feature) {
-  const size = feature.get('features').length;
-
-  if (size === 1) {
-    // одиночная точка
-    return new Style({
-      image: new CircleStyle({
-        radius: 6,
-        fill: new Fill({ color: '#1976d2' }),
-        stroke: new Stroke({ color: '#fff', width: 2 }),
-      }),
+    // Кластерный источник
+    const clusterSource = new Cluster({
+      distance: 40,          // расстояние (в пикселях) для объединения точек
+      source: vectorSource,
     });
-  } else {
-    // кластер
-    return new Style({
-      image: new CircleStyle({
-        radius: 15,
-        fill: new Fill({ color: '#ff7043' }),
-        stroke: new Stroke({ color: '#fff', width: 2 }),
-      }),
-      text: new Text({
-        text: size.toString(),
-        fill: new Fill({ color: '#fff' }),
-        font: 'bold 13px sans-serif',
-      }),
+
+    // Стиль для кластеров
+    const clusterStyle = function (feature) {
+      const size = feature.get('features').length;
+
+      if (size === 1) {
+        // одиночная точка
+        return new Style({
+          image: new CircleStyle({
+            radius: 6,
+            fill: new Fill({ color: '#1976d2' }),
+            stroke: new Stroke({ color: '#fff', width: 2 }),
+          }),
+        });
+      } else {
+        // кластер
+        return new Style({
+          image: new CircleStyle({
+            radius: 15,
+            fill: new Fill({ color: '#ff7043' }),
+            stroke: new Stroke({ color: '#fff', width: 2 }),
+          }),
+          text: new Text({
+            text: size.toString(),
+            fill: new Fill({ color: '#fff' }),
+            font: 'bold 13px sans-serif',
+          }),
+        });
+      }
+    };
+
+    // Слой с кластеризацией
+    const vectorLayer = new VectorLayer({
+      source: clusterSource,
+      style: clusterStyle,
     });
-  }
-};
 
-// Слой с кластеризацией
-const vectorLayer = new VectorLayer({
-  source: clusterSource,
-  style: clusterStyle,
-});
-
-map.addLayer(vectorLayer);
+    map.addLayer(vectorLayer);
 
     //  Всплывающее описание точек
     const overlay = new Overlay({
@@ -115,7 +117,6 @@ map.addLayer(vectorLayer);
       const { longitude, latitude, tags } = point;
       const feature = new Feature({
         geometry: new Point(fromLonLat([longitude, latitude])),
-        
         pointData: {
           tags: tags || {},
           longitude,
@@ -125,25 +126,73 @@ map.addLayer(vectorLayer);
       vectorSource.addFeature(feature);
     });
 
+    // ============================================================
+    //          ПОСТРОЕНИЕ МАРШРУТА ПО ВСЕМ ТОЧКАМ (A-вариант)
+    // ============================================================
+
+    const routeCoords = geoData.map((p) => [p.longitude, p.latitude]);
+
+    if (routeCoords.length >= 2) {
+      const coordsString = routeCoords.map(([lon, lat]) => `${lon},${lat}`).join(';');
+
+      const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
+
+      fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+          if (!data.routes || !data.routes.length) return;
+
+          const geometry = data.routes[0].geometry.coordinates;
+          const lineCoordinates = geometry.map((c) => fromLonLat(c));
+
+          const routeFeature = new Feature({
+            geometry: new LineString(lineCoordinates),
+          });
+
+          const routeSource = new VectorSource({
+            features: [routeFeature],
+          });
+
+          const routeLayer = new VectorLayer({
+            source: routeSource,
+            style: new Style({
+              stroke: new Stroke({
+                color: '#ff0000',
+                width: 3,
+              }),
+            }),
+            zIndex: 2000,
+          });
+
+          map.addLayer(routeLayer);
+
+          map.getView().fit(routeFeature.getGeometry().getExtent(), {
+            padding: [50, 50, 50, 50],
+            duration: 800,
+          });
+        })
+        .catch((err) => console.error('Ошибка запроса маршрута:', err));
+    }
+
     // Обработчик наведения
     let lastFeature = null;
     map.on('pointermove', function (event) {
-    if (map.getView().getAnimating() || map.getView().getInteracting()) return;
+      if (map.getView().getAnimating() || map.getView().getInteracting()) return;
 
-    const feature = map.forEachFeatureAtPixel(event.pixel, (f) => f);
+      const feature = map.forEachFeatureAtPixel(event.pixel, (f) => f);
 
-    // Если та же фича, что и раньше — ничего не делаем
-    if (feature === lastFeature) return;
-    lastFeature = feature;
+      // Если та же фича, что и раньше — ничего не делаем
+      if (feature === lastFeature) return;
+      lastFeature = feature;
 
-    if (feature) {
+      if (feature) {
         const features = feature.get('features'); // массив внутренних точек
 
         // Если это кластер (несколько точек) — не показываем popup
         if (features.length > 1) {
-        overlay.setPosition(undefined);
-        popupRef.current.style.display = 'none';
-        return;
+          overlay.setPosition(undefined);
+          popupRef.current.style.display = 'none';
+          return;
         }
 
         // Если это одиночная точка — показываем popup
@@ -172,20 +221,15 @@ map.addLayer(vectorLayer);
 
         popupRef.current.innerHTML = content;
         popupRef.current.style.display = 'block';
-    } else {
+      } else {
         overlay.setPosition(undefined);
         popupRef.current.style.display = 'none';
-    }
+      }
     });
-    }, [geoData, loading, error]);
+
+  }, [geoData, loading, error]); // useEffect заканчивается здесь
 
   if (error) return <div>Error: {error}</div>;
-
-
-
-
-
-
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden' }}>
