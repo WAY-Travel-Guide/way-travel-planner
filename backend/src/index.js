@@ -5,7 +5,6 @@ import { logger, requestLogger } from'./core/logger.js';
 import { errorMiddleware } from './core/middleware/error.js';
 import { userRoutes } from'./modules/user/routes.js';
 import { geoDataRoutes } from'./modules/geo-data/routes.js';
-//import { routingRoutes } from'./modules/routing/routes.js';
 
 const app = express();
 
@@ -16,8 +15,7 @@ const apiRouter = express.Router();
 app.use('/api', apiRouter);
 
 apiRouter.use('/users', userRoutes);
-apiRouter.use('/places', geoDataRoutes);
-//apiRouter.use('/routes', routingRoutes);
+apiRouter.use('/geo-data', geoDataRoutes);
 
 app.use(errorMiddleware);
 

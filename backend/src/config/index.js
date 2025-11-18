@@ -8,6 +8,7 @@ const config = {
     //osrmUrl:     process.env.OSRM_URL,
     logLevel:    process.env.LOG_LEVEL || 'info',
     secret:      process.env.JWT_SECRET || 'your-secret-key',
+    OSRM_URL:    process.env.OSRM_URL,
 };
 
 export default config;

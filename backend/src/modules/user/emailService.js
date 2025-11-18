@@ -18,7 +18,7 @@ class EmailService {
     }
 
     /**
-     * Отправляет письмо с подтверждением emailб
+     * Отправляет письмо с подтверждением email
      * @param {string} email - Email пользователя
      * @param {string} token - Токен подтверждения
      * @param {string} username - Имя пользователя
@@ -69,7 +69,7 @@ class EmailService {
             const resetLink = `${config.frontendUrl || 'http://localhost:5173'}/reset-password?token=${token}`;
             
             const mailOptions = {
-                from: process.env.EMAIL_USER || 'your-email@gmail.com',
+                from: process.env.EMAIL_USER,
                 to: email,
                 subject: 'Восстановление пароля',
                 html: `

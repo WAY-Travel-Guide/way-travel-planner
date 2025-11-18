@@ -5,221 +5,162 @@ import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import OSM from 'ol/source/OSM';
 import { fromLonLat } from 'ol/proj';
-import Point from 'ol/geom/Point';
 import Feature from 'ol/Feature';
+import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
-import { useGeoData } from './useGeoData.jsx';
-
 import Cluster from 'ol/source/Cluster';
 import { Style, Circle as CircleStyle, Fill, Stroke, Text } from 'ol/style';
+import { useGeoData } from './useGeoData';
 
-const INITIAL_DATA = {
-  longitude: 44.0,
-  latitude: 49.5,
-  radius: 300000,
-  keysArray: ['amenity', 'buildings'],
+const DEFAULT_CENTER = fromLonLat([44.5167, 48.7077]);
+
+const defaultRouteOptions = {
+  optimize: true,
+  max_distance_km: 20,
+  return_to_start: false
 };
 
-const MapConstructor = function () {
-  // Ссылка на начальные данные
-  const initialDataRef = useRef({
-    longitude: 44.0,
-    latitude: 49.5,
-    radius: 300000,
-    keysArray: ['amenity', 'buildings'],
-  });
-
-  const popupRef = useRef(null);
+const MapConstructor = ({ initialData, filtersData }) => {
   const mapRef = useRef(null);
-  const { geoData, loading, error } = useGeoData(initialDataRef.current);
+  const popupRef = useRef(null);
+  const mapInstanceRef = useRef(null);
+
+  const { geoData, routeGeometry, loading, error } = useGeoData(
+    initialData,
+    filtersData,
+    defaultRouteOptions
+  );
 
   useEffect(() => {
-    // ждём пока данные загрузятся и refs будут готовы
-    if (loading || !popupRef.current || !mapRef.current) return;
+    if (loading || error || !mapRef.current) return;
 
-    // предотвращаем повторную инициализацию
-    if (mapRef.current.__ol_initialized) return;
-    mapRef.current.__ol_initialized = true;
+    // Инициализация карты один раз
+    if (!mapInstanceRef.current) {
+      const map = new Map({
+        target: mapRef.current,
+        layers: [new TileLayer({ source: new OSM() })],
+        view: new View({ center: DEFAULT_CENTER, zoom: 12 }),
+        controls: [],
+      });
 
-    // Создание карты 
-    const map = new Map({
-      target: mapRef.current,
-      layers: [
-        new TileLayer({
-          source: new OSM(),
-        }),
-      ],
-      view: new View({
-        center: fromLonLat([44.0, 49.5]),
-        zoom: 8,
-      }),
-    });
+      const vectorSource = new VectorSource();
+      const clusterSource = new Cluster({ distance: 40, source: vectorSource });
 
-    // Обычный источник точек
-    const vectorSource = new VectorSource();
+      const vectorLayer = new VectorLayer({
+        source: clusterSource,
+        style: (feature) => {
+          const size = feature.get('features').length;
+          if (size === 1)
+            return new Style({
+              image: new CircleStyle({
+                radius: 8,
+                fill: new Fill({ color: '#1976d2' }),
+                stroke: new Stroke({ color: '#fff', width: 2 }),
+              }),
+            });
 
-    // Кластерный источник
-    const clusterSource = new Cluster({
-      distance: 40,          // расстояние (в пикселях) для объединения точек
-      source: vectorSource,
-    });
-
-    // Стиль для кластеров
-    const clusterStyle = function (feature) {
-      const size = feature.get('features').length;
-
-      if (size === 1) {
-        // одиночная точка
-        return new Style({
-          image: new CircleStyle({
-            radius: 6,
-            fill: new Fill({ color: '#1976d2' }),
-            stroke: new Stroke({ color: '#fff', width: 2 }),
-          }),
-        });
-      } else {
-        // кластер
-        return new Style({
-          image: new CircleStyle({
-            radius: 15,
-            fill: new Fill({ color: '#ff7043' }),
-            stroke: new Stroke({ color: '#fff', width: 2 }),
-          }),
-          text: new Text({
-            text: size.toString(),
-            fill: new Fill({ color: '#fff' }),
-            font: 'bold 13px sans-serif',
-          }),
-        });
-      }
-    };
-
-    // Слой с кластеризацией
-    const vectorLayer = new VectorLayer({
-      source: clusterSource,
-      style: clusterStyle,
-    });
-
-    map.addLayer(vectorLayer);
-
-    //  Всплывающее описание точек
-    const overlay = new Overlay({
-      element: popupRef.current,
-      positioning: 'bottom-center',
-      offset: [0, -8],
-      stopEvent: false, // важно
-      autoPan: false,   // не двигать карту
-    });
-    map.addOverlay(overlay);
-
-    // фичи
-    geoData.forEach((point) => {
-      const { longitude, latitude, tags } = point;
-      const feature = new Feature({
-        geometry: new Point(fromLonLat([longitude, latitude])),
-        pointData: {
-          tags: tags || {},
-          longitude,
-          latitude,
+          return new Style({
+            image: new CircleStyle({
+              radius: 18,
+              fill: new Fill({ color: '#ff7043' }),
+              stroke: new Stroke({ color: '#fff', width: 3 }),
+            }),
+            text: new Text({
+              text: size.toString(),
+              fill: new Fill({ color: '#fff' }),
+              font: 'bold 14px Arial',
+            }),
+          });
         },
+      });
+
+      map.addLayer(vectorLayer);
+
+      const overlay = new Overlay({
+        element: popupRef.current,
+        positioning: 'bottom-center',
+        offset: [0, -10],
+        stopEvent: false,
+      });
+      map.addOverlay(overlay);
+
+      // Сохраняем ссылки
+      mapInstanceRef.current = { map, vectorSource, overlay };
+    }
+
+    const { map, vectorSource, overlay } = mapInstanceRef.current;
+
+    // Очищаем старые точки
+    vectorSource.clear();
+
+    // Добавляем новые точки
+    geoData.forEach((point) => {
+      const feature = new Feature({
+        geometry: new Point(fromLonLat([point.longitude, point.latitude])),
+        pointData: point,
       });
       vectorSource.addFeature(feature);
     });
 
-    // ============================================================
-    //          ПОСТРОЕНИЕ МАРШРУТА ПО ВСЕМ ТОЧКАМ (A-вариант)
-    // ============================================================
+    // === Маршрут от бэкенда ===
+    map.getLayers().getArray()
+      .filter(layer => layer.get('name') === 'routeLayer')
+      .forEach(layer => map.removeLayer(layer));
 
-    const routeCoords = geoData.map((p) => [p.longitude, p.latitude]);
+    if (routeGeometry && routeGeometry.length >= 2) {
+      const routeCoords = routeGeometry.map(coord => fromLonLat(coord));
 
-    if (routeCoords.length >= 2) {
-      const coordsString = routeCoords.map(([lon, lat]) => `${lon},${lat}`).join(';');
+      const routeFeature = new Feature({
+        geometry: new LineString(routeCoords),
+      });
 
-      const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
+      const routeLayer = new VectorLayer({
+        source: new VectorSource({ features: [routeFeature] }),
+        style: new Style({
+          stroke: new Stroke({ color: '#d32f2f', width: 4 }),
+        }),
+        zIndex: 1000,
+      });
+      routeLayer.set('name', 'routeLayer');
+      map.addLayer(routeLayer);
 
-      fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-          if (!data.routes || !data.routes.length) return;
+      // Автомасштабирование под маршрут + точки
+      const extent = routeFeature.getGeometry().getExtent();
+      geoData.forEach(p => {
+        const coord = fromLonLat([p.longitude, p.latitude]);
+        extent[0] = Math.min(extent[0], coord[0]);
+        extent[1] = Math.min(extent[1], coord[1]);
+        extent[2] = Math.max(extent[2], coord[0]);
+        extent[3] = Math.max(extent[3], coord[1]);
+      });
 
-          const geometry = data.routes[0].geometry.coordinates;
-          const lineCoordinates = geometry.map((c) => fromLonLat(c));
-
-          const routeFeature = new Feature({
-            geometry: new LineString(lineCoordinates),
-          });
-
-          const routeSource = new VectorSource({
-            features: [routeFeature],
-          });
-
-          const routeLayer = new VectorLayer({
-            source: routeSource,
-            style: new Style({
-              stroke: new Stroke({
-                color: '#ff0000',
-                width: 3,
-              }),
-            }),
-            zIndex: 2000,
-          });
-
-          map.addLayer(routeLayer);
-
-          map.getView().fit(routeFeature.getGeometry().getExtent(), {
-            padding: [50, 50, 50, 50],
-            duration: 800,
-          });
-        })
-        .catch((err) => console.error('Ошибка запроса маршрута:', err));
+      map.getView().fit(extent, { padding: [50, 50, 50, 50], duration: 1000 });
     }
 
-    // Обработчик наведения
-    let lastFeature = null;
-    map.on('pointermove', function (event) {
-      if (map.getView().getAnimating() || map.getView().getInteracting()) return;
+    // Popup на наведение
+    let hoveredFeature = null;
+    map.on('pointermove', (evt) => {
+      if (map.getView().getAnimating()) return;
 
-      const feature = map.forEachFeatureAtPixel(event.pixel, (f) => f);
+      const feature = map.forEachFeatureAtPixel(evt.pixel, f => f);
+      if (feature === hoveredFeature) return;
+      hoveredFeature = feature;
 
-      // Если та же фича, что и раньше — ничего не делаем
-      if (feature === lastFeature) return;
-      lastFeature = feature;
+      if (feature && feature.get('features')?.length === 1) {
+        const point = feature.get('features')[0].get('pointData');
+        overlay.setPosition(evt.coordinate);
 
-      if (feature) {
-        const features = feature.get('features'); // массив внутренних точек
-
-        // Если это кластер (несколько точек) — не показываем popup
-        if (features.length > 1) {
-          overlay.setPosition(undefined);
-          popupRef.current.style.display = 'none';
-          return;
-        }
-
-        // Если это одиночная точка — показываем popup
-        const coordinate = event.coordinate;
-        overlay.setPosition(coordinate);
-        const point = features[0].get('pointData');
-
-        let content = '<div style="font-family: sans-serif; font-size: 13px; line-height: 1.4;">';
-
-        // Координаты
-        content += `<div><strong>Координаты:</strong> ${point.latitude.toFixed(6)}, ${point.longitude.toFixed(6)}</div>`;
-
-        // Все tags
-        if (point.tags && Object.keys(point.tags).length > 0) {
-          content += '<div style="margin-top: 6px;"><strong>Теги:</strong></div>';
-          content += '<ul style="margin: 4px 0; padding-left: 18px;">';
-          for (const [key, value] of Object.entries(point.tags)) {
-            content += `<li><strong>${key}:</strong> ${value}</li>`;
+        let html = `<div style="font-family: Arial; font-size: 13px;">`;
+        html += `<strong>Координаты:</strong> ${point.latitude.toFixed(6)}, ${point.longitude.toFixed(6)}<br>`;
+        if (point.tags && Object.keys(point.tags).length) {
+          html += `<strong>Теги:</strong><ul style="margin:4px 0; padding-left:18px;">`;
+          for (const [k, v] of Object.entries(point.tags)) {
+            html += `<li><b>${k}:</b> ${v}</li>`;
           }
-          content += '</ul>';
-        } else {
-          content += '<div style="margin-top: 6px; color: #666;">Теги отсутствуют</div>';
+          html += `</ul>`;
         }
-
-        content += '</div>';
-
-        popupRef.current.innerHTML = content;
+        html += `</div>`;
+        popupRef.current.innerHTML = html;
         popupRef.current.style.display = 'block';
       } else {
         overlay.setPosition(undefined);
@@ -227,39 +168,34 @@ const MapConstructor = function () {
       }
     });
 
-  }, [geoData, loading, error]); // useEffect заканчивается здесь
+  }, [geoData, routeGeometry, loading, error]);
 
-  if (error) return <div>Error: {error}</div>;
+  
+
+  if (error) return <div style={{ padding: 20, color: 'red' }}>Ошибка: {error}</div>;
+  if (loading) return <div style={{ padding: 20 }}>Загрузка карты...</div>;
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden' }}>
-      <div
-        ref={mapRef}
-        id="map"
-        style={{
-          width: '100%',
-          height: '100vh',
-          position: 'relative',
-          willChange: 'auto',
-          zIndex: 0,
-        }}
-      ></div>
+    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+      <div ref={mapRef} style={{ width: '100%', height: '100%' }} />
 
       <div
         ref={popupRef}
-        id="popup"
         style={{
-          backgroundColor: 'white',
-          border: '1px solid black',
-          borderRadius: '6px',
-          padding: '4px 8px',
           position: 'absolute',
+          background: 'white',
+          padding: '8px 12px',
+          borderRadius: '8px',
+          border: '1px solid #ccc',
+          boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
+          pointerEvents: 'none',
           zIndex: 1000,
           display: 'none',
-          transform: 'translate(-50%, -100%)',
-          pointerEvents: 'none',
+          maxWidth: '300px',
+          fontSize: '13px',
+          lineHeight: '1.4',
         }}
-      ></div>
+      />
     </div>
   );
 };
