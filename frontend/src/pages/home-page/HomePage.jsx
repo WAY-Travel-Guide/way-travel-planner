@@ -16,7 +16,7 @@ import { useState, useEffect } from 'react';
 import { HomeWidget,Header,TileBackground,CaterpillarSlider} from '../../widgets/';
 import "./HomePage.css";
 import {slides} from './slides.jsx';
-
+import React from 'react';
 /**
  * @typedef {Object} HomePageProps
  * @property {Object|null} user         - Данные текущего пользователя или null.
