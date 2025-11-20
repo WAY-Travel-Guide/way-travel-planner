@@ -1,8 +1,8 @@
 import React from "react";
 import "./Catterpillar.css";
 
-import LeftArrow from '../../widgets/picture-swapper/left.svg?react';
-import RightArrow from '../../widgets/picture-swapper/right.svg?react';
+import LeftArrow from '../picture-swapper/left.svg?react';
+import RightArrow from '../picture-swapper/right.svg?react';
 
 
 const CaterpillarSlider = ({ slides }) => {
@@ -65,8 +65,8 @@ const CaterpillarSlider = ({ slides }) => {
                 </span>
       </button>
       <div className="home-arrows">
-        <button className="home-arrow" onClick={prevSlide}></button>
-        <button className="home-arrow" onClick={nextSlide}></button>
+        <LeftArrow className="home-arrow" onClick={prevSlide}></LeftArrow>
+        <RightArrow className="home-arrow" onClick={nextSlide}></RightArrow>
       </div>
     </div>
     </div>

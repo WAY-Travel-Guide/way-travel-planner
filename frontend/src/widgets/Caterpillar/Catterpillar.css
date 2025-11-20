@@ -151,7 +151,7 @@
   justify-content: center;    /* Центрируем элементы горизонтально */
   align-items: center;        /* Центрируем вертикально, если нужно */
   max-width: 100%;                /* Родитель растягивается на всю ширину (опционально) */
-  gap:820px;                    /* Расстояние между элементами */
+  gap:850px;                    /* Расстояние между элементами */
 }
 
 
@@ -166,8 +166,8 @@
 }
 
 .home-arrow {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background: rgba(217, 217, 217, 100);
     border-radius: 50%;
@@ -185,8 +185,8 @@
 .see-much-more {
   background-color: #d9d9d9;
   height: 20px;
-  width: 500px;
-  border-radius: 10px;
+  width: 430px;
+  border-radius: 15px;
   padding: 20px 32px;
   display: flex;
   align-items: center;
