@@ -710,3 +710,11 @@
 2025-10-02 19:26:42 [32minfo[39m: MongoDB connected successfully
 2025-10-02 19:26:42 [32minfo[39m: All databases initialized successfully
 2025-10-02 19:26:42 [32minfo[39m: Server is running on port 5000
+2025-10-30 23:32:49 [32minfo[39m: PostgreSQL connected successfully
+2025-10-30 23:32:49 [32minfo[39m: MongoDB connected successfully
+2025-10-30 23:32:49 [32minfo[39m: All databases initialized successfully
+2025-10-30 23:32:49 [32minfo[39m: Server is running on port 5000
+2025-10-30 23:33:00 [32minfo[39m: PostgreSQL connected successfully
+2025-10-30 23:33:01 [32minfo[39m: MongoDB connected successfully
+2025-10-30 23:33:01 [32minfo[39m: All databases initialized successfully
+2025-10-30 23:33:01 [32minfo[39m: Server is running on port 5000

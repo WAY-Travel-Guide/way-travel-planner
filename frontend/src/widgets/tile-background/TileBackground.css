@@ -1,12 +1,13 @@
 .homestory-carousel {
   position: relative;
-  width: min(95vw, 95rem); /* Responsive width: 90% of viewport or max 90rem */
-  height: min(95vh, 95rem); /* Responsive height: 40% of viewport or max 40rem */
-  border-radius: 1.25rem; /* 20px equivalent */
+  width: min(95vw, 100rem); 
+  aspect-ratio: 16 / 9;
+  max-height: min(95vh, 56.25rem); /* 100rem * 9/16 = 56.25rem для сохранения пропорций */
+  border-radius: 1.25rem; 
   overflow: hidden;
-  margin: 2rem auto;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25); /* Converted px to rem */
-  font-family: sans-serif;
+  margin: 0 auto;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25); 
+  font-family: 'SuisseInt-Regular', sans-serif;
 }
 
 .homestory-background {
@@ -25,8 +26,14 @@
   padding: 1.2rem;
   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
   color: #fff;
+  font-family: 'SuisseInt-Regular', sans-serif;
 }
 
+.homestory-overlay h2,
+.homestory-overlay p {
+  font-family: 'SuisseInt-Regular', sans-serif;
+  font-weight: 400;
+}
 .homeprogress-bars {
   position: absolute;
   bottom: 1.25rem; /* 20px equivalent */
@@ -96,44 +103,5 @@
   will-change: transform;
 }
 
-/* Responsive breakpoints for better zoom handling */
-@media (max-width: 768px) {
-  .homestory-carousel {
-    width: 95vw;
-    height: 35vh;
-    margin: 1rem auto;
-  }
-  
-  .homestory-overlay {
-    padding: 1rem;
-  }
-  
-  .homeprogress-bars {
-    bottom: 0.75rem;
-    padding: 0 0.75rem;
-  }
-}
 
-@media (max-width: 480px) {
-  .homestory-carousel {
-    width: 98vw;
-    height: 30vh;
-    margin: 0.5rem auto;
-  }
-  
-  .homestory-overlay {
-    padding: 0.75rem;
-  }
-  
-  .homeprogress-bars {
-    bottom: 0.5rem;
-    padding: 0 0.5rem;
-  }
-}
-
-/* Ensure proper scaling on zoom */
-.homestory-carousel {
-  transform-origin: center;
-  will-change: transform;
-}
 

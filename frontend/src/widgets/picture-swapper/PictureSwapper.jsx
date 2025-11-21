@@ -28,19 +28,19 @@ const slides = [
         city: "Москва",
         label: "Популярно",
         description: "5-дневный гид",
-        image: "/images/advert1.jpg"
+        image: "/images/slides1-2.png"
     },
     {
         city: "Санкт-Петербург",
         label: "Историческое",
         description: "3-дневный маршрут",
-        image: "/images/advert2.jpg"
+        image: "/images/slides1-5.jpg"
     },
     {
         city: "Казань",
         label: "Национальное",
         description: "Уикенд в столице Татарстана",
-        image: "/images/advert3.jpg"
+        image: "/images/slides1-6.jpg"
     }
 ];
 

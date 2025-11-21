@@ -13,9 +13,10 @@
 
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { HomeWidget,Header,TileBackground} from '../../widgets/';
+import { HomeWidget,Header,TileBackground,CaterpillarSlider} from '../../widgets/';
 import "./HomePage.css";
-
+import {slides} from './slides.jsx';
+import React from 'react';
 /**
  * @typedef {Object} HomePageProps
  * @property {Object|null} user         - Данные текущего пользователя или null.
@@ -29,26 +30,6 @@ import "./HomePage.css";
  * @returns {JSX.Element}               - Стилизиованный контейнер с содержимым домашней страницы.
  */
 
-const slides = [
-    {
-        city: "Москва",
-        label: "Популярно",
-        description: "5-дневный гид",
-        image: "/images/advert1.jpg"
-    },
-    {
-        city: "Санкт-Петербург",
-        label: "Историческое",
-        description: "3-дневный маршрут",
-        image: "/images/advert2.jpg"
-    },
-    {
-        city: "Казань",
-        label: "Национальное",
-        description: "Уикенд в столице Татарстана",
-        image: "/images/advert3.jpg"
-    }
-];
 const HomePage = function ({ user, onLogout }) {
   const navigate = useNavigate();
 
@@ -58,9 +39,18 @@ const HomePage = function ({ user, onLogout }) {
      * @see HomeWidget
      */
     <div className="homepage">
-      <Header></Header>
-      {/*<HomeWidget user={user} onLogout={onLogout}/>*/}
-      <TileBackground slides = {slides}></TileBackground>
+      {/* Первая "страница" */}
+      <section className="section">
+        <Header/>
+        <TileBackground slides={slides} />
+      </section>
+      <section className="section">
+        <h2 className="section-title">Популярные туры</h2>
+        <CaterpillarSlider slides={slides} />
+      </section>
+      <section className="section">
+        <h2 className="section-title">Отзывы</h2>
+      </section>
     </div>
   );
 }
