@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
-import { User, Role } from './model.js';
+import { User, Role } from './model/roleModel.js';
 import { logger } from '../../core/logger.js';
 import config from '../../config/index.js';
 import { emailService } from './emailService.js';
