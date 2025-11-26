@@ -1,6 +1,6 @@
 import { OAuth2Client } from 'google-auth-library';
 import jwt from 'jsonwebtoken';
-import { User, Role } from './model.js';
+import { User, Role } from './model/roleModel.js';
 import { logger } from '../../core/logger.js';
 import config from '../../config/index.js';
 

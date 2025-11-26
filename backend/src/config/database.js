@@ -1,30 +1,29 @@
-import mongoose from 'mongoose';
 import { Sequelize } from 'sequelize';
-import config from './index.js'; // Конфигурация окружения
-import { logger } from '../core/logger.js'; // Логирование
+import { config } from './index.js';
+import { logger } from '../core/logger.js';
 
-// Подключение к MongoDB
-const connectMongoDB = async () => {
-    try {
-        await mongoose.connect(config.mongoUri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        serverSelectionTimeoutMS: 5000, // Таймаут подключения 5 секунд
-        bufferCommands: false, // Отключение буферизации команд
-        });
-        logger.info('MongoDB connected successfully');
-    } catch (error) {
-        logger.error(`MongoDB connection error: ${error.message}`);
-        process.exit(1); // Завершение процесса при ошибке
-    }
+// // Подключение к MongoDB
+// const connectMongoDB = async () => {
+//     try {
+//         await mongoose.connect(config.mongoUri, {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//         serverSelectionTimeoutMS: 5000, // Таймаут подключения 5 секунд
+//         bufferCommands: false, // Отключение буферизации команд
+//         });
+//         logger.info('MongoDB connected successfully');
+//     } catch (error) {
+//         logger.error(`MongoDB connection error: ${error.message}`);
+//         process.exit(1); // Завершение процесса при ошибке
+//     }
 
-    // Логирование событий подключения MongoDB
-    mongoose.connection
-        .on('connecting', () => logger.debug('MongoDB: connecting'))
-        .on('connected', () => logger.debug('MongoDB: connected'))
-        .on('error', (err) => logger.error(`MongoDB error: ${err.message}`))
-        .on('disconnected', () => logger.warn('MongoDB: disconnected'));
-};
+//     // Логирование событий подключения MongoDB
+//     mongoose.connection
+//         .on('connecting', () => logger.debug('MongoDB: connecting'))
+//         .on('connected', () => logger.debug('MongoDB: connected'))
+//         .on('error', (err) => logger.error(`MongoDB error: ${err.message}`))
+//         .on('disconnected', () => logger.warn('MongoDB: disconnected'));
+// };
 
 // Подключение к PostgreSQL/PostGIS
 const sequelize = new Sequelize(config.postgresUri, {
@@ -49,7 +48,7 @@ const connectPostgres = async () => {
 // Инициализация всех баз данных
 const initializeDatabases = async () => {
     try {
-        await Promise.all([connectMongoDB(), connectPostgres()]);
+        await Promise.all([connectPostgres()]);
         logger.info('All databases initialized successfully');
     } catch (error) {
         logger.error(`Database initialization failed: ${error.message}`);
@@ -59,7 +58,6 @@ const initializeDatabases = async () => {
 
 // Экспорт объектов для использования в модулях
 export {
-  mongoose, // Для работы с MongoDB в User Module
-  sequelize, // Для работы с PostgreSQL/PostGIS в Geo Data Module
+  sequelize, // Для работы с PostgreSQL/PostGIS в Geo Data Module и с пользовательским данными в User Module
   initializeDatabases, // Функция для инициализации подключений
 };

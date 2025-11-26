@@ -18,7 +18,6 @@ class GeoDataService {
                 :radius
             )
             AND n.tags ?| ARRAY[:keys]
-            LIMIT 10
         `; // Используем плейсхолдеры для параметров
 
         const replacements = {
@@ -35,9 +34,10 @@ class GeoDataService {
                 model: PlaceModel,
                 mapToModel: true,
             });
-            return results.map(row => row.toJSON());
+            logger.info('Результаты:', results.map(r => r.toJSON()));
+            return results;
         } catch (error) {
-            console.error('Ошибка запроса:', error);
+            logger.info('Ошибка запроса:', error);
         }
     }
 }
