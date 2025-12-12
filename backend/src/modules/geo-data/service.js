@@ -1,6 +1,6 @@
 import { QueryTypes } from 'sequelize';
 import { PlaceModel } from './model.js';
-import { sequelize } from '../../config/database.js';
+import { sequelizeAuth } from '../../config/database.js';
 
 class GeoDataService {
     async getRouteByFilters(longitude, latitude, radius, keysArray) {

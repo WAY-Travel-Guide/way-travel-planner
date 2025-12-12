@@ -1,5 +1,3 @@
-import { sequelize, initializeDatabases } from './database.js';
-
 import dotenv from 'dotenv';
 dotenv.config();
 

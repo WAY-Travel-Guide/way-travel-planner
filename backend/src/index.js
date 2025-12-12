@@ -1,6 +1,6 @@
 import express from'express';
-import { initializeDatabases } from'./config/';
-import config from'./config/index.js';
+import { initializeDatabases } from'./config/database.js';
+import { config } from'./config/index.js';
 import { logger, requestLogger } from'./core/logger.js';
 import { errorMiddleware } from './core/middleware/error.js';
 import { userRoutes } from'./modules/user/routes.js';
@@ -15,7 +15,7 @@ const apiRouter = express.Router();
 app.use('/api', apiRouter);
 
 apiRouter.use('/users', userRoutes);
-apiRouter.use('/geo-data', geoDataRoutes);
+//apiRouter.use('/geo-data', geoDataRoutes);
 
 app.use(errorMiddleware);
 
