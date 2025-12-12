@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../../../config/database.js';
+import { sequelizeAuth } from '../../../config/index.js';
 import { logger } from '../../../core/logger.js';
 
 class UserModel extends Model {}
@@ -55,7 +55,7 @@ const userAttributes = {
 };
 
 const userOptions = {
-    sequelize,
+    sequelizeAuth,
     modelName: 'UserModel',
     tableName: 'users',
     timestamps: true,

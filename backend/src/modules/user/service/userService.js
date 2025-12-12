@@ -1,9 +1,10 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
-import { UserModel, RoleModel } from '../models/UserModel.js'; // Правильный импорт
+import { UserModel } from '../model/userModel.js'; // Правильный импорт
+import { RoleModel } from '../model/roleModel.js'; // кто эти комменты пишет я хз
 import { logger } from '../../../core/logger.js';
-import config from '../../../config/index.js';
+import {config} from '../../../config/index.js';
 import { emailService } from './emailService.js';
 import { Op } from 'sequelize';
 

@@ -1,5 +1,5 @@
 import winston from 'winston';
-import config from '../config/index.js'; // Конфигурация окружения
+import {config} from '../config/index.js'; // Конфигурация окружения
 
 // Определение уровней логирования
 const levels = {

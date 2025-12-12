@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 import { logger } from '../../../core/logger.js';
-import config from '../../../config/index.js';
+import { config } from '../../../config/index.js';
 
 
 class EmailService {

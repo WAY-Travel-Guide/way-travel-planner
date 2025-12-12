@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../../config/database.js';
+import { sequelizeAuth } from '../../config/database.js';
 import { logger } from '../../core/logger.js';
 
 class PlaceModel extends Model {}

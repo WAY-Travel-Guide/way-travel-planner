@@ -1,5 +1,6 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../../../config/database.js';
+//import { sequelize } from '../../../config/database.js';
+import { sequelizeAuth } from '../../../config/index.js';
 import { logger } from '../../../core/logger.js';
 
 class RoleModel extends Model {}
