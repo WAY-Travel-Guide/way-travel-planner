@@ -1,63 +1,65 @@
+// config/database.js
 import { Sequelize } from 'sequelize';
 import { config } from './index.js';
 import { logger } from '../core/logger.js';
 
-// // Подключение к MongoDB
-// const connectMongoDB = async () => {
-//     try {
-//         await mongoose.connect(config.mongoUri, {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true,
-//         serverSelectionTimeoutMS: 5000, // Таймаут подключения 5 секунд
-//         bufferCommands: false, // Отключение буферизации команд
-//         });
-//         logger.info('MongoDB connected successfully');
-//     } catch (error) {
-//         logger.error(`MongoDB connection error: ${error.message}`);
-//         process.exit(1); // Завершение процесса при ошибке
-//     }
-
-//     // Логирование событий подключения MongoDB
-//     mongoose.connection
-//         .on('connecting', () => logger.debug('MongoDB: connecting'))
-//         .on('connected', () => logger.debug('MongoDB: connected'))
-//         .on('error', (err) => logger.error(`MongoDB error: ${err.message}`))
-//         .on('disconnected', () => logger.warn('MongoDB: disconnected'));
-// };
-
-// Подключение к PostgreSQL/PostGIS
-const sequelize = new Sequelize(config.postgresUri, {
+// 1. БД с геоданными (у тебя уже есть)
+export const sequelizeGeo = new Sequelize(config.postgresUriGeodb, {
     dialect: 'postgres',
-    logging: (msg) => logger.debug(msg), // Логирование SQL-запросов
+    logging: msg => logger.debug('[GEO] ' + msg),
     define: {
-        timestamps: true,
-        underscored: true
-    }
+        underscored: true,
+        timestamps: false, // у тебя геоданные обычно без timestamps
+    },
+    pool: { max: 10, min: 0, acquire: 30000, idle: 10000 }
 });
 
-const connectPostgres = async () => {
-    try {
-        await sequelize.authenticate();
-        logger.info('PostgreSQL connected successfully');
-    } catch (error) {
-        logger.error(`PostgreSQL connection error: ${error.message}`);
-        process.exit(1); // Завершение процесса при ошибке
-    }
-};
+// 2. Отдельная БД для пользователей и авторизации
+export const sequelizeAuth = new Sequelize(config.postgresUriUserdb, {
+    dialect: 'postgres',
+    logging: msg => logger.debug('[AUTH] ' + msg),
+    define: {
+        underscored: true,
+        timestamps: true,
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+    },
+    pool: { max: 10, min: 0, acquire: 30000, idle: 10000 }
+});
 
-// Инициализация всех баз данных
-const initializeDatabases = async () => {
+// Подключение и синхронизация каждой БД отдельно
+const connectGeo = async () => {
     try {
-        await Promise.all([connectPostgres()]);
-        logger.info('All databases initialized successfully');
-    } catch (error) {
-        logger.error(`Database initialization failed: ${error.message}`);
+        await sequelizeGeo.authenticate();
+        logger.info('Geo database (PostGIS) connected');
+    } catch (err) {
+        logger.error('Geo DB connection failed:', err.message);
         process.exit(1);
     }
 };
 
-// Экспорт объектов для использования в модулях
-export {
-  sequelize, // Для работы с PostgreSQL/PostGIS в Geo Data Module и с пользовательским данными в User Module
-  initializeDatabases, // Функция для инициализации подключений
+const connectAuth = async () => {
+    try {
+        await sequelizeAuth.authenticate();
+        logger.info('Auth database connected');
+
+        // Создаём/обновляем только таблицы пользователей и ролей
+        if (process.env.NODE_ENV === 'development') {
+            await sequelizeAuth.sync({ alter: true });
+            logger.info('Auth tables synced with { alter: true } (dev)');
+        } else {
+            await sequelizeAuth.sync();
+            logger.info('Auth tables checked (no changes in prod)');
+        }
+
+    } catch (err) {
+        logger.error('Auth DB connection/sync failed:', err.message);
+        process.exit(1);
+    }
+};
+
+// Инициализация всех баз
+export const initializeDatabases = async () => {
+    await Promise.all([connectGeo(), connectAuth()]);
+    logger.info('All databases (Geo + Auth) initialized successfully');
 };

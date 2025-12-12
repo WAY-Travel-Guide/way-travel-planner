@@ -4,7 +4,7 @@ import { logger } from '../../../core/logger.js';
 
 class UserModel extends Model {}
 
-const userAttributes = {
+const userAttributes = { 
     id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
@@ -24,7 +24,7 @@ const userAttributes = {
     },
     password: {
         type: DataTypes.STRING,
-        allowNull: true, // необязательно для Google-авторизации
+        allowNull: true,
     },
     name: {
         type: DataTypes.STRING,

@@ -2,9 +2,9 @@ import Joi from 'joi';
 import { sendError } from '../../utils/response.js';
 
 const registerUserSchema = Joi.object({
-    login: Joi.string().required(),
+    login: Joi.string().min(3).max(30).required(),
     email: Joi.string().email().required(),
-    password: Joi.string().min(4).required(),
+    password: Joi.string().min(6).required(),
 });
 
 const loginUserSchema = Joi.object({

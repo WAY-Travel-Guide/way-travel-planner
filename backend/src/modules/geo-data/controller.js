@@ -2,7 +2,7 @@ import { logger } from '../../core/logger.js';
 import { sendSuccess, sendError } from '../../utils/response.js';
 
 import { geoDataService } from './service.js';
-import { routingService } from '../route/routingService.js';
+import { routingService } from '../route/service.js';
 import { CATEGORY_TO_OSM_TAGS } from '../../utils/tagsMapping.js';
 
 class GeoDataController {
