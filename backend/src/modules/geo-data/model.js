@@ -21,7 +21,7 @@ const attributes = {
 };
 
 const options = {
-    sequelize,
+    sequelize: sequelizeAuth,
     modelName: 'PlaceModel',
     tableName: 'nodes',
     timestamps: false,

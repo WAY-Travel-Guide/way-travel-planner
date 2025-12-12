@@ -1,4 +1,3 @@
-import { sequelizeAuth, initializeDatabases } from './database.js';
 
 import dotenv from 'dotenv';
 dotenv.config();
@@ -13,5 +12,5 @@ const config = {
     osrmUrl:                process.env.OSRM_URL,
 };
 
-export { sequelizeAuth, initializeDatabases, config};
+export {config};
 

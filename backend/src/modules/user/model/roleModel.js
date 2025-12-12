@@ -1,6 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-//import { sequelize } from '../../../config/database.js';
-import { sequelizeAuth } from '../../../config/index.js';
+import { sequelizeAuth } from '../../../config/database.js';
 import { logger } from '../../../core/logger.js';
 
 class RoleModel extends Model {}
@@ -21,7 +20,7 @@ const roleAttributes = {
 };
 
 const roleOptions = {
-    sequelize,
+    sequelize: sequelizeAuth,
     modelName: 'RoleModel',
     tableName: 'roles',
     timestamps: false,

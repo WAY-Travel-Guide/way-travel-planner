@@ -1,5 +1,5 @@
 import express from'express';
-import { initializeDatabases } from'./config/index.js';
+import { initializeDatabases } from'./config/database.js';
 import {config} from'./config/index.js';
 import { logger, requestLogger } from'./core/logger.js';
 import { errorMiddleware } from './core/middleware/error.js';

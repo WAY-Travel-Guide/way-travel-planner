@@ -30,7 +30,7 @@ const connectAuth = async () => {
         }
 
     } catch (err) {
-        logger.error('Auth DB connection/sync failed:', err.message);
+        logger.error('Auth DB connection/sync failed:', err);
         process.exit(1);
     }
 };
@@ -41,5 +41,5 @@ const initializeDatabases = async () => {
     logger.info('All databases (Geo + Auth) initialized successfully');
 };
 
-export { sequelizeAuth, initializeDatabases};
+export {sequelizeAuth, initializeDatabases};
 export {config};

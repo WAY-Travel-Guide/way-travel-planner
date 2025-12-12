@@ -4,7 +4,16 @@
     "vite-plugin-svgr": "^4.3.0"
   },
   "dependencies": {
-    "nodemon": "^3.1.10",
-    "ol": "^10.6.1"
+    "dotenv": "^17.2.3",
+    "google-auth-library": "^10.5.0",
+    "joi": "^18.0.2",
+    "mongoose": "^9.0.1",
+    "nodemailer": "^7.0.11",
+    "nodemon": "^3.1.11",
+    "ol": "^10.6.1",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "winston": "^3.19.0"
   }
 }
