@@ -42,3 +42,4 @@ const initializeDatabases = async () => {
 };
 
 export { sequelizeAuth, initializeDatabases};
+export {config};
