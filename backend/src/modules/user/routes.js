@@ -20,4 +20,8 @@ userRoutes.get('/', roleMiddleware(['Admin']), userController.getAllUsers);
 // POST /api/users/delete - Удаление пользователя
 userRoutes.post('/delete', roleMiddleware(['Admin']), validateDeleteUser, userController.deleteUser);
 
+// GET /api/users/confirm-email?token=...
+userRoutes.get('/confirm-email', userController.confirmEmail);
+
+
 export { userRoutes };

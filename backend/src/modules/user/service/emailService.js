@@ -19,7 +19,8 @@ class EmailService {
 
     async sendConfirmationEmail(email, token, username) {
         try {
-            const confirmationLink = `${config.frontendUrl || 'http://localhost:5173'}/confirm-email?token=${token}`;
+            const confirmationLink =
+  `${config.backendUrl || 'http://localhost:5050'}/api/users/confirm-email?token=${token}`;
             
             const mailOptions = {
                 from: process.env.EMAIL_USER || 'your-email@gmail.com',

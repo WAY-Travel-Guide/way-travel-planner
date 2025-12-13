@@ -52,6 +52,22 @@ class UserController {
             sendError(res, 400, err.message);
         }
     }
+
+    async confirmEmail(req, res) {
+    try {
+        const { token } = req.query;
+
+        if (!token) {
+            return sendError(res, 400, 'Токен подтверждения не передан');
+        }
+
+        const result = await userService.confirmEmail(token);
+        sendSuccess(res, result);
+    } catch (err) {
+        logger.error(`Error confirming email: ${err.message}`);
+        sendError(res, 400, err.message);
+    }
+}
 }
 
 const userController = new UserController();

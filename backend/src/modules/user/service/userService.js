@@ -85,6 +85,10 @@ class UserService {
 
     async checkUser({ login, password }) {
         const user = await UserModel.findOne({ where: { login } });
+
+        if (!user.emailVerified) {
+            throw new Error('Подтвердите email перед входом в аккаунт');
+        }
         if (!user) {
             throw new Error('Пользователь с таким логином не найден');
         }
@@ -111,6 +115,11 @@ class UserService {
 
     async checkUserByEmail({ email, password }) {
         const user = await UserModel.findOne({ where: { email } });
+
+        if (!user.emailVerified) {
+            throw new Error('Подтвердите email перед входом в аккаунт');
+        }
+
         if (!user) {
             throw new Error('Пользователь с таким email не найден');
         }
@@ -160,6 +169,35 @@ class UserService {
 
         return { message: 'Пользователь успешно удалён' };
     }
+
+    
+    
+    async confirmEmail(token) {
+    const user = await UserModel.findOne({
+        where: {
+            emailVerificationToken: token
+        }
+    });
+
+    if (!user) {
+        throw new Error('Неверный или устаревший токен подтверждения');
+    }
+
+    if (user.emailVerified) {
+        return { message: 'Email уже подтверждён' };
+    }
+
+    await user.update({
+        emailVerified: true,
+        emailVerificationToken: null
+    });
+
+    logger.info(`Email confirmed for user: ${user.login} (id: ${user.id})`);
+
+    return {
+        message: 'Email успешно подтверждён'
+    };
+}
 }
 
 const userService = new UserService();
