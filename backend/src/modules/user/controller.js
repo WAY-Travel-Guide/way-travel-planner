@@ -67,7 +67,27 @@ class UserController {
         logger.error(`Error confirming email: ${err.message}`);
         sendError(res, 400, err.message);
     }
+    }
+
+    async forgotPassword(req, res) {
+    try {
+        const result = await userService.forgotPassword(req.body.email);
+        sendSuccess(res, result);
+    } catch (err) {
+        logger.error(err.message);
+        sendError(res, 400, err.message);
+    }
 }
+
+    async resetPassword(req, res) {
+        try {
+            const result = await userService.resetPassword(req.body);
+            sendSuccess(res, result);
+        } catch (err) {
+            logger.error(err.message);
+            sendError(res, 400, err.message);
+        }
+    }
 }
 
 const userController = new UserController();

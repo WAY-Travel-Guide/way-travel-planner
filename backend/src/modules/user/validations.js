@@ -53,4 +53,32 @@ const validateDeleteUser = (req, res, next) => {
     next();
 };
 
-export { validateRegisterUser, validateLoginUser, validateLoginEmail, validateDeleteUser };
+const forgotPasswordSchema = Joi.object({
+    email: Joi.string().email().required(),
+});
+
+const resetPasswordSchema = Joi.object({
+    token: Joi.string().required(),
+    password: Joi.string().min(6).required(),
+});
+
+const validateForgotPassword = (req, res, next) => {
+    const { error } = forgotPasswordSchema.validate(req.body);
+    if (error) return sendError(res, 400, error.details[0].message);
+    next();
+};
+
+const validateResetPassword = (req, res, next) => {
+    const { error } = resetPasswordSchema.validate(req.body);
+    if (error) return sendError(res, 400, error.details[0].message);
+    next();
+};
+
+export { 
+    validateRegisterUser,
+     validateLoginUser,
+      validateLoginEmail,
+       validateDeleteUser,
+        validateForgotPassword,
+         validateResetPassword
+        };

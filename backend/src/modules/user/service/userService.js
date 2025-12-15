@@ -197,7 +197,63 @@ class UserService {
     return {
         message: 'Email успешно подтверждён'
     };
-}
+    }
+
+    async forgotPassword(email) {
+        const user = await UserModel.findOne({ where: { email } });
+
+        // не палим, существует ли пользователь
+        if (!user) {
+            return { message: 'Если такой email существует, письмо отправлено' };
+        }
+
+        const resetToken = crypto.randomBytes(32).toString('hex');
+        const expires = new Date(Date.now() + 60 * 60 * 1000); // 1 час
+
+        await user.update({
+            passwordResetToken: resetToken,
+            passwordResetExpires: expires
+        });
+
+        await emailService.sendPasswordResetEmail(
+            user.email,
+            resetToken,
+            user.login
+        );
+
+        return { message: 'Если такой email существует, письмо отправлено' };
+    }
+
+
+    async resetPassword({ token, password }) {
+        const user = await UserModel.findOne({
+            where: {
+                passwordResetToken: token,
+                passwordResetExpires: {
+                    [Op.gt]: new Date()
+                }
+            }
+        });
+
+        if (!user) {
+            throw new Error('Токен недействителен или истёк');
+        }
+
+        const hashPassword = bcrypt.hashSync(password, 7);
+
+        await user.update({
+            password: hashPassword,
+            passwordResetToken: null,
+            passwordResetExpires: null
+        });
+
+        logger.info(`Password reset for user: ${user.login}`);
+
+        return { message: 'Пароль успешно обновлён' };
+    }
+
+
+
 }
 
 const userService = new UserService();

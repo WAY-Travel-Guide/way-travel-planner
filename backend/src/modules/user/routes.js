@@ -1,6 +1,6 @@
 import express from 'express';
 import { userController } from './controller.js';
-import { validateRegisterUser, validateLoginUser, validateLoginEmail, validateDeleteUser } from './validations.js';
+import { validateRegisterUser, validateLoginUser, validateLoginEmail, validateDeleteUser, validateForgotPassword, validateResetPassword } from './validations.js';
 import { roleMiddleware } from '../../core/middleware/role.js';
 
 const userRoutes = express.Router();
@@ -22,6 +22,12 @@ userRoutes.post('/delete', roleMiddleware(['Admin']), validateDeleteUser, userCo
 
 // GET /api/users/confirm-email?token=...
 userRoutes.get('/confirm-email', userController.confirmEmail);
+
+// POST /api/users/forgot-password
+userRoutes.post('/forgot-password', userController.forgotPassword);
+
+// POST /api/users/reset-password
+userRoutes.post('/reset-password', userController.resetPassword);
 
 
 export { userRoutes };
