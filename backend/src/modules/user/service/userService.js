@@ -6,9 +6,14 @@ import { logger } from '../../../core/logger.js';
 import { config } from '../../../config/index.js';
 import { emailService } from './emailService.js';
 import { Op } from 'sequelize';
+import { RoleModel } from '../model/roleModel.js';
 
+// Сервис для управления пользователями
 class UserService {
+
+    // Регистрация пользователя
     async registerUser({ login, email, password }) {
+
         // Проверка на уникальность (уже проверяется в middleware, но дублируем для надёжности)
         const existingUser = await UserModel.findOne({
             where: {
@@ -82,7 +87,10 @@ class UserService {
         };
     }
 
+    // Аутентификация пользователя
     async checkUser({ login, password }) {
+
+        // Поиск пользователя по логину
         const user = await UserModel.findOne({ where: { login } });
         if (!user) {
             throw new Error('Пользователь с таким логином не найден');
@@ -93,8 +101,9 @@ class UserService {
             throw new Error('Введён неверный пароль');
         }
 
+        // Генерация JWT токена для аутентификации
         const token = jwt.sign(
-            { id: user.id, roles: ['User'] }, // потом заменить на реальные роли
+            { id: user.id, roles: ['User'] },
             config.secret,
             { expiresIn: '24h' }
         );
@@ -108,6 +117,7 @@ class UserService {
         };
     }
 
+    // Аутентификация пользователя по email
     async checkUserByEmail({ email, password }) {
         const user = await UserModel.findOne({ where: { email } });
         if (!user) {
@@ -134,16 +144,17 @@ class UserService {
         };
     }
 
+    // Получение всех пользователей
     async getAllUsers() {
         const users = await UserModel.findAll({
             attributes: ['id', 'login', 'email', 'emailVerified', 'createdAt', 'updatedAt'],
-            // include: [{ model: RoleModel, through: { attributes: [] } }] // если есть связь
         });
 
         logger.info(`Fetched ${users.length} users`);
         return users;
     }
 
+    // Удаление пользователя
     async deleteUser({ login, userId }) {
         const user = await UserModel.findOne({ where: { login } });
         if (!user) {
@@ -162,4 +173,5 @@ class UserService {
 }
 
 const userService = new UserService();
+
 export { userService };

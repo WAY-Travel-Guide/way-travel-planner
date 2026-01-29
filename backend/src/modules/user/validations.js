@@ -1,6 +1,8 @@
 import Joi from 'joi';
 import { sendError } from '../../utils/response.js';
 
+// Валидации для пользователей через Joi
+
 const registerUserSchema = Joi.object({
     login: Joi.string().min(3).max(30).required(),
     email: Joi.string().email().required(),
@@ -20,6 +22,8 @@ const loginEmailSchema = Joi.object({
 const deleteUserSchema = Joi.object({
     login: Joi.string().required(),
 });
+
+// Функции валидации middleware
 
 const validateRegisterUser = (req, res, next) => {
     const { error } = registerUserSchema.validate(req.body);

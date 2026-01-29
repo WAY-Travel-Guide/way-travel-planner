@@ -298,3 +298,6 @@
 2026-01-28 18:21:13 [31merror[39m: User DB connection/sync failed: password authentication failed for user "pavellitvinov"
 2026-01-28 18:25:31 [31merror[39m: User DB connection/sync failed: password authentication failed for user "pavellitvinov"
 2026-01-28 18:25:46 [31merror[39m: User DB connection/sync failed: password authentication failed for user "postgres"
+2026-01-28 20:27:40 [31merror[39m: User DB connection/sync failed: password authentication failed for user "postgres"
+2026-01-28 23:20:18 [31merror[39m: Подключение к базе геоданных не удалось:
+2026-01-28 23:27:56 [31merror[39m: points is not defined

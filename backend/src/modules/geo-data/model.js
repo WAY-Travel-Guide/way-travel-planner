@@ -26,12 +26,12 @@ const options = {
     tableName: 'nodes',
     timestamps: false,
     underscored: true,
-    //indexes: { name: 'idx_nodes_geom', using: 'GIST', fields: ['geom'] }, // GIST-индекс для геозапросов
 };
 
 PlaceModel.init(attributes, options);
 
 logger.debug(`[PlaceModel] Initialized with attributes: ${JSON.stringify(attributes, null, 2)}`);
+
 const { modelName, tableName, timestamps, underscored } = options;
 logger.debug(`[PlaceModel] Options: ${JSON.stringify({ modelName, tableName, timestamps, underscored }, null, 2)}`);
 

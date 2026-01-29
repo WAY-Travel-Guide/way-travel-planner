@@ -32,7 +32,7 @@ const format = winston.format.combine(
 
 const logger = winston.createLogger({
     levels,
-    level: 'info',
+    level: config.logLevel,
     format,
     transports: [
         new winston.transports.Console(),
@@ -53,6 +53,6 @@ const requestLogger = (req, res, next) => {
 };
 
 export {
-  logger, // Основной логгер для использования в других модулях
-  requestLogger, // Middleware для логирования запросов
+  logger,           // Основной логгер для использования в других модулях
+  requestLogger,    // Middleware для логирования запросов
 };

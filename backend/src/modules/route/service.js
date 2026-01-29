@@ -1,6 +1,9 @@
 import { config } from '../../config/index.js';
 
+// Сервис для работы с маршрутами
 class RoutingService {
+
+    // Построение маршрута через OSRM
     async buildRoute(points, options = {}) {
         if (!points || points.length < 2) return null;
 
@@ -10,9 +13,11 @@ class RoutingService {
 
         if (validPoints.length < 2) return null;
 
+        // Формируем строку координат для OSRM
         const coords = validPoints.map(p => [p.longitude, p.latitude]);
         const coordString = coords.map(c => c.join(',')).join(';');
 
+        // Формируем URL запроса к OSRM
         const url = `${config.osrmUrl}/route/v1/driving/${coordString}?overview=full&geometries=geojson`;
 
         try {
@@ -32,10 +37,10 @@ class RoutingService {
 
             const route = data.routes[0];
 
-            // ГЛАВНОЕ ИСПРАВЛЕНИЕ: берём координаты из GeoJSON
+            // Формируем результат в виде GeoJSON
             const coordinates = route.geometry.type === 'LineString'
                 ? route.geometry.coordinates
-                : route.geometry; // на случай, если вдруг придёт массив
+                : route.geometry;                                    // на случай, если вдруг придёт массив
 
             return {
                 geometry: coordinates,

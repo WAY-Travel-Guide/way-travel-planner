@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { logger } from '../../../core/logger.js';
 import { config } from '../../../config/index.js';
 
-
+// Сервис для отправки email пользователям
 class EmailService {
     constructor() {
         // Настройка транспорта для отправки email

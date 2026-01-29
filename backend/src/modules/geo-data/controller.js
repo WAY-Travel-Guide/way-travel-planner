@@ -9,7 +9,6 @@ class GeoDataController {
     async getRouteByFilters(req, res) {
         try {
             const { initial_data, filters_data, route_options = {} } = req.body;
-            console.log(initial_data, filters_data, route_options);
 
             const { longitude, latitude, radius } = initial_data;
 
@@ -41,11 +40,12 @@ class GeoDataController {
             });
 
         } catch (error) {
-            console.error(error);
+            logger.error(error);
             res.status(500).json({ erroror: error.message });
         }
     }
 }
 
 const geoDataController = new GeoDataController();
+
 export { geoDataController };

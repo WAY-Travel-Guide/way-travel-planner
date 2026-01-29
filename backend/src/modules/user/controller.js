@@ -2,7 +2,10 @@ import { userService } from './service/userService.js';
 import { logger } from '../../core/logger.js';
 import { sendSuccess, sendError } from '../../utils/response.js';
 
+// Контроллер пользователей
 class UserController {
+
+    // Регистрация пользователя
     async registerUser(req, res) {
         try {
             const result = await userService.registerUser(req.body);
@@ -13,6 +16,7 @@ class UserController {
         }
     }
 
+    // Аутентификация пользователя
     async checkUser(req, res) {
         try {
             const result = await userService.checkUser(req.body);
@@ -23,6 +27,7 @@ class UserController {
         }
     }
 
+    // Аутентификация пользователя по email
     async checkUserByEmail(req, res) {
         try {
             const result = await userService.checkUserByEmail(req.body);
@@ -33,6 +38,7 @@ class UserController {
         }
     }
 
+    // Получение всех пользователей
     async getAllUsers(req, res) {
         try {
             const users = await userService.getAllUsers();
@@ -43,6 +49,7 @@ class UserController {
         }
     }
 
+    // Удаление пользователя
     async deleteUser(req, res) {
         try {
             const result = await userService.deleteUser({ ...req.body, userId: req.user.id });
@@ -55,4 +62,5 @@ class UserController {
 }
 
 const userController = new UserController();
+
 export { userController };

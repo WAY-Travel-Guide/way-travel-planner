@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useGeoData(initialData, filtersData = {}, routeOptions = {}) {
+const useGeoData = function(initialData, filtersData = {}, routeOptions = {}) {
     const [geoData, setGeoData] = useState([]);           // массив точек
     const [routeGeometry, setRouteGeometry] = useState(null); // [[lon, lat], ...] или null
     const [loading, setLoading] = useState(true);

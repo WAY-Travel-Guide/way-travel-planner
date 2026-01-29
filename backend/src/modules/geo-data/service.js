@@ -1,9 +1,11 @@
 import { QueryTypes } from 'sequelize';
-import { PlaceModel } from './model.js';
 import { sequelizeGeoDB } from '../../config/database.js';
 import { logger } from '../../core/logger.js';
 
+// Сервис для работы с геоданными
 class GeoDataService {
+
+    // Получение маршрута по фильтрам
     async getRouteByFilters(longitude, latitude, radius, keysArray) {
         const sql = `
             SELECT
@@ -18,19 +20,21 @@ class GeoDataService {
                 :radius
             )
             AND n.tags ?| ARRAY[:keys]
-        `; // Используем плейсхолдеры для параметров
+        `;
 
         const replacements = {
-            long: longitude,
-            lat: latitude,
-            radius,
-            keys: keysArray, // Массив ключей
+            long: longitude,                    // Долгота
+            lat: latitude,                      // Широта
+            radius,                             // Радиус в метрах
+            keys: keysArray,                    // Массив ключей
         };
 
         try {
+
+            // Выполняем запрос к базе данных через Sequelize
             const results = await sequelizeGeoDB.query(sql, {
                 replacements,
-                type: QueryTypes.SELECT,
+                type: QueryTypes.SELECT,        // Тип запроса - SELECT
                 raw: true,
             });
 
@@ -41,9 +45,9 @@ class GeoDataService {
                 latitude: Number(r.latitude),
             }));
 
-            logger.info('Результаты:', normalized.slice(0, 3));
             return normalized;
-            } catch (error) {
+
+        } catch (error) {
             logger.info('Ошибка запроса:', error);
             return [];
         }

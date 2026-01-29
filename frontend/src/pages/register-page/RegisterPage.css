@@ -1,0 +1,22 @@
+.register-page {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Левая часть — форма */
+.reg-form-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Правая часть — блок с картинкой */
+.reg-picture-swapper-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
