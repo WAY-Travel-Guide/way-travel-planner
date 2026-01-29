@@ -3,16 +3,14 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./AuthProvider";
 import { Loader } from "../../src/shared";
 
-/**
- * Главный компонент приложения.
- *
- * @function
- * @returns {JSX.Element} Корневой компонент приложения с роутингом и авторизацией.
- */
+// Основной компонент приложения, отвечающий за маршрутизацию и авторизацию.
 function App() {
+
+  // Состояние загрузки страницы
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    
     // Снимаем "loading", когда всё загрузилось
     const handleLoad = () => {
       setTimeout(() => { setLoading(false); }, 1000);

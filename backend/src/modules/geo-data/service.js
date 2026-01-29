@@ -15,11 +15,12 @@ class GeoDataService {
                 n.tags
             FROM nodes n
             WHERE ST_DWithin(
-                n.geom::geography,
-                ST_SetSRID(ST_MakePoint(:long, :lat), 4326)::geography,
+                ST_Transform(n.geom, 3857),
+                ST_Transform(ST_SetSRID(ST_MakePoint(:long, :lat), 4326), 3857),
                 :radius
             )
             AND n.tags ?| ARRAY[:keys]
+            LIMIT 100
         `;
 
         const replacements = {

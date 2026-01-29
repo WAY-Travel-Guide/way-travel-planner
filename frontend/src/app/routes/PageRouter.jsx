@@ -18,30 +18,10 @@ import { UserPage } from "../../pages";
 import { HomePage } from "../../pages";
 import { RegisterPage } from "../../pages";
 import { Filters } from "../Filters.jsx";
-
-/**
- * @typedef {Object} PageRouterProps
- * @property {Object|null} user           - Объект пользователя или null, если пользователь не авторизован.
- * @property {Function} handleLogin       - Функция-обработчик входа, вызывается при успешной авторизации.
- * @property {Function} handleLogout      - Функция-обработчик выхода пользователя.
- */
-
-/**
- * Компонент маршрутизации. Определяет, какой компонент страницы отобразить по текущему URL.
- *
- * @param {PageRouterProps} props - Свойства компонента.
- * @returns {JSX.Element} JSX-дерево роутера для приложения.
- */
 const PageRouter = function({ user, handleLogin, handleLogout }) {
     return (
-        /**
-         * Рендерит все маршруты приложения.
-         * Маршруты:
-         * - "/login"     — страница авторизации (LoginPage)
-         * - "/register"  — страница регистрации (RegisterPage)
-         * - "/"          — главная страница (HomePage)
-         * - "/user/:id"  — страница профиля пользователя (UserPage)
-         */
+
+        // Настройка маршрутов приложения
         <Routes>
             {/* Страница входа. onLogin пробрасывается для дальнейшей авторизации. */}
             <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />

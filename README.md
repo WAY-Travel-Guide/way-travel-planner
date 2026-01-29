@@ -8,7 +8,7 @@
 
 ---
 
-## 📂 Структура проекта
+## Структура проекта
 
 ```plaintext
 way-travel-planner/
@@ -21,20 +21,21 @@ way-travel-planner/
 └── ...
 ```
 
-## 🚀 Основные модули
+## Основные модули
+
 -frontend/ — одностраничное приложение (SPA) на React, Vite, OpenLayers (карты).
 -backend/ — модульный бэкенд на Node.js (Express, MongoDB, JWT, Docker).
 -deploy/ — скрипты и конфиги для развертывания (Docker Compose, Kubernetes, nginx).
 -docs/ — расширенная документация, схемы, диаграммы, примеры API.
 
-## ⚙️ Запуск
+## Запуск
 
 Backend
 
 ```plaintext
 cd backend
 npm install
-npm install mongoose dotenv sequelize pg pg-hstore nodemon winston joi nodemailer google-auth-library
+npm install dotenv sequelize pg pg-hstore nodemon winston joi nodemailer google-auth-library
 npm run dev
 ```
 ---
@@ -48,11 +49,12 @@ npm install ol
 npm run dev
 ```
 
-## 🧩 Ключевые технологии
+## Ключевые технологии
+
 -Node.js, Express.js — сервер, REST API, middleware
--MongoDB, Redis — хранение пользователей и кэширование маршрутов
 -JWT, bcrypt — безопасная авторизация, шифрование паролей
 -React, Vite, OpenLayers — быстрый современный фронтенд
 -Docker, Kubernetes — контейнеризация и масштабирование
--Mapbox, Overpass API — внешние карты и геоданные
+-Open Street Map — геоданные
+-OSRM - своя маршрутная машина
 
