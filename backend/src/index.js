@@ -3,7 +3,7 @@ import { initializeDatabases } from'./config/database.js';
 import { config } from'./config/index.js';
 import { logger, requestLogger } from'./core/logger.js';
 import { errorMiddleware } from './core/middleware/error.js';
-import { userRoutes } from'./modules/user/routes.js';
+//import { userRoutes } from'./modules/user/routes.js';
 import { geoDataRoutes } from'./modules/geo-data/routes.js';
 
 const app = express();
@@ -14,8 +14,8 @@ app.use(requestLogger);
 const apiRouter = express.Router();
 app.use('/api', apiRouter);
 
-apiRouter.use('/users', userRoutes);
-//apiRouter.use('/geo-data', geoDataRoutes);
+//apiRouter.use('/users', userRoutes);
+apiRouter.use('/geo-data', geoDataRoutes);
 
 app.use(errorMiddleware);
 

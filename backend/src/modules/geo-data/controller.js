@@ -24,9 +24,8 @@ class GeoDataController {
 
             // 2. Получаем точки
             const points = await geoDataService.getRouteByFilters(longitude, latitude, radius, activeTags);
-
-
-            // 3. Строим маршрут (на бэкенде!)
+            
+            // 3. Строим маршрут (на бэкенде)
             let route = null;
             if (points.length >= 2 && route_options.optimize !== false) {
                 route = await routingService.buildRoute(points, route_options);

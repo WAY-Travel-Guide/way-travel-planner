@@ -1,6 +1,6 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelizeAuth } from '../../config/database.js';
 import { logger } from '../../core/logger.js';
+import { sequelizeGeoDB } from '../../config/database.js';
 
 class PlaceModel extends Model {}
 
@@ -21,7 +21,7 @@ const attributes = {
 };
 
 const options = {
-    sequelize,
+    sequelize: sequelizeGeoDB,
     modelName: 'PlaceModel',
     tableName: 'nodes',
     timestamps: false,

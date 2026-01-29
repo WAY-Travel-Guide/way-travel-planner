@@ -1,3 +1,5 @@
+// тестовая страница с фильтрами по построению маршрута, которой не будет в релизе
+
 import React, { useState } from 'react';
 import { RouteMapPage } from './RouteMapPage.jsx';
 

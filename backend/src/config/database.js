@@ -2,17 +2,17 @@ import { Sequelize } from 'sequelize';
 import { config } from './index.js';
 import { logger } from '../core/logger.js';
 
-// export const sequelizeGeo = new Sequelize(config.postgresUriGeodb, {
-//     dialect: 'postgres',
-//     logging: msg => logger.debug('[GEO] ' + msg),
-//     define: {
-//         underscored: true,
-//         timestamps: false, // у тебя геоданные обычно без timestamps
-//     },
-//     pool: { max: 10, min: 0, acquire: 30000, idle: 10000 }
-// });
+const sequelizeGeoDB = new Sequelize(config.postgresUriGeodb, {
+    dialect: 'postgres',
+    logging: msg => logger.debug('[GEO] ' + msg),
+    define: {
+        underscored: true,
+        timestamps: false,
+    },
+    pool: { max: 10, min: 0, acquire: 30000, idle: 10000 }
+});
 
-const sequelizeAuth = new Sequelize(config.postgresUriUserdb, {
+const sequelizeUserDB = new Sequelize(config.postgresUriUserdb, {
     dialect: 'postgres',
     logging: msg => logger.debug('[AUTH] ' + msg),
     define: {
@@ -24,40 +24,42 @@ const sequelizeAuth = new Sequelize(config.postgresUriUserdb, {
     pool: { max: 10, min: 0, acquire: 30000, idle: 10000 }
 });
 
-// const connectGeo = async () => {
-//     try {
-//         await sequelizeGeo.authenticate();
-//         logger.info('Geo database (PostGIS) connected');
-//     } catch (err) {
-//         logger.error('Geo DB connection failed:', err.message);
-//         process.exit(1);
-//     }
-// };
-
-const connectAuth = async () => {
+const connectGeoDB = async () => {
     try {
-        await sequelizeAuth.authenticate();
-        logger.info('Auth database connected');
+        await sequelizeGeoDB.authenticate();
+        logger.info('Geo database (PostGIS) connected');
+    } catch (err) {
+        logger.error('Geo DB connection failed:', err.message);
+        process.exit(1);
+    }
+};
+
+const connectUserDB = async () => {
+    try {
+        await sequelizeUserDB.authenticate();
+        logger.info('User database connected');
 
         // Создаём/обновляем только таблицы пользователей и ролей
-        if (process.env.NODE_ENV === 'development') {
-            await sequelizeAuth.sync({ alter: true });
-            logger.info('Auth tables synced with { alter: true } (dev)');
+        if (config.node === 'development') {
+            await sequelizeUserDB.sync({ alter: true });
+            logger.info('User tables synced with { alter: true } (dev)');
         } else {
-            await sequelizeAuth.sync();
-            logger.info('Auth tables checked (no changes in prod)');
+            await sequelizeUserDB.sync();
+            logger.info('User tables checked (no changes in prod)');
         }
 
     } catch (err) {
-        logger.error('Auth DB connection/sync failed:', err.message);
+        logger.error('User DB connection/sync failed:', err);
         process.exit(1);
     }
 };
 
 // Инициализация всех баз
 const initializeDatabases = async () => {
-    await Promise.all([/*connectGeo(),*/ connectAuth()]);
+    await Promise.all([connectGeoDB(), connectUserDB()]);
     logger.info('All databases (Geo + Auth) initialized successfully');
 };
 
-export { sequelizeAuth, initializeDatabases };
+export { initializeDatabases };
+export { config };
+export { sequelizeGeoDB, sequelizeUserDB };

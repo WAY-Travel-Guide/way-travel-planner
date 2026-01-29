@@ -9,6 +9,7 @@ const config = {
     logLevel:               process.env.LOG_LEVEL,
     secret:                 process.env.JWT_SECRET,
     osrmUrl:                process.env.OSRM_URL,
+    node:                   process.env.NODE || 'development',
 };
 
-export { config };
+export {config};
