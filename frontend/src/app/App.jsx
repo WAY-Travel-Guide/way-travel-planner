@@ -33,7 +33,7 @@ function App() {
   
   return (
     <BrowserRouter>
-      {loading ? <Loader /> : <AuthProvider />}
+      <AuthProvider />
     </BrowserRouter>
   );
 }

@@ -38,7 +38,7 @@ const PageRouter = function({ user, handleLogin, handleLogout }) {
             {/* Страница пользователя. Передаём user для отображения информации о текущем пользователе. */}
             <Route path="/user/:id" element={<UserPage user={user} />} />
 
-            <Route path="/filters" element={<Filters />} />
+            <Route path="/map" element={<Filters />} />
         </Routes>
     )
 }

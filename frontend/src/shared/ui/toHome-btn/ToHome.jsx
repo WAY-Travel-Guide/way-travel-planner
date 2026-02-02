@@ -1,29 +1,11 @@
-/**
- * @fileoverview
- * Кнопка возврата на главную страницу (в уголке экрана).
- * Отображает логотип и всплывающую подсказку при наведении.
- *
- * @description
- * ToHome — универсальная кнопка для возврата пользователя на главную страницу приложения.
- * При наведении отображает подсказку, реализован плавный hover-эффект.
- * Используется на формах логина, регистрации и др. для быстрого возврата к домашнему экрану.
- *
- * @module ToHomeButton
- */
-
 import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import CornerLogo from "./corner-logo.svg";
 import './ToHome.css';
 
-/**
- * Кнопка возврата в главное меню.
- *
- * @returns {JSX.Element}  - Обёртка с логотипом и tooltip-подсказкой.
- */
 const ToHomeButton = function() {
     const navigate = useNavigate();
-    /** @type {[boolean, Function]} Состояние наведения мыши на кнопку */
+    //Состояние наведения мыши на кнопку
     const [hovered, setHovered] = useState(false);
 
     return (
