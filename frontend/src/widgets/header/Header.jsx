@@ -2,7 +2,6 @@ import Exit from "../../assets/exit.svg";
 import History from "../../assets/time-past.svg";
 import Person from "../../assets/user.svg";
 import Logo from "../../../public/way-minilogo-2.svg";
-import { BurgerButton } from "../../shared/ui/burger-btn/burger-btn.jsx";
 
 const Header = () => {
   return (
@@ -10,7 +9,7 @@ const Header = () => {
       <div className="container-fluid">
         {/* Логотип слева */}
         <a className="navbar-brand" href="/">
-          <img src={Logo} alt="Лого" className="minilogo" style={{ width: '40px', height: '40px' }}/>
+          <img src={Logo} alt="Лого" className="minilogo"/>
         </a>
 
         {/* Контент, который сворачивается */}
@@ -46,7 +45,7 @@ const Header = () => {
           </div>
         </div>
         
-        <div className="d-flex align-items-center" style={{ gap: '40px' }}>
+        <div className="d-flex align-items-center flex-nowrap" style={{ gap: '40px' }}>
           {/* Иконки */}
           <img src={Exit} alt="Главная" className="header-nav-icon" style={{ width: '40px', height: '40px', cursor: 'pointer' }} />
           <img src={History} alt="О нас" className="header-nav-icon" style={{ width: '40px', height: '40px', cursor: 'pointer' }} />
