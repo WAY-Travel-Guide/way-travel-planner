@@ -1,19 +1,18 @@
-import React, {useState} from 'react';
 import './def-btn.css';
 
 // Универсальная кнопка с синим стилем.
 const DefaultButton = function( {children, onClick, style ={}} ) {
     
-    const { bgColor, borderColor, textColorBefore, textColor, backdropFilter, bgColorBefore } = style;
+    const { bgColor, textColor, backdropFilter, width, height, borderColor } = style;
 
     // Собираем объект стилей для CSS-переменных:
     const vars = {
         ...(bgColor         && { '--btn-color':             bgColor }),
-        ...(borderColor     && { '--btn-border-color':      borderColor }),
-        ...(textColorBefore && { '--btn-before-text-color': textColorBefore }),
+        ...(width           && { '--btn-width':             width }),
+        ...(height          && { '--btn-height':            height }),
         ...(textColor       && { '--btn-text-color':        textColor }),
         ...(backdropFilter  && { '--btn-backdrop-filter':   backdropFilter}),
-        ...(bgColorBefore   && { '--btn-before-color':      bgColorBefore}),
+        ...(borderColor     && { '--btn-border-color':      borderColor}),
     };
     
     return (

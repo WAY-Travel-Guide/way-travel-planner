@@ -1,0 +1,8 @@
+body {
+    padding-top: 75px;
+}
+
+.offcanvas {
+  z-index: 1055 !important;          /* выше, чем у navbar (1030) и модалок (1050) */
+  height: 100vh !important;   /* на всю высоту экрана */
+}

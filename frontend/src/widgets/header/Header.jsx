@@ -1,55 +1,27 @@
-import Exit from "../../assets/exit.svg";
-import History from "../../assets/time-past.svg";
-import Person from "../../assets/user.svg";
 import Logo from "../../../public/way-minilogo-2.svg";
+import { DefaultButton } from "../../shared/index.js";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-transparent **fixed-top** shadow">
-      <div className="container-fluid">
+    <nav
+      className="navbar navbar-expand-lg navbar-light fixed-top"
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.72)",
+        backdropFilter: "saturate(180%) blur(20px)",
+        WebkitBackdropFilter: "saturate(180%) blur(20px)",
+        transition: "background-color 0.3s ease",
+      }}
+    >
+      <div className="container">
+
         {/* Логотип слева */}
-        <a className="navbar-brand" href="/">
-          <img src={Logo} alt="Лого" className="minilogo"/>
+        <a className="navbar-brand d-flex align-items-center" href="/">
+          <img src={Logo} alt="Лого" className="minilogo" style={{ width: '48px', height: '48px' }}/>
         </a>
 
-        {/* Контент, который сворачивается */}
-        <div className="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          {/* Ссылки */}
-          <div className="offcanvas-header">
-            <button
-              type="button"
-              className="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-            
-          </div>
-
-          <div className="offcanvas-body" >
-            
-            {/* Ссылки внутри offcanvas */}
-            <ul className="navbar-nav justify-content-start">
-              <li className="nav-item">
-                <a className="nav-link" href="#reviews">Отзывы</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link " href="#contacts">Контакты</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#help">Помощь</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/map">Карта</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="d-flex align-items-center flex-nowrap" style={{ gap: '40px' }}>
-          {/* Иконки */}
-          <img src={Exit} alt="Главная" className="header-nav-icon" style={{ width: '40px', height: '40px', cursor: 'pointer' }} />
-          <img src={History} alt="О нас" className="header-nav-icon" style={{ width: '40px', height: '40px', cursor: 'pointer' }} />
-          <img src={Person} alt="Контакты" className="header-nav-icon" style={{ width: '40px', height: '40px', cursor: 'pointer' }} />
+        <div className="d-flex align-items-center order-2" style={{ gap: '40px' }}>
+          {/* Создать маршрут */}
+          <DefaultButton children="Создать маршрут" onClick={() => window.location.href = '/map'} style={{  bgColor: '#000000', textColor: '#ffffff', width: '227px', height: '48px', borderColor: '#000000' }} />
 
           {/* Кнопка-гамбургер для мобильных устройств */}
           <button
@@ -62,11 +34,27 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
-          
         </div>
 
-        
+        {/* Адаптивное навигационное меню */}
+        <div className="offcanvas offcanvas-start order-1" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          {/* Контент, который сворачивается */}
+          <div className="offcanvas-body">
+            {/* Ссылки */}
+            <ul className="navbar-nav">
+              <li className="nav-item px-4">
+                <a className="nav-link color-" href="#contacts">Контакты</a>
+              </li>
+              <li className="nav-item px-4">
+                <a className="nav-link" href="#reviews">Отзывы</a>
+              </li>
+              <li className="nav-item px-4">
+                <a className="nav-link" href="#help">Помощь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </nav>
   );
