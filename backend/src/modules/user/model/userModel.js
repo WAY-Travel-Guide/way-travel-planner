@@ -57,7 +57,7 @@ const userAttributes = {
 };
 
 const userOptions = {
-    sequelize: sequelizeAuth,
+    sequelize: sequelizeUserDB,
     modelName: 'UserModel',
     tableName: 'users',
     timestamps: true,
