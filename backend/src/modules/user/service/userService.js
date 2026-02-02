@@ -7,7 +7,6 @@ import { logger } from '../../../core/logger.js';
 import {config} from '../../../config/index.js';
 import { emailService } from './emailService.js';
 import { Op } from 'sequelize';
-import { RoleModel } from '../model/roleModel.js';
 
 // Сервис для управления пользователями
 class UserService {

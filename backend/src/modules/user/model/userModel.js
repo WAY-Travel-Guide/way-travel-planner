@@ -52,11 +52,6 @@ const userAttributes = {
     passwordResetExpires: {
         type: DataTypes.DATE,
         allowNull: true,
-    },
-    role: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: 'User',
     }
 
 };
