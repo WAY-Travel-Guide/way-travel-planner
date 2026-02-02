@@ -46,7 +46,7 @@ const MapConstructor = ({ initialData, filtersData }) => {
       const vectorSource = new VectorSource();
       const clusterSource = new Cluster({ distance: 40, source: vectorSource });
 
-      const vectorLayer = new VectorLayer({
+      const pointsLayer = new VectorLayer({
         source: clusterSource,
         style: (feature) => {
           const size = feature.get('features').length;
@@ -72,9 +72,10 @@ const MapConstructor = ({ initialData, filtersData }) => {
             }),
           });
         },
+        zIndex: 2,
       });
 
-      map.addLayer(vectorLayer);
+      map.addLayer(pointsLayer);
 
       const overlay = new Overlay({
         element: popupRef.current,
@@ -119,7 +120,7 @@ const MapConstructor = ({ initialData, filtersData }) => {
         style: new Style({
           stroke: new Stroke({ color: '#d32f2f', width: 4 }),
         }),
-        zIndex: 1000,
+        zIndex: 1,
       });
       routeLayer.set('name', 'routeLayer');
       map.addLayer(routeLayer);

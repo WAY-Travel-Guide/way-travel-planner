@@ -1,7 +1,8 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelizeAuth } from '../../../config/database.js';
+import { sequelizeUserDB } from '../../../config/database.js';
 import { logger } from '../../../core/logger.js';
 
+// Модель ролей пользователей
 class RoleModel extends Model {}
 
 const roleAttributes = {
@@ -20,7 +21,7 @@ const roleAttributes = {
 };
 
 const roleOptions = {
-    sequelize: sequelizeAuth,
+    sequelize: sequelizeUserDB,
     modelName: 'RoleModel',
     tableName: 'roles',
     timestamps: false,
@@ -35,5 +36,4 @@ const { modelName: roleModelName, tableName: roleTableName, timestamps: roleTime
 
 logger.debug(`[RoleModel] Options: ${JSON.stringify({ modelName: roleModelName, tableName: roleTableName, timestamps: roleTimestamps, underscored: roleUnderscored }, null, 2)}`);
 
-// Экспорт
 export { RoleModel };

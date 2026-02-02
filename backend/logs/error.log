@@ -294,3 +294,10 @@
 2025-12-12 17:45:37 [31merror[39m: Auth DB connection/sync failed: тип "hstore" не существует
 2025-12-12 17:47:12 [31merror[39m: Auth DB connection/sync failed: тип "geometry" не существует
 2025-12-12 17:56:47 [31merror[39m: Auth DB connection/sync failed: тип "geometry" не существует
+2026-01-28 00:53:25 [31merror[39m: Geo DB connection failed:
+2026-01-28 18:21:13 [31merror[39m: User DB connection/sync failed: password authentication failed for user "pavellitvinov"
+2026-01-28 18:25:31 [31merror[39m: User DB connection/sync failed: password authentication failed for user "pavellitvinov"
+2026-01-28 18:25:46 [31merror[39m: User DB connection/sync failed: password authentication failed for user "postgres"
+2026-01-28 20:27:40 [31merror[39m: User DB connection/sync failed: password authentication failed for user "postgres"
+2026-01-28 23:20:18 [31merror[39m: Подключение к базе геоданных не удалось:
+2026-01-28 23:27:56 [31merror[39m: points is not defined

@@ -1,10 +1,11 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelizeAuth } from '../../../config/database.js';
+import { sequelizeUserDB } from '../../../config/database.js';
 import { logger } from '../../../core/logger.js';
 
+// Модель пользователей
 class UserModel extends Model {}
 
-const userAttributes = { 
+const userAttributes = {
     id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
@@ -52,6 +53,12 @@ const userAttributes = {
         type: DataTypes.DATE,
         allowNull: true,
     },
+    role: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: 'User',
+    }
+
 };
 
 const userOptions = {
@@ -66,7 +73,9 @@ const userOptions = {
 UserModel.init(userAttributes, userOptions);
 
 logger.debug(`[UserModel] Initialized with attributes: ${JSON.stringify(userAttributes, null, 2)}`);
+
 const { modelName: userModelName, tableName: userTableName, timestamps: userTimestamps, underscored: userUnderscored } = userOptions;
+
 logger.debug(`[UserModel] Options: ${JSON.stringify({ modelName: userModelName, tableName: userTableName, timestamps: userTimestamps, underscored: userUnderscored }, null, 2)}`);
 
 export { UserModel };

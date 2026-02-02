@@ -1,3 +1,5 @@
+// Маппинг категорий на теги OSM
+
 const CATEGORY_TO_OSM_TAGS ={
     "Food": [
         "amenity:bar",

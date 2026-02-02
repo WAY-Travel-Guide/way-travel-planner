@@ -1523,3 +1523,2009 @@
 2025-12-12 17:47:12 [31merror[39m: Auth DB connection/sync failed: тип "geometry" не существует
 2025-12-12 17:56:47 [32minfo[39m: Auth database connected
 2025-12-12 17:56:47 [31merror[39m: Auth DB connection/sync failed: тип "geometry" не существует
+2026-01-27 09:49:08 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 09:49:08 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 09:49:08 [32minfo[39m: Server is running on port 5060
+2026-01-27 09:49:37 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 09:49:37 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 09:49:37 [32minfo[39m: Server is running on port 5050
+2026-01-27 09:50:49 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 09:50:49 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 09:50:49 [32minfo[39m: Server is running on port 5050
+2026-01-27 10:02:33 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 10:02:33 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 10:02:33 [32minfo[39m: Server is running on port 5050
+2026-01-27 10:06:56 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 10:06:56 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 10:06:56 [32minfo[39m: Server is running on port 5050
+2026-01-27 10:07:47 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 10:07:47 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 10:07:47 [32minfo[39m: Server is running on port 5051
+2026-01-27 10:08:32 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 10:08:32 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 10:08:32 [32minfo[39m: Server is running on port 5051
+2026-01-27 10:08:35 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-27 10:08:35 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-27 10:08:35 [32minfo[39m: Server is running on port 5051
+2026-01-27 10:08:39 [32minfo[39m: Результаты:
+2026-01-27 10:10:13 [32minfo[39m: Результаты:
+2026-01-27 22:04:16 [32minfo[39m: Результаты:
+2026-01-27 23:28:22 [32minfo[39m: Результаты:
+2026-01-27 23:29:25 [32minfo[39m: Результаты:
+2026-01-27 23:42:34 [32minfo[39m: Ошибка запроса: terminating connection due to administrator command
+2026-01-27 23:59:41 [32minfo[39m: Результаты:
+2026-01-28 00:00:01 [32minfo[39m: Результаты:
+2026-01-28 00:18:39 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 00:18:39 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 00:18:39 [32minfo[39m: Server is running on port 5051
+2026-01-28 00:21:07 [32minfo[39m: Результаты:
+2026-01-28 00:25:18 [32minfo[39m: Результаты:
+2026-01-28 00:42:03 [32minfo[39m: Результаты:
+2026-01-28 00:53:09 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 00:53:09 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 00:53:09 [32minfo[39m: Server is running on port 5051
+2026-01-28 00:53:25 [31merror[39m: Geo DB connection failed:
+2026-01-28 00:53:34 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 00:53:34 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 00:53:34 [32minfo[39m: Server is running on port 5051
+2026-01-28 00:59:37 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 00:59:37 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 00:59:37 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:07:07 [32minfo[39m: Результаты:
+2026-01-28 01:07:29 [32minfo[39m: Результаты:
+2026-01-28 01:08:53 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:08:53 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:08:53 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:08:58 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:08:58 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:08:58 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:09:02 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:09:02 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:09:02 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:09:37 [32minfo[39m: Результаты:
+2026-01-28 01:10:17 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:10:17 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:10:17 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:10:18 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:10:18 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:10:18 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:11:00 [32minfo[39m: Результаты:
+2026-01-28 01:12:46 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:12:46 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:12:46 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:12:54 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:12:54 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:12:54 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:12:57 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:12:57 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:12:57 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:13:13 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:13:13 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:13:13 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:13:16 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:13:16 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:13:16 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:13:51 [32minfo[39m: Результаты:
+2026-01-28 01:13:51 [32minfo[39m: [object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel],[object SequelizeInstance:PlaceModel]
+2026-01-28 01:14:03 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:14:03 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:14:03 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:14:05 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:14:05 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:14:05 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:14:44 [32minfo[39m: Результаты:
+2026-01-28 01:14:49 [32minfo[39m: Результаты:
+2026-01-28 01:15:30 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:15:30 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:15:30 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:20:23 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:20:23 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:20:23 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:20:47 [32minfo[39m: Результаты:
+2026-01-28 01:24:22 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:24:22 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:24:22 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:24:26 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:24:26 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:24:26 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:24:32 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:24:32 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:24:32 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:25:03 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:25:03 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:25:03 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:25:04 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:25:04 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:25:04 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:25:10 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:25:10 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:25:10 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:25:59 [32minfo[39m: Результаты:
+2026-01-28 01:29:10 [32minfo[39m: Результаты:
+2026-01-28 01:29:20 [32minfo[39m: Результаты:
+2026-01-28 01:30:41 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:30:41 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:30:41 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:30:43 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:30:43 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:30:43 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:30:45 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:30:45 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:30:45 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:30:55 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:30:55 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:30:55 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:31:08 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:31:08 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:31:08 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:31:11 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:31:11 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:31:11 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:31:34 [32minfo[39m: Результаты:
+2026-01-28 01:32:23 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:32:23 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:32:23 [32minfo[39m: Server is running on port 5051
+2026-01-28 01:49:57 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 01:49:57 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 01:49:57 [32minfo[39m: Server is running on port 5051
+2026-01-28 18:21:13 [31merror[39m: User DB connection/sync failed: password authentication failed for user "pavellitvinov"
+2026-01-28 18:25:31 [31merror[39m: User DB connection/sync failed: password authentication failed for user "pavellitvinov"
+2026-01-28 18:25:46 [31merror[39m: User DB connection/sync failed: password authentication failed for user "postgres"
+2026-01-28 18:26:07 [32minfo[39m: User database connected
+2026-01-28 18:26:07 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 18:26:07 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 18:26:07 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 18:26:07 [32minfo[39m: Server is running on port 5051
+2026-01-28 18:44:21 [32minfo[39m: Результаты:
+2026-01-28 18:45:46 [32minfo[39m: User database connected
+2026-01-28 18:45:46 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 18:45:46 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 18:45:46 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 18:45:46 [32minfo[39m: Server is running on port 5051
+2026-01-28 18:46:36 [32minfo[39m: Результаты:
+2026-01-28 20:01:05 [32minfo[39m: User database connected
+2026-01-28 20:01:05 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 20:01:05 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 20:01:05 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 20:01:05 [32minfo[39m: Server is running on port 5051
+2026-01-28 20:01:21 [32minfo[39m: User database connected
+2026-01-28 20:01:21 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 20:01:21 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 20:01:21 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 20:01:21 [32minfo[39m: Server is running on port 5051
+2026-01-28 20:01:25 [32minfo[39m: User database connected
+2026-01-28 20:01:25 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 20:01:25 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 20:01:25 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 20:01:25 [32minfo[39m: Server is running on port 5051
+2026-01-28 20:27:31 [32minfo[39m: User database connected
+2026-01-28 20:27:31 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 20:27:31 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 20:27:31 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 20:27:31 [32minfo[39m: Server is running on port 5051
+2026-01-28 20:27:40 [31merror[39m: User DB connection/sync failed: password authentication failed for user "postgres"
+2026-01-28 20:59:25 [32minfo[39m: User database connected
+2026-01-28 20:59:25 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 20:59:25 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 20:59:25 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 20:59:25 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:13:53 [32minfo[39m: Результаты:
+2026-01-28 21:13:56 [32minfo[39m: Результаты:
+2026-01-28 21:23:41 [32minfo[39m: Ошибка запроса: password authentication failed for user "postgres"
+2026-01-28 21:27:32 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 21:27:32 [32minfo[39m: User database connected
+2026-01-28 21:27:32 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:27:32 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:27:32 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:27:52 [32minfo[39m: User database connected
+2026-01-28 21:27:52 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:27:53 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 21:27:53 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:27:53 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:27:54 [32minfo[39m: User database connected
+2026-01-28 21:27:54 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:27:55 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 21:27:55 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:27:55 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:06 [32minfo[39m: User database connected
+2026-01-28 21:28:06 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:06 [32minfo[39m: Geo database (PostGIS) connected
+2026-01-28 21:28:06 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:06 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:13 [32minfo[39m: User database connected
+2026-01-28 21:28:13 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:13 [32minfo[39m: 
+2026-01-28 21:28:13 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:13 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:19 [32minfo[39m: User database connected
+2026-01-28 21:28:19 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:20 [32minfo[39m: 
+2026-01-28 21:28:20 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:20 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:23 [32minfo[39m: User database connected
+2026-01-28 21:28:23 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:23 [32minfo[39m: База
+2026-01-28 21:28:23 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:23 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:23 [32minfo[39m: User database connected
+2026-01-28 21:28:24 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:24 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:24 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:24 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:28 [32minfo[39m: User database connected
+2026-01-28 21:28:28 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:28 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:28 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:28 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:31 [32minfo[39m: User database connected
+2026-01-28 21:28:31 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:31 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:31 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:31 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:33 [32minfo[39m: User database connected
+2026-01-28 21:28:33 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:33 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:33 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:33 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:36 [32minfo[39m: User database connected
+2026-01-28 21:28:36 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:36 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:36 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:36 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:43 [32minfo[39m: User database connected
+2026-01-28 21:28:43 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:43 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:43 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:43 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:46 [32minfo[39m: База пользователей подключена
+2026-01-28 21:28:46 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:46 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:46 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:46 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:56 [32minfo[39m: База пользователей подключена
+2026-01-28 21:28:56 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:57 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:57 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:57 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:28:59 [32minfo[39m: База пользователей подключена
+2026-01-28 21:28:59 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:28:59 [32minfo[39m: База геоданных подключена
+2026-01-28 21:28:59 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:28:59 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:01 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:01 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:01 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:01 [32minfo[39m: All databases (Geo + Auth) initialized successfully
+2026-01-28 21:29:01 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:12 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:13 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:13 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:13 [32minfo[39m: 
+2026-01-28 21:29:13 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:13 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:13 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:14 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:14 [32minfo[39m: Все базы данных инициализированы
+2026-01-28 21:29:14 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:21 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:21 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:21 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:21 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:21 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:31 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:31 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:32 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:32 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:37 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:37 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:38 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:38 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:38 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:38 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:44 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:44 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:44 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:44 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:44 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:49 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:49 [32minfo[39m: User tables checked (no changes in prod)
+2026-01-28 21:29:49 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:49 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:29:52 [32minfo[39m: База пользователей подключена
+2026-01-28 21:29:52 [32minfo[39m: Таблицы пользователей проверены (без изменений в проде)
+2026-01-28 21:29:52 [32minfo[39m: База геоданных подключена
+2026-01-28 21:29:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:29:52 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:30:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:30:29 [32minfo[39m: Таблицы пользователей синх (без изменений в проде)
+2026-01-28 21:30:29 [32minfo[39m: База геоданных подключена
+2026-01-28 21:30:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:30:29 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:30:32 [32minfo[39m: База пользователей подключена
+2026-01-28 21:30:32 [32minfo[39m: Таблицы пользователей синхронизированы (без изменений в проде)
+2026-01-28 21:30:32 [32minfo[39m: База геоданных подключена
+2026-01-28 21:30:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:30:32 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:30:39 [32minfo[39m: База пользователей подключена
+2026-01-28 21:30:39 [32minfo[39m: Таблицы пользователей синхронизированы { alter: true } (dev)
+2026-01-28 21:30:39 [32minfo[39m: База геоданных подключена
+2026-01-28 21:30:39 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:30:39 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:30:46 [32minfo[39m: База пользователей подключена
+2026-01-28 21:30:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:30:46 [32minfo[39m: База геоданных подключена
+2026-01-28 21:30:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:30:46 [32minfo[39m: Server is running on port 5051
+2026-01-28 21:31:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:03 [32minfo[39m:  5051
+2026-01-28 21:31:05 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:05 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:06 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:06 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:06 [32minfo[39m: Сервер 5051
+2026-01-28 21:31:07 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:07 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:07 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:07 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:07 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:12 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:12 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:12 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:12 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:12 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:16 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:16 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:16 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:16 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:16 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:42 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:42 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:42 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:45 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:45 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:45 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:45 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:45 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:49 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:49 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:54 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:54 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:31:58 [32minfo[39m: База пользователей подключена
+2026-01-28 21:31:58 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:31:58 [32minfo[39m: База геоданных подключена
+2026-01-28 21:31:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:31:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:01 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:01 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:09 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:09 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:09 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:09 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:09 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:11 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:11 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:11 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:11 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:11 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:12 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:12 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:12 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:12 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:12 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:15 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:15 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:15 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:15 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:15 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:18 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:18 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:18 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:18 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:18 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:20 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:20 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:20 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:20 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:20 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:21 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:21 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:21 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:21 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:21 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:24 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:24 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:24 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:24 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:24 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:28 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:28 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:28 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:28 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:28 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:29 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:32 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:32 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:32 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:32 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:33 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:33 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:39 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:39 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:39 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:39 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:39 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:40 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:40 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:40 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:40 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:40 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:49 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:49 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:51 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:51 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:52 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:52 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:52 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:52 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:53 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:53 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:54 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:32:57 [32minfo[39m: База пользователей подключена
+2026-01-28 21:32:57 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:32:57 [32minfo[39m: База геоданных подключена
+2026-01-28 21:32:57 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:32:57 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:01 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:01 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:07 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:07 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:07 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:07 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:07 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:09 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:09 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:09 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:09 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:09 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:21 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:21 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:22 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:23 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:23 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:25 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:25 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:27 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:28 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:28 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:28 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:29 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:34 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:34 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:34 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:34 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:34 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:35 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:36 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:36 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:36 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:41 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:42 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:48 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:48 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:49 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:49 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:56 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:56 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:56 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:56 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:56 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:57 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:57 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:58 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:33:59 [32minfo[39m: База пользователей подключена
+2026-01-28 21:33:59 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:33:59 [32minfo[39m: База геоданных подключена
+2026-01-28 21:33:59 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:33:59 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:07 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:07 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:07 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:07 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:07 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:11 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:11 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:11 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:11 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:11 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:22 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:22 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:22 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:26 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:26 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:33 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:33 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:34 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:34 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:34 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:34 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:34 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:36 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:36 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:36 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:36 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:36 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:38 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:38 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:38 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:48 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:48 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:34:51 [32minfo[39m: База пользователей подключена
+2026-01-28 21:34:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:34:51 [32minfo[39m: База геоданных подключена
+2026-01-28 21:34:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:34:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:13 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:13 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:13 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:13 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:13 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:18 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:18 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:18 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:18 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:18 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:19 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:19 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:19 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:19 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:19 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:24 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:24 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:24 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:24 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:24 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:30 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:30 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:30 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:30 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:30 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:39 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:39 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:39 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:39 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:39 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:45 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:45 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:45 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:45 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:45 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:48 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:48 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:51 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:51 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:35:58 [32minfo[39m: База пользователей подключена
+2026-01-28 21:35:58 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:35:58 [32minfo[39m: База геоданных подключена
+2026-01-28 21:35:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:35:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:02 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:02 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:02 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:02 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:02 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:04 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:04 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:05 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:05 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:05 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:10 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:10 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:10 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:10 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:10 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:12 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:12 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:12 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:12 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:12 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:14 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:14 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:14 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:14 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:21 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:21 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:21 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:21 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:21 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:23 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:23 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:25 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:25 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:30 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:30 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:30 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:30 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:30 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:35 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:35 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:36:39 [32minfo[39m: База пользователей подключена
+2026-01-28 21:36:39 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:36:39 [32minfo[39m: База геоданных подключена
+2026-01-28 21:36:39 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:36:39 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:02 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:02 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:02 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:02 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:02 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:23 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:23 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:27 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:27 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:27 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:27 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:28 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:28 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:28 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:28 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:28 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:35 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:35 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:38 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:38 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:38 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:51 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:51 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:37:54 [32minfo[39m: База пользователей подключена
+2026-01-28 21:37:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:37:54 [32minfo[39m: База геоданных подключена
+2026-01-28 21:37:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:37:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:38:05 [32minfo[39m: База пользователей подключена
+2026-01-28 21:38:05 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:38:05 [32minfo[39m: База геоданных подключена
+2026-01-28 21:38:05 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:38:05 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:38:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:38:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:38:29 [32minfo[39m: База геоданных подключена
+2026-01-28 21:38:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:38:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:38:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:38:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:38:30 [32minfo[39m: База геоданных подключена
+2026-01-28 21:38:30 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:38:30 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:38:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:38:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:38:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:38:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:38:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:38:48 [32minfo[39m: База пользователей подключена
+2026-01-28 21:38:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:38:48 [32minfo[39m: База геоданных подключена
+2026-01-28 21:38:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:38:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:14 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:15 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:15 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:15 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:16 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:16 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:16 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:16 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:16 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:18 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:18 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:18 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:18 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:18 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:26 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:26 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:29 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:30 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:30 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:30 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:30 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:30 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:33 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:34 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:34 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:34 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:43 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:43 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:43 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:43 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:43 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:46 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:46 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:46 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:51 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:52 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:52 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:53 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:53 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:53 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:53 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:53 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:39:56 [32minfo[39m: База пользователей подключена
+2026-01-28 21:39:56 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:39:56 [32minfo[39m: База геоданных подключена
+2026-01-28 21:39:56 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:39:56 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:00 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:00 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:01 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:05 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:05 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:05 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:05 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:05 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:09 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:09 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:09 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:09 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:09 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:11 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:11 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:11 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:11 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:11 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:12 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:12 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:12 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:12 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:12 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:15 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:15 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:16 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:16 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:16 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:24 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:24 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:24 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:24 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:24 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:25 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:25 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:26 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:27 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:27 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:27 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:27 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:27 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:27 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:27 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:41 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:41 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:41 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:41 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:43 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:43 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:44 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:44 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:44 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:52 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:52 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:53 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:53 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:53 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:54 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:54 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:55 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:55 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:56 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:56 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:56 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:40:57 [32minfo[39m: База пользователей подключена
+2026-01-28 21:40:57 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:40:58 [32minfo[39m: База геоданных подключена
+2026-01-28 21:40:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:40:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:00 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:00 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:00 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:00 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:00 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:06 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:06 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:06 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:06 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:06 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:12 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:12 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:13 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:13 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:13 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:23 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:23 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:35 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:35 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:40 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:40 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:40 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:40 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:40 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:43 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:43 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:43 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:43 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:43 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:46 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:46 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:46 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:48 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:48 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:41:58 [32minfo[39m: База пользователей подключена
+2026-01-28 21:41:58 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:41:58 [32minfo[39m: База геоданных подключена
+2026-01-28 21:41:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:41:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:14 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:14 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:14 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:14 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:21 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:21 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:21 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:21 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:21 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:28 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:28 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:28 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:28 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:28 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:31 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:31 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:31 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:31 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:31 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:40 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:40 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:40 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:40 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:40 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:41 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:41 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:41 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:41 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:44 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:44 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:44 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:44 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:44 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:48 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:48 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:50 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:50 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:42:56 [32minfo[39m: База пользователей подключена
+2026-01-28 21:42:56 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:42:56 [32minfo[39m: База геоданных подключена
+2026-01-28 21:42:56 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:42:56 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:04 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:04 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:04 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:04 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:04 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:06 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:06 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:06 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:06 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:06 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:08 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:08 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:08 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:08 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:08 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:29 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:29 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:30 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:30 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:30 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:30 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:30 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:34 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:34 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:34 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:34 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:34 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:36 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:36 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:38 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:41 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:41 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:41 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:41 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:44 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:44 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:44 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:44 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:44 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:50 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:50 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:43:50 [32minfo[39m: База пользователей подключена
+2026-01-28 21:43:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:43:50 [32minfo[39m: База геоданных подключена
+2026-01-28 21:43:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:43:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:01 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:02 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:02 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:02 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:05 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:05 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:05 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:05 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:05 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:07 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:07 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:07 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:07 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:07 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:17 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:17 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:17 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:17 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:17 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:17 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:17 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:18 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:18 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:18 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:22 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:22 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:22 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:26 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:26 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:27 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:27 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:27 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:27 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:32 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:32 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:32 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:32 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:33 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:33 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:41 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:41 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:41 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:41 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:47 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:47 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:47 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:47 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:47 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:44:50 [32minfo[39m: База пользователей подключена
+2026-01-28 21:44:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:44:50 [32minfo[39m: База геоданных подключена
+2026-01-28 21:44:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:44:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:06 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:06 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:06 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:06 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:06 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:10 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:10 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:10 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:10 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:10 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:14 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:14 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:14 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:14 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:19 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:19 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:19 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:19 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:19 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:22 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:22 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:22 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:37 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:37 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:38 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:38 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:38 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:42 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:42 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:42 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:44 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:44 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:44 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:44 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:44 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:50 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:50 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:51 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:51 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:45:54 [32minfo[39m: База пользователей подключена
+2026-01-28 21:45:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:45:54 [32minfo[39m: База геоданных подключена
+2026-01-28 21:45:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:45:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:46:01 [32minfo[39m: База пользователей подключена
+2026-01-28 21:46:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:46:01 [32minfo[39m: База геоданных подключена
+2026-01-28 21:46:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:46:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:46:03 [32minfo[39m: База пользователей подключена
+2026-01-28 21:46:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:46:03 [32minfo[39m: База геоданных подключена
+2026-01-28 21:46:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:46:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:46:05 [32minfo[39m: База пользователей подключена
+2026-01-28 21:46:05 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:46:05 [32minfo[39m: База геоданных подключена
+2026-01-28 21:46:05 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:46:05 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 21:46:13 [32minfo[39m: База пользователей подключена
+2026-01-28 21:46:13 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 21:46:13 [32minfo[39m: База геоданных подключена
+2026-01-28 21:46:13 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 21:46:13 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:03:58 [32minfo[39m: База пользователей подключена
+2026-01-28 23:03:58 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:03:58 [32minfo[39m: База геоданных подключена
+2026-01-28 23:03:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:03:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:26 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:26 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:28 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:28 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:29 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:35 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:35 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:39 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:39 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:39 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:39 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:39 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:42 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:42 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:42 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:47 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:47 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:48 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:04:49 [32minfo[39m: База пользователей подключена
+2026-01-28 23:04:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:04:49 [32minfo[39m: База геоданных подключена
+2026-01-28 23:04:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:04:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:05:01 [32minfo[39m: База пользователей подключена
+2026-01-28 23:05:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:05:01 [32minfo[39m: База геоданных подключена
+2026-01-28 23:05:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:05:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:05:04 [32minfo[39m: База пользователей подключена
+2026-01-28 23:05:04 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:05:04 [32minfo[39m: База геоданных подключена
+2026-01-28 23:05:04 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:05:04 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:07:36 [32minfo[39m: База пользователей подключена
+2026-01-28 23:07:36 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:07:36 [32minfo[39m: База геоданных подключена
+2026-01-28 23:07:36 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:07:36 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:08:53 [32minfo[39m: База пользователей подключена
+2026-01-28 23:08:53 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:08:53 [32minfo[39m: База геоданных подключена
+2026-01-28 23:08:53 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:08:53 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:09:57 [32minfo[39m: База пользователей подключена
+2026-01-28 23:09:57 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:09:57 [32minfo[39m: База геоданных подключена
+2026-01-28 23:09:57 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:09:57 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:10:00 [32minfo[39m: База пользователей подключена
+2026-01-28 23:10:00 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:10:00 [32minfo[39m: База геоданных подключена
+2026-01-28 23:10:00 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:10:00 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:10:22 [32minfo[39m: База пользователей подключена
+2026-01-28 23:10:22 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:10:22 [32minfo[39m: База геоданных подключена
+2026-01-28 23:10:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:10:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:10:25 [32minfo[39m: База пользователей подключена
+2026-01-28 23:10:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:10:25 [32minfo[39m: База геоданных подключена
+2026-01-28 23:10:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:10:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:10:37 [32minfo[39m: База пользователей подключена
+2026-01-28 23:10:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:10:37 [32minfo[39m: База геоданных подключена
+2026-01-28 23:10:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:10:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:14:09 [32minfo[39m: База пользователей подключена
+2026-01-28 23:14:09 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:14:09 [32minfo[39m: База геоданных подключена
+2026-01-28 23:14:09 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:14:09 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:14:53 [32minfo[39m: База пользователей подключена
+2026-01-28 23:14:53 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:14:53 [32minfo[39m: База геоданных подключена
+2026-01-28 23:14:53 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:14:53 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:14:55 [32minfo[39m: База пользователей подключена
+2026-01-28 23:14:55 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:14:55 [32minfo[39m: База геоданных подключена
+2026-01-28 23:14:55 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:14:55 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:15:36 [32minfo[39m: База пользователей подключена
+2026-01-28 23:15:36 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:15:36 [32minfo[39m: База геоданных подключена
+2026-01-28 23:15:36 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:15:36 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:15:38 [32minfo[39m: База пользователей подключена
+2026-01-28 23:15:38 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:15:38 [32minfo[39m: База геоданных подключена
+2026-01-28 23:15:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:15:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:15:42 [32minfo[39m: База пользователей подключена
+2026-01-28 23:15:42 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:15:42 [32minfo[39m: База геоданных подключена
+2026-01-28 23:15:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:15:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:20:18 [31merror[39m: Подключение к базе геоданных не удалось:
+2026-01-28 23:20:23 [32minfo[39m: База пользователей подключена
+2026-01-28 23:20:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:20:23 [32minfo[39m: База геоданных подключена
+2026-01-28 23:20:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:20:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:22:11 [32minfo[39m: База пользователей подключена
+2026-01-28 23:22:11 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:22:11 [32minfo[39m: База геоданных подключена
+2026-01-28 23:22:11 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:22:11 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:22:15 [32minfo[39m: [object Object]
+2026-01-28 23:22:43 [32minfo[39m: Результаты:
+2026-01-28 23:24:50 [32minfo[39m: База пользователей подключена
+2026-01-28 23:24:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:24:50 [32minfo[39m: База геоданных подключена
+2026-01-28 23:24:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:24:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:25:26 [32minfo[39m: База пользователей подключена
+2026-01-28 23:25:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:25:26 [32minfo[39m: База геоданных подключена
+2026-01-28 23:25:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:25:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:25:52 [32minfo[39m: База пользователей подключена
+2026-01-28 23:25:52 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:25:52 [32minfo[39m: База геоданных подключена
+2026-01-28 23:25:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:25:52 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:27:49 [32minfo[39m: База пользователей подключена
+2026-01-28 23:27:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:27:49 [32minfo[39m: База геоданных подключена
+2026-01-28 23:27:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:27:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:27:51 [32minfo[39m: База пользователей подключена
+2026-01-28 23:27:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:27:51 [32minfo[39m: База геоданных подключена
+2026-01-28 23:27:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:27:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:27:54 [32minfo[39m: База пользователей подключена
+2026-01-28 23:27:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:27:54 [32minfo[39m: База геоданных подключена
+2026-01-28 23:27:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:27:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:27:56 [31merror[39m: points is not defined
+2026-01-28 23:28:07 [32minfo[39m: База пользователей подключена
+2026-01-28 23:28:07 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:28:07 [32minfo[39m: База геоданных подключена
+2026-01-28 23:28:07 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:28:07 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:29:35 [32minfo[39m: База пользователей подключена
+2026-01-28 23:29:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:29:35 [32minfo[39m: База геоданных подключена
+2026-01-28 23:29:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:29:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-28 23:29:41 [32minfo[39m: База пользователей подключена
+2026-01-28 23:29:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-28 23:29:42 [32minfo[39m: База геоданных подключена
+2026-01-28 23:29:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-28 23:29:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:18:14 [32minfo[39m: База пользователей подключена
+2026-01-29 00:18:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:18:14 [32minfo[39m: База геоданных подключена
+2026-01-29 00:18:14 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:18:14 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:26 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:26 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:31 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:31 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:31 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:31 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:31 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:32 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:32 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:32 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:32 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:37 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:37 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:40 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:40 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:40 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:40 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:40 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:43 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:43 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:43 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:43 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:43 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:46 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:46 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:46 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:52 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:52 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:52 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:52 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:54 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:54 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:56 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:56 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:56 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:56 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:56 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:22:59 [32minfo[39m: База пользователей подключена
+2026-01-29 00:22:59 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:22:59 [32minfo[39m: База геоданных подключена
+2026-01-29 00:22:59 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:22:59 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:00 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:00 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:00 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:00 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:00 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:02 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:02 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:02 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:02 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:02 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:03 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:04 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:04 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:04 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:06 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:06 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:06 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:06 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:06 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:08 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:08 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:08 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:08 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:08 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:10 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:10 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:10 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:10 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:10 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:17 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:17 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:17 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:17 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:17 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:24 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:24 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:24 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:24 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:24 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:26 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:26 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:26 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:26 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:26 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:30 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:30 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:30 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:30 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:30 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:33 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:33 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:38 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:38 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:38 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:43 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:43 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:43 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:43 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:43 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:45 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:45 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:45 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:45 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:45 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:46 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:46 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:46 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:49 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:49 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:50 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:51 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:52 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:52 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:52 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:52 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:55 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:55 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:56 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:56 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:56 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:23:58 [32minfo[39m: База пользователей подключена
+2026-01-29 00:23:58 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:23:58 [32minfo[39m: База геоданных подключена
+2026-01-29 00:23:58 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:23:58 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:00 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:01 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:03 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:03 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:03 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:03 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:03 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:08 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:08 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:08 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:08 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:08 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:10 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:10 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:10 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:10 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:10 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:13 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:13 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:13 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:13 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:13 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:19 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:19 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:19 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:19 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:19 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:22 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:22 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:22 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:24 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:25 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:27 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:28 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:28 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:28 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:32 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:32 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:33 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:36 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:37 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:37 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:37 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:37 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:38 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:38 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:38 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:38 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:38 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:42 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:42 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:42 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:24:44 [32minfo[39m: База пользователей подключена
+2026-01-29 00:24:44 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:24:44 [32minfo[39m: База геоданных подключена
+2026-01-29 00:24:44 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:24:44 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:27:06 [32minfo[39m: База пользователей подключена
+2026-01-29 00:27:06 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:27:06 [32minfo[39m: База геоданных подключена
+2026-01-29 00:27:06 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:27:06 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:30:34 [32minfo[39m: База пользователей подключена
+2026-01-29 00:30:34 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:30:34 [32minfo[39m: База геоданных подключена
+2026-01-29 00:30:34 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:30:34 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:32:46 [32minfo[39m: База пользователей подключена
+2026-01-29 00:32:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:32:46 [32minfo[39m: База геоданных подключена
+2026-01-29 00:32:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:32:46 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:32:48 [32minfo[39m: База пользователей подключена
+2026-01-29 00:32:48 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:32:48 [32minfo[39m: База геоданных подключена
+2026-01-29 00:32:48 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:32:48 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:32:50 [32minfo[39m: База пользователей подключена
+2026-01-29 00:32:50 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:32:50 [32minfo[39m: База геоданных подключена
+2026-01-29 00:32:50 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:32:50 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:32:52 [32minfo[39m: База пользователей подключена
+2026-01-29 00:32:52 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:32:52 [32minfo[39m: База геоданных подключена
+2026-01-29 00:32:52 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:32:52 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 00:32:54 [32minfo[39m: База пользователей подключена
+2026-01-29 00:32:54 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 00:32:54 [32minfo[39m: База геоданных подключена
+2026-01-29 00:32:54 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 00:32:54 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:30:23 [32minfo[39m: База пользователей подключена
+2026-01-29 01:30:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:30:23 [32minfo[39m: База геоданных подключена
+2026-01-29 01:30:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:30:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:30:31 [32minfo[39m: База пользователей подключена
+2026-01-29 01:30:31 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:30:31 [32minfo[39m: База геоданных подключена
+2026-01-29 01:30:31 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:30:31 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:30:41 [32minfo[39m: База пользователей подключена
+2026-01-29 01:30:41 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:30:41 [32minfo[39m: База геоданных подключена
+2026-01-29 01:30:41 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:30:41 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:30:49 [32minfo[39m: База пользователей подключена
+2026-01-29 01:30:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:30:49 [32minfo[39m: База геоданных подключена
+2026-01-29 01:30:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:30:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:30:51 [32minfo[39m: База пользователей подключена
+2026-01-29 01:30:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:30:51 [32minfo[39m: База геоданных подключена
+2026-01-29 01:30:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:30:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:31:01 [32minfo[39m: База пользователей подключена
+2026-01-29 01:31:01 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:31:01 [32minfo[39m: База геоданных подключена
+2026-01-29 01:31:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:31:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:31:07 [32minfo[39m: База пользователей подключена
+2026-01-29 01:31:07 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:31:07 [32minfo[39m: База геоданных подключена
+2026-01-29 01:31:07 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:31:07 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:31:10 [32minfo[39m: База пользователей подключена
+2026-01-29 01:31:10 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:31:10 [32minfo[39m: База геоданных подключена
+2026-01-29 01:31:10 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:31:10 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:31:46 [32minfo[39m: [TIMING] tags=0.0ms db=32297.6ms osrm=449.5ms json=13.1ms total=32760.3ms
+2026-01-29 01:36:25 [32minfo[39m: База пользователей подключена
+2026-01-29 01:36:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:36:25 [32minfo[39m: База геоданных подключена
+2026-01-29 01:36:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:36:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:36:27 [32minfo[39m: База пользователей подключена
+2026-01-29 01:36:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:36:28 [32minfo[39m: База геоданных подключена
+2026-01-29 01:36:28 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:36:28 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 01:36:29 [32minfo[39m: База пользователей подключена
+2026-01-29 01:36:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 01:36:29 [32minfo[39m: База геоданных подключена
+2026-01-29 01:36:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 01:36:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 02:06:51 [32minfo[39m: База пользователей подключена
+2026-01-29 02:06:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 02:06:51 [32minfo[39m: База геоданных подключена
+2026-01-29 02:06:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 02:06:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 02:06:55 [32minfo[39m: Ошибка запроса: syntax error at or near ","
+2026-01-29 02:06:55 [32minfo[39m: [TIMING] tags=0.0ms db=26.6ms osrm=0.0ms json=1.9ms total=28.6ms
+2026-01-29 02:07:00 [32minfo[39m: Ошибка запроса: syntax error at or near ","
+2026-01-29 02:07:00 [32minfo[39m: [TIMING] tags=0.0ms db=21.4ms osrm=0.0ms json=1.2ms total=22.7ms
+2026-01-29 04:51:40 [32minfo[39m: База пользователей подключена
+2026-01-29 04:51:40 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 04:51:40 [32minfo[39m: База геоданных подключена
+2026-01-29 04:51:40 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 04:51:40 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 04:51:44 [32minfo[39m: Ошибка запроса: syntax error at or near ","
+2026-01-29 04:51:44 [32minfo[39m: [TIMING] tags=0.0ms db=13.0ms osrm=0.0ms json=5.4ms total=18.4ms
+2026-01-29 04:51:46 [32minfo[39m: Ошибка запроса: syntax error at or near ","
+2026-01-29 04:51:46 [32minfo[39m: [TIMING] tags=0.0ms db=12.1ms osrm=0.0ms json=0.9ms total=13.0ms
+2026-01-29 04:52:35 [32minfo[39m: База пользователей подключена
+2026-01-29 04:52:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 04:52:35 [32minfo[39m: База геоданных подключена
+2026-01-29 04:52:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 04:52:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 04:52:42 [32minfo[39m: База пользователей подключена
+2026-01-29 04:52:42 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 04:52:42 [32minfo[39m: База геоданных подключена
+2026-01-29 04:52:42 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 04:52:42 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 04:52:47 [32minfo[39m: [TIMING] tags=0.0ms db=1575.3ms osrm=974.3ms json=6.0ms total=2555.6ms
+2026-01-29 04:54:26 [32minfo[39m: [TIMING] tags=0.0ms db=3503.7ms osrm=755.7ms json=5.3ms total=4264.8ms
+2026-01-29 04:54:26 [32minfo[39m: [TIMING] tags=0.0ms db=3512.5ms osrm=759.7ms json=4.4ms total=4276.6ms
+2026-01-29 04:57:51 [32minfo[39m: База пользователей подключена
+2026-01-29 04:57:51 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 04:57:51 [32minfo[39m: База геоданных подключена
+2026-01-29 04:57:51 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 04:57:51 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 04:57:57 [32minfo[39m: [TIMING] tags=0.4ms db=1270.2ms osrm=60.4ms json=23.7ms total=1354.7ms
+2026-01-29 04:59:31 [32minfo[39m: [TIMING] tags=0.2ms db=1165.9ms osrm=36.6ms json=22.4ms total=1225.1ms
+2026-01-29 05:00:22 [32minfo[39m: База пользователей подключена
+2026-01-29 05:00:22 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:00:22 [32minfo[39m: База геоданных подключена
+2026-01-29 05:00:22 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:00:22 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 05:00:23 [32minfo[39m: База пользователей подключена
+2026-01-29 05:00:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:00:23 [32minfo[39m: База геоданных подключена
+2026-01-29 05:00:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:00:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 05:00:28 [32minfo[39m: [TIMING] tags=0.0ms db=1080.9ms osrm=4.4ms json=17.6ms total=1103.0ms
+2026-01-29 05:01:03 [32minfo[39m: База пользователей подключена
+2026-01-29 05:01:04 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:01:04 [32minfo[39m: База геоданных подключена
+2026-01-29 05:01:04 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:01:04 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 05:01:10 [32minfo[39m: [TIMING] tags=0.0ms db=1158.5ms osrm=2.7ms json=7.6ms total=1168.8ms
+2026-01-29 05:01:10 [32minfo[39m: [TIMING] tags=0.0ms db=1190.4ms osrm=0.8ms json=5.9ms total=1197.1ms
+2026-01-29 05:04:33 [32minfo[39m: База пользователей подключена
+2026-01-29 05:04:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:04:33 [32minfo[39m: База геоданных подключена
+2026-01-29 05:04:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:04:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 05:04:35 [32minfo[39m: База пользователей подключена
+2026-01-29 05:04:35 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:04:35 [32minfo[39m: База геоданных подключена
+2026-01-29 05:04:35 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:04:35 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 05:05:00 [32minfo[39m: База пользователей подключена
+2026-01-29 05:05:00 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:05:01 [32minfo[39m: База геоданных подключена
+2026-01-29 05:05:01 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:05:01 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 05:06:16 [32minfo[39m: База пользователей подключена
+2026-01-29 05:06:16 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 05:06:17 [32minfo[39m: База геоданных подключена
+2026-01-29 05:06:17 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 05:06:17 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:03:34 [32minfo[39m: [TIMING] tags=0.1ms db=834.4ms osrm=2.2ms json=21.7ms total=858.5ms
+2026-01-29 11:53:51 [32minfo[39m: [TIMING] tags=0.7ms db=594.9ms osrm=1.6ms json=6.3ms total=603.5ms
+2026-01-29 11:53:56 [32minfo[39m: [TIMING] tags=0.0ms db=104.7ms osrm=0.5ms json=1.3ms total=106.4ms
+2026-01-29 11:53:57 [32minfo[39m: [TIMING] tags=0.0ms db=79.3ms osrm=0.3ms json=1.0ms total=80.6ms
+2026-01-29 11:53:58 [32minfo[39m: [TIMING] tags=0.0ms db=103.2ms osrm=1.0ms json=2.6ms total=106.9ms
+2026-01-29 11:55:01 [32minfo[39m: База пользователей подключена
+2026-01-29 11:55:02 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:55:02 [32minfo[39m: База геоданных подключена
+2026-01-29 11:55:02 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:55:02 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:55:06 [32minfo[39m: [TIMING] tags=0.0ms db=678.8ms osrm=0.7ms json=9.6ms total=689.2ms
+2026-01-29 11:55:47 [32minfo[39m: База пользователей подключена
+2026-01-29 11:55:47 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:55:47 [32minfo[39m: База геоданных подключена
+2026-01-29 11:55:47 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:55:47 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:55:50 [32minfo[39m: [TIMING] tags=0.0ms db=243.8ms osrm=724.4ms json=13.9ms total=982.1ms
+2026-01-29 11:56:03 [32minfo[39m: [TIMING] tags=0.9ms db=1038.7ms osrm=284.2ms json=1.5ms total=1325.3ms
+2026-01-29 11:56:26 [32minfo[39m: База пользователей подключена
+2026-01-29 11:56:27 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:56:27 [32minfo[39m: База геоданных подключена
+2026-01-29 11:56:27 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:56:27 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:56:39 [32minfo[39m: База пользователей подключена
+2026-01-29 11:56:39 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:56:39 [32minfo[39m: База геоданных подключена
+2026-01-29 11:56:39 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:56:39 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:56:40 [32minfo[39m: База пользователей подключена
+2026-01-29 11:56:40 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:56:40 [32minfo[39m: База геоданных подключена
+2026-01-29 11:56:40 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:56:40 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:58:25 [32minfo[39m: База пользователей подключена
+2026-01-29 11:58:25 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:58:25 [32minfo[39m: База геоданных подключена
+2026-01-29 11:58:25 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:58:25 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:58:29 [32minfo[39m: База пользователей подключена
+2026-01-29 11:58:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 11:58:29 [32minfo[39m: База геоданных подключена
+2026-01-29 11:58:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 11:58:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 11:58:33 [32minfo[39m: [TIMING] tags=0.0ms db=670.6ms osrm=458.3ms json=12.2ms total=1141.1ms
+2026-01-29 11:58:44 [32minfo[39m: [TIMING] tags=0.2ms db=445.8ms osrm=229.6ms json=16.9ms total=692.4ms
+2026-01-29 12:04:51 [32minfo[39m: [TIMING] tags=0.9ms db=674.3ms osrm=499.5ms json=14.9ms total=1189.7ms
+2026-01-29 12:05:26 [32minfo[39m: [TIMING] tags=0.8ms db=659.6ms osrm=313.7ms json=18.1ms total=992.2ms
+2026-01-29 12:05:50 [32minfo[39m: [TIMING] tags=0.2ms db=3068.7ms osrm=24.8ms json=3.2ms total=3096.9ms
+2026-01-29 12:08:05 [32minfo[39m: [TIMING] tags=1.2ms db=936.0ms osrm=216.7ms json=13.4ms total=1167.3ms
+2026-01-29 12:08:37 [32minfo[39m: [TIMING] tags=0.0ms db=797.9ms osrm=582.9ms json=19.7ms total=1400.5ms
+2026-01-29 12:08:58 [32minfo[39m: [TIMING] tags=0.3ms db=141773.1ms osrm=340.1ms json=62.9ms total=142176.4ms
+2026-01-29 12:08:58 [32minfo[39m: [TIMING] tags=0.1ms db=7450.1ms osrm=37.4ms json=18.9ms total=7506.4ms
+2026-01-29 12:11:05 [32minfo[39m: [TIMING] tags=0.1ms db=159761.7ms osrm=1673.0ms json=120.2ms total=161554.9ms
+2026-01-29 12:33:14 [32minfo[39m: База пользователей подключена
+2026-01-29 12:33:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:33:15 [32minfo[39m: База геоданных подключена
+2026-01-29 12:33:15 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:33:15 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:33:33 [32minfo[39m: [TIMING] tags=0.2ms db=1675.8ms osrm=1006.1ms json=7.8ms total=2689.9ms
+2026-01-29 12:35:12 [32minfo[39m: База пользователей подключена
+2026-01-29 12:35:12 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:35:12 [32minfo[39m: База геоданных подключена
+2026-01-29 12:35:12 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:35:12 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:35:13 [32minfo[39m: База пользователей подключена
+2026-01-29 12:35:13 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:35:14 [32minfo[39m: База геоданных подключена
+2026-01-29 12:35:14 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:35:14 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:35:16 [32minfo[39m: База пользователей подключена
+2026-01-29 12:35:16 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:35:16 [32minfo[39m: База геоданных подключена
+2026-01-29 12:35:16 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:35:16 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:35:29 [32minfo[39m: База пользователей подключена
+2026-01-29 12:35:29 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:35:29 [32minfo[39m: База геоданных подключена
+2026-01-29 12:35:29 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:35:29 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:35:32 [32minfo[39m: База пользователей подключена
+2026-01-29 12:35:32 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:35:32 [32minfo[39m: База геоданных подключена
+2026-01-29 12:35:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:35:32 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:35:56 [32minfo[39m: [TIMING] tags=0.1ms db=856.6ms osrm=79.3ms json=21.9ms total=957.8ms
+2026-01-29 12:36:08 [32minfo[39m: [TIMING] tags=0.0ms db=362.9ms osrm=13.2ms json=1.0ms total=377.2ms
+2026-01-29 12:36:08 [32minfo[39m: [TIMING] tags=0.1ms db=387.8ms osrm=16.1ms json=0.6ms total=404.6ms
+2026-01-29 12:37:49 [32minfo[39m: База пользователей подключена
+2026-01-29 12:37:49 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:37:49 [32minfo[39m: База геоданных подключена
+2026-01-29 12:37:49 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:37:49 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:37:54 [32minfo[39m: [TIMING] tags=0.0ms db=826.5ms osrm=2182.3ms json=22.1ms total=3030.9ms
+2026-01-29 12:39:32 [32minfo[39m: База пользователей подключена
+2026-01-29 12:39:32 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:39:32 [32minfo[39m: База геоданных подключена
+2026-01-29 12:39:32 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:39:32 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:39:33 [32minfo[39m: База пользователей подключена
+2026-01-29 12:39:33 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:39:33 [32minfo[39m: База геоданных подключена
+2026-01-29 12:39:33 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:39:33 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:39:46 [32minfo[39m: База пользователей подключена
+2026-01-29 12:39:46 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:39:46 [32minfo[39m: База геоданных подключена
+2026-01-29 12:39:46 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:39:46 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:39:55 [32minfo[39m: База пользователей подключена
+2026-01-29 12:39:55 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:39:55 [32minfo[39m: База геоданных подключена
+2026-01-29 12:39:55 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:39:55 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:39:57 [32minfo[39m: База пользователей подключена
+2026-01-29 12:39:57 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:39:57 [32minfo[39m: База геоданных подключена
+2026-01-29 12:39:57 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:39:57 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:40:04 [32minfo[39m: База пользователей подключена
+2026-01-29 12:40:04 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:40:05 [32minfo[39m: База геоданных подключена
+2026-01-29 12:40:05 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:40:05 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:40:13 [32minfo[39m: База пользователей подключена
+2026-01-29 12:40:13 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:40:13 [32minfo[39m: База геоданных подключена
+2026-01-29 12:40:13 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:40:13 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:40:23 [32minfo[39m: База пользователей подключена
+2026-01-29 12:40:23 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:40:23 [32minfo[39m: База геоданных подключена
+2026-01-29 12:40:23 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:40:23 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:40:31 [32minfo[39m: [TIMING] tags=0.0ms db=253.1ms osrm=256.5ms json=7.0ms total=516.6ms
+2026-01-29 12:41:04 [32minfo[39m: База пользователей подключена
+2026-01-29 12:41:04 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:41:04 [32minfo[39m: База геоданных подключена
+2026-01-29 12:41:04 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:41:04 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:41:14 [32minfo[39m: База пользователей подключена
+2026-01-29 12:41:14 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:41:14 [32minfo[39m: База геоданных подключена
+2026-01-29 12:41:14 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:41:14 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:41:16 [32minfo[39m: База пользователей подключена
+2026-01-29 12:41:16 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:41:16 [32minfo[39m: База геоданных подключена
+2026-01-29 12:41:16 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:41:16 [32minfo[39m: Сервер запущен на порту 5051
+2026-01-29 12:41:19 [32minfo[39m: [TIMING] tags=0.0ms db=319.0ms osrm=208.8ms json=7.2ms total=535.1ms
+2026-01-29 12:41:38 [32minfo[39m: [TIMING] tags=0.0ms db=265.8ms osrm=31.7ms json=1.0ms total=298.5ms
+2026-01-29 12:44:16 [32minfo[39m: База пользователей подключена
+2026-01-29 12:44:16 [32minfo[39m: Таблицы пользователей синхронизированы { alter: false } (dev)
+2026-01-29 12:44:16 [32minfo[39m: База геоданных подключена
+2026-01-29 12:44:16 [32minfo[39m: Подключение ко всем базам данных успешно выполнено
+2026-01-29 12:44:16 [32minfo[39m: Сервер запущен на порту 5051

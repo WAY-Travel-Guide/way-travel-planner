@@ -1,43 +1,56 @@
 import { QueryTypes } from 'sequelize';
-import { PlaceModel } from './model.js';
-// import { sequelize } from '../../config/database.js';
+import { sequelizeGeoDB } from '../../config/database.js';
+import { logger } from '../../core/logger.js';
 
+// Сервис для работы с геоданными
 class GeoDataService {
+
+    // Получение маршрута по фильтрам
     async getRouteByFilters(longitude, latitude, radius, keysArray) {
         const sql = `
             SELECT
                 n.id,
                 ST_X(n.geom) AS longitude,
                 ST_Y(n.geom) AS latitude,
-                n.tags,
-                n.geom
+                n.tags
             FROM nodes n
             WHERE ST_DWithin(
-                n.geom,
-                ST_SetSRID(ST_MakePoint(:long, :lat), 4326)::geography,
+                ST_Transform(n.geom, 3857),
+                ST_Transform(ST_SetSRID(ST_MakePoint(:long, :lat), 4326), 3857),
                 :radius
             )
             AND n.tags ?| ARRAY[:keys]
-        `; // Используем плейсхолдеры для параметров
+            LIMIT 100
+        `;
 
         const replacements = {
-            long: longitude,
-            lat: latitude,
-            radius,
-            keys: keysArray, // Массив ключей
+            long: longitude,                    // Долгота
+            lat: latitude,                      // Широта
+            radius,                             // Радиус в метрах
+            keys: keysArray,                    // Массив ключей
         };
 
         try {
-            const results = await sequelize.query(sql, {
+
+            // Выполняем запрос к базе данных через Sequelize
+            const results = await sequelizeGeoDB.query(sql, {
                 replacements,
-                type: QueryTypes.SELECT,
-                model: PlaceModel,
-                mapToModel: true,
+                type: QueryTypes.SELECT,        // Тип запроса - SELECT
+                raw: true,
             });
-            logger.info('Результаты:', results.map(r => r.toJSON()));
-            return results;
+
+            // Приводим к числам (Postgres иногда отдаёт строки)
+            const normalized = results.map(r => ({
+                ...r,
+                longitude: Number(r.longitude),
+                latitude: Number(r.latitude),
+            }));
+
+            return normalized;
+
         } catch (error) {
             logger.info('Ошибка запроса:', error);
+            return [];
         }
     }
 }

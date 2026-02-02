@@ -1,24 +1,36 @@
-import {config} from '../../config/index.js';
-const { OSRM_URL } = config;
+import { config } from '../../config/index.js';
+import { logger } from '../../core/logger.js';
 
+// Сервис для работы с маршрутами
 class RoutingService {
+
+    // Построение маршрута через OSRM
     async buildRoute(points, options = {}) {
         if (!points || points.length < 2) return null;
 
         const validPoints = points
             .filter(p => typeof p.longitude === 'number' && typeof p.latitude === 'number')
-            .slice(0, options.maxPoints || 500);
+            .slice(0, 100);
 
         if (validPoints.length < 2) return null;
 
-        const coords = validPoints.map(p => [p.longitude, p.latitude]);
-        const coordString = coords.map(c => c.join(',')).join(';');
+        // Формируем строку координат для OSRM
+        const coordString = validPoints.map(p => `${p.longitude},${p.latitude}`).join(';');
 
-        const url = `${OSRM_URL}/route/v1/driving/${coordString}?overview=full&geometries=geojson`;
-        //const url = `${OSRM_URL}/trip/v1/driving/${coordString}?overview=full&geometries=geojson`;
+        const url =
+            `${config.osrmUrl}/trip/v1/driving/${coordString}` +
+            `?roundtrip=false` +
+            `&source=first` +
+            `&destination=last` +
+            `&overview=full` +
+            `&steps=false` +
+            `&geometries=geojson`;
+
+
+        logger.debug('[OSRM] URL:', url);
 
         try {
-            const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
+            const res = await fetch(url);
 
             if (!res.ok) {
                 const text = await res.text();
@@ -27,24 +39,23 @@ class RoutingService {
 
             const data = await res.json();
 
-            if (!data.routes?.[0]) {
-                console.warn('OSRM: маршрут не построен', data);
+            if (!data.trips?.[0]) {
+                logger.warn('OSRM: маршрут не построен', data);
                 return null;
             }
 
-            const route = data.routes[0];
+            const route = data.trips[0];
 
-            // ГЛАВНОЕ ИСПРАВЛЕНИЕ: берём координаты из GeoJSON
+            // Формируем результат в виде GeoJSON
             const coordinates = route.geometry.type === 'LineString'
                 ? route.geometry.coordinates
-                : route.geometry; // на случай, если вдруг придёт массив
+                : route.geometry;                                    // на случай, если вдруг придёт массив
 
             return {
-                geometry: coordinates,                    // ← теперь точно массив [[lon, lat], ...]
+                geometry: coordinates,
                 distance_km: Math.round(route.distance / 100) / 10,  // 15.0 км
                 duration_min: Math.round(route.duration / 60),       // 25 мин
             };
-
         } catch (err) {
             console.error('RoutingService error:', err.message);
             return null;

@@ -1,7 +1,9 @@
 import { logger } from '../logger.js';
 import { sendError } from '../../utils/response.js';
 
+// Глобальный обработчик ошибок для Express
 const errorMiddleware = (err, req, res, next) => {
+    
     // Логируем ошибку с информацией о запросе
     logger.error(`Error in ${req.method} ${req.originalUrl}: ${err.message}`);
 
