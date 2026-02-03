@@ -20,7 +20,7 @@ class EmailService {
     async sendConfirmationEmail(email, token, username) {
         try {
             const confirmationLink =
-  `${config.backendUrl || 'http://localhost:5173'}/api/users/confirm-email?token=${token}`;
+  `${config.backendUrl || 'http://localhost:5051'}/api/users/confirm-email?token=${token}`;
             
             const mailOptions = {
                 from: process.env.EMAIL_USER || 'your-email@gmail.com',
@@ -55,7 +55,7 @@ class EmailService {
 
     async sendPasswordResetEmail(email, token, username) {
         try {
-            const resetLink = `${config.frontendUrl || 'http://localhost:5173'}/api/users/reset-password?token=${token}`;
+            const resetLink = `${config.frontendUrl || 'http://localhost:5051'}/api/users/reset-password?token=${token}`;
             
             const mailOptions = {
                 from: process.env.EMAIL_USER,
