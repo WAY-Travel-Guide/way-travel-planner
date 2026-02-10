@@ -1,41 +1,34 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import AuthProvider from "./AuthProvider";
-import { Loader } from "../shared";
+import { PageRouter } from "./routes/PageRouter.jsx";
 
-/**
- * Главный компонент приложения.
- *
- * @function
- * @returns {JSX.Element} Корневой компонент приложения с роутингом и авторизацией.
- */
+// Основной компонент приложения, отвечающий за маршрутизацию и авторизацию.
 function App() {
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Снимаем "loading", когда всё загрузилось
-    const handleLoad = () => {
-      setTimeout(() => { setLoading(false); }, 1000);
-    };
+  // Состояние загрузки страницы
+  // const [loading, setLoading] = useState(true);
 
-    if (document.readyState === "complete") {
-      // Страница уже загружена
-      setLoading(false);
-    } else {
-      // Ждём событие load
-      window.addEventListener("load", handleLoad);
-    }
+  // useEffect(() => {
+    
+  //   // Снимаем "loading", когда всё загрузилось
+  //   const handleLoad = () => {
+  //     setTimeout(() => { setLoading(false); }, 1000);
+  //   };
 
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
+  //   if (document.readyState === "complete") {
+  //     // Страница уже загружена
+  //     setLoading(false);
+  //   } else {
+  //     // Ждём событие load
+  //     window.addEventListener("load", handleLoad);
+  //   }
 
-  
-
-  console.log("App component rendering...");
+  //   return () => window.removeEventListener("load", handleLoad);
+  // }, []);
   
   return (
     <BrowserRouter>
-      {loading ? <Loader /> : <AuthProvider />}
+      <PageRouter />
     </BrowserRouter>
   );
 }

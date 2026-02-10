@@ -1,32 +1,12 @@
-/**
- * @fileoverview roleMiddleware.js
- * @description Express-middleware для проверки JWT и наличия нужных ролей у пользователя.
- *
- * @param {Array<string>} roles - Список ролей, которым разрешён доступ к маршруту (например, ['Admin', 'Moderator']).
- * @returns {function} Middleware-функция для Express.
- *
- * @usage
- * // Только администраторы могут получить список всех пользователей:
- * UserRouter.get('/users', roleMiddleware(['Admin']), UserController.getAllUsers);
- *
- * @description
- * - Проверяет наличие заголовка Authorization: Bearer <JWT>.
- * - Проверяет валидность JWT (подпись, срок действия).
- * - Проверяет, что у пользователя в JWT есть хотя бы одна из указанных ролей.
- * - Если проверки не пройдены, возвращает 403 Forbidden и сообщение.
- * - Если всё ок, добавляет req.user с данными из JWT и пускает дальше.
- */
-
 import jwt from "jsonwebtoken";
-import config from "../../config/index.js";
+import { config } from "../../config/index.js";
+import { logger } from "../logger.js";
 
-/**
- * @function roleMiddleware
- * @param {Array<string>} roles - Массив разрешённых ролей
- * @returns {function} Express middleware для проверки ролей пользователя через JWT
- */
+// Middleware для проверки ролей пользователя
 const roleMiddleware = function (roles) {
+
     return function (req, res, next) {
+        
         // Пропускаем preflight-запросы CORS
         if (req.method === "OPTIONS") {
             return next();
@@ -47,7 +27,6 @@ const roleMiddleware = function (roles) {
 
             // Декодируем и проверяем токен
             const decoded = jwt.verify(token, config.secret);
-            // console.log("decoded JWT:", decoded);
 
             const { roles: userRoles } = decoded;
             let hasRole = false;
@@ -64,10 +43,10 @@ const roleMiddleware = function (roles) {
                 return res.status(403).json({ message: "Доступ запрещен." });
             }
 
-            // Всё ок, пропускаем дальше
             next();
         } catch (error) {
-            console.log(error);
+
+            logger.info(error);
             return res.status(403).json({ message: "Пользователь не авторизован." });
         }
     }

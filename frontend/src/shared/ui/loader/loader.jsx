@@ -1,7 +1,7 @@
 import React from "react";
 import "./loader.css";
 
-const Loader = () => {
+const   Loader = () => {
     return (
         <div className="loader-view">
             <div className="loader">

@@ -1,91 +1,70 @@
-import { geoDataService } from './service.js';
 import { logger } from '../../core/logger.js';
 import { sendSuccess, sendError } from '../../utils/response.js';
 
-class GeoDataController {
-    async listPlaces(req, res, next) {
-        try {
-            const { bounds, zoom, limit } = req.query;
-            
-            if (!bounds) {
-                return sendError(res, 400, "Missing 'bounds' query parameter");
-            }
-            
-            // Ожидаем bounds в формате: minLon,minLat,maxLon,maxLat
-            const [minLon, minLat, maxLon, maxLat] = bounds.split(',').map(Number);
-            
-            // Валидация координат
-            if (isNaN(minLon) || isNaN(minLat) || isNaN(maxLon) || isNaN(maxLat)) {
-                return sendError(res, 400, "Invalid bounds format. Expected: minLon,minLat,maxLon,maxLat");
-            }
-            
-            if (minLon >= maxLon || minLat >= maxLat) {
-                return sendError(res, 400, "Invalid bounds: min coordinates must be less than max coordinates");
-            }
-            
-            // Параметры запроса
-            const params = {
-                minLon, minLat, maxLon, maxLat,
-                zoom: zoom ? parseInt(zoom) : 10,
-                limit: limit ? parseInt(limit) : null
-            };
-            
-            // Валидация зума
-            if (params.zoom < 0 || params.zoom > 18) {
-                return sendError(res, 400, "Zoom level must be between 0 and 18");
-            }
-            
-            // Валидация лимита
-            if (params.limit && (params.limit < 1 || params.limit > 50000)) {
-                return sendError(res, 400, "Limit must be between 1 and 50000");
-            }
-            
-            const geojson = await geoDataService.getListPlaces(params);
-            
-            // Добавляем метаданные в ответ
-            const response = {
-                ...geojson,
-                meta: {
-                    bounds: { minLon, minLat, maxLon, maxLat },
-                    zoom: params.zoom,
-                    limit: params.limit,
-                    count: geojson.features.length,
-                    timestamp: new Date().toISOString()
-                }
-            };
-            
-            return sendSuccess(res, response);
-        } catch (error) {
-            logger.error(`Error fetching places: ${error.message}`);
-            return sendError(res, error);
-        }
-    }
+import { geoDataService } from './service.js';
+import { routingService } from '../route/service.js';
+import { CATEGORY_TO_OSM_TAGS } from '../../utils/tagsMapping.js';
 
-    async getPlacesStats(req, res, next) {
+class GeoDataController {
+
+    // Получение маршрута по фильтрам
+    async getRouteByFilters(req, res) {
         try {
-            const { bounds } = req.query;
-            
-            if (!bounds) {
-                return sendError(res, 400, "Missing 'bounds' query parameter");
+            const t0 = performance.now();
+
+            const { initial_data, filters_data, route_options = {} } = req.body;
+
+            const { longitude, latitude, radius } = initial_data;
+
+            // 1. Собираем теги из активных фильтров
+            const activeTags = Object.keys(filters_data)
+                .filter(key => filters_data[key])
+                .flatMap(key => CATEGORY_TO_OSM_TAGS[key] || []);
+
+            if (activeTags.length === 0) {
+                return res.json({ points: [], route: null });
             }
+
+            const t1 = performance.now();
+
+            // 2. Получаем точки
+            const points = await geoDataService.getRouteByFilters(longitude, latitude, radius, activeTags);
+
+            const t2 = performance.now();
             
-            const [minLon, minLat, maxLon, maxLat] = bounds.split(',').map(Number);
-            
-            if (isNaN(minLon) || isNaN(minLat) || isNaN(maxLon) || isNaN(maxLat)) {
-                return sendError(res, 400, "Invalid bounds format");
+            // 3. Строим маршрут (на бэкенде)
+            let route = null;
+            if (points.length >= 2 && route_options.optimize !== false) {
+                route = await routingService.buildRoute(points, route_options);
             }
-            
-            const stats = await geoDataService.getPlacesStats({
-                minLon, minLat, maxLon, maxLat
+
+            const t3 = performance.now();
+
+            res.json({
+                points: points.map(p => ({
+                    longitude: p.longitude,
+                    latitude: p.latitude,
+                    tags: p.tags
+                })),
+                route
             });
-            
-            return sendSuccess(res, stats);
+
+            const t4 = performance.now();
+
+            logger.info(
+                `[TIMING] tags=${(t1-t0).toFixed(1)}ms ` +
+                `db=${(t2-t1).toFixed(1)}ms ` +
+                `osrm=${(t3-t2).toFixed(1)}ms ` +
+                `json=${(t4-t3).toFixed(1)}ms total=${(t4-t0).toFixed(1)}ms`
+            );
+
         } catch (error) {
-            logger.error(`Error fetching places stats: ${error.message}`);
-            return sendError(res, error);
+            logger.error(error);
+            res.status(500).json({ erroror: error.message });
         }
     }
 }
 
 const geoDataController = new GeoDataController();
+
 export { geoDataController };

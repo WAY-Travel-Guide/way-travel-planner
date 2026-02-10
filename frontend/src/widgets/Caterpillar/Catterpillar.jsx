@@ -13,7 +13,7 @@ const CaterpillarSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   // Вычисляем индексы трех отображаемых слайдов
-  const getSlide = (offset)=>{
+  const getSlide = (offset) => {
     const len = slides.length;
     return slides[(currentIndex+offset+len)%len];
   };
@@ -35,7 +35,12 @@ const CaterpillarSlider = ({ slides }) => {
   
 
   return (
-    <div className="caterpillar-slider">
+    <div className="container">
+      
+      <div className="home-arrows">
+        <LeftArrow className="home-arrow" onClick={prevSlide}></LeftArrow>
+        <RightArrow className="home-arrow" onClick={nextSlide}></RightArrow>
+      </div>
       <div className="container-items">
         {visibleSlides.map((slide, i) => (
           <div
@@ -57,18 +62,7 @@ const CaterpillarSlider = ({ slides }) => {
           </div>
         ))}
       </div>
-    <div className="bottom-part">
-          
-      <button className="see-much-more">
-                <span className="see-much-more-text">
-                Увидеть еще больше
-                </span>
-      </button>
-      <div className="home-arrows">
-        <LeftArrow className="home-arrow" onClick={prevSlide}></LeftArrow>
-        <RightArrow className="home-arrow" onClick={nextSlide}></RightArrow>
-      </div>
-    </div>
+      
     </div>
   );
 };

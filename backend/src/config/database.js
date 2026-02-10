@@ -1,65 +1,71 @@
-import mongoose from 'mongoose';
 import { Sequelize } from 'sequelize';
-import config from './index.js'; // Конфигурация окружения
-import { logger } from '../core/logger.js'; // Логирование
+import { config } from './index.js';
+import { logger } from '../core/logger.js';
 
-// Подключение к MongoDB
-const connectMongoDB = async () => {
-    try {
-        await mongoose.connect(config.mongoUri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        serverSelectionTimeoutMS: 5000, // Таймаут подключения 5 секунд
-        bufferCommands: false, // Отключение буферизации команд
-        });
-        logger.info('MongoDB connected successfully');
-    } catch (error) {
-        logger.error(`MongoDB connection error: ${error.message}`);
-        process.exit(1); // Завершение процесса при ошибке
-    }
-
-    // Логирование событий подключения MongoDB
-    mongoose.connection
-        .on('connecting', () => logger.debug('MongoDB: connecting'))
-        .on('connected', () => logger.debug('MongoDB: connected'))
-        .on('error', (err) => logger.error(`MongoDB error: ${err.message}`))
-        .on('disconnected', () => logger.warn('MongoDB: disconnected'));
-};
-
-// Подключение к PostgreSQL/PostGIS
-const sequelize = new Sequelize(config.postgresUri, {
+// Инициализация Sequelize для базы геоданных (PostGIS)
+const sequelizeGeoDB = new Sequelize(config.postgresUriGeodb, {
     dialect: 'postgres',
-    logging: (msg) => logger.debug(msg), // Логирование SQL-запросов
-    define: {
-        timestamps: true,
-        underscored: true
-    }
+    logging: msg => logger.debug('[GEO] ' + msg),           // Логирование SQL-запросов с префиксом [GEO]
+    define: {                                               // Общие настройки для всех моделей
+        underscored: true,
+        timestamps: false,
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+    },
+    pool: { max: 10, min: 0, acquire: 30000, idle: 10000 } // Настройки пула соединений
 });
 
-const connectPostgres = async () => {
-    try {
-        await sequelize.authenticate();
-        logger.info('PostgreSQL connected successfully');
-    } catch (error) {
-        logger.error(`PostgreSQL connection error: ${error.message}`);
-        process.exit(1); // Завершение процесса при ошибке
-    }
-};
+// Инициализация Sequelize для базы пользователей
+const sequelizeUserDB = new Sequelize(config.postgresUriUserdb, {
+    dialect: 'postgres',
+    logging: msg => logger.debug('[USER] ' + msg),
+    define: {
+        underscored: true,
+        timestamps: true,
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+    },
+    pool: { max: 10, min: 0, acquire: 30000, idle: 10000 }
+});
 
-// Инициализация всех баз данных
-const initializeDatabases = async () => {
+// Подключение и проверка базы геоданных
+const connectGeoDB = async () => {
     try {
-        await Promise.all([connectMongoDB(), connectPostgres()]);
-        logger.info('All databases initialized successfully');
-    } catch (error) {
-        logger.error(`Database initialization failed: ${error.message}`);
+        await sequelizeGeoDB.authenticate();
+        logger.info('База геоданных подключена');
+    } catch (err) {
+        logger.error('Подключение к базе геоданных не удалось:', err.message);
         process.exit(1);
     }
 };
 
-// Экспорт объектов для использования в модулях
-export {
-  mongoose, // Для работы с MongoDB в User Module
-  sequelize, // Для работы с PostgreSQL/PostGIS в Geo Data Module
-  initializeDatabases, // Функция для инициализации подключений
+// Подключение и синхронизация базы пользователей
+const connectUserDB = async () => {
+    try {
+        await sequelizeUserDB.authenticate();
+        logger.info('База пользователей подключена');
+
+        // Создаём/обновляем только таблицы пользователей и ролей
+        if (config.node === 'development') {
+            await sequelizeUserDB.sync({ alter: true });
+            logger.info('Таблицы пользователей синхронизированы { alter: true } (dev)');
+        } else {
+            await sequelizeUserDB.sync();
+            logger.info('Таблицы пользователей синхронизированы { alter: false } (dev)');
+        }
+
+    } catch (err) {
+        logger.error('Подключение к базе пользователей не удалось:', err);
+        process.exit(1);
+    }
 };
+
+// Инициализация всех баз
+const initializeDatabases = async () => {
+    await Promise.all([connectGeoDB(), connectUserDB()]);
+    logger.info('Подключение ко всем базам данных успешно выполнено');
+};
+
+export { initializeDatabases };
+export { config };
+export { sequelizeGeoDB, sequelizeUserDB };

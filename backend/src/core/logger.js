@@ -1,5 +1,5 @@
 import winston from 'winston';
-import config from '../config/index.js'; // Конфигурация окружения
+import { config } from '../config/index.js'; // Конфигурация окружения
 
 // Определение уровней логирования
 const levels = {
@@ -30,33 +30,15 @@ const format = winston.format.combine(
     })
 );
 
-// Транспорты (куда писать логи)
-const transports = [
-    // Логи в консоль
-    new winston.transports.Console({
-        level: config.logLevel || 'info', // Уровень логирования из конфигурации
-    }),
-    // Логи в файл для ошибок
-    new winston.transports.File({
-        filename: 'logs/error.log',
-        level: 'error',
-        maxsize: 5242880, // 5MB
-        maxFiles: 5, // Хранить до 5 файлов
-    }),
-    // Логи в файл для всех событий
-    new winston.transports.File({
-        filename: 'logs/combined.log',
-        level: 'info',
-        maxsize: 5242880, // 5MB
-        maxFiles: 5,
-    }),
-];
-
-// Создание логгера
 const logger = winston.createLogger({
     levels,
+    level: config.logLevel,
     format,
-    transports,
+    transports: [
+        new winston.transports.Console(),
+        new winston.transports.File({ filename: 'logs/error.log', level: 'error', maxsize: 5242880, maxFiles: 5 }),
+        new winston.transports.File({ filename: 'logs/combined.log', level: 'info', maxsize: 5242880, maxFiles: 5 }),
+    ],
 });
 
 // Middleware для логирования HTTP-запросов
@@ -71,6 +53,6 @@ const requestLogger = (req, res, next) => {
 };
 
 export {
-  logger, // Основной логгер для использования в других модулях
-  requestLogger, // Middleware для логирования запросов
+  logger,           // Основной логгер для использования в других модулях
+  requestLogger,    // Middleware для логирования запросов
 };

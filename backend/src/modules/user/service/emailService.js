@@ -1,25 +1,22 @@
 import nodemailer from 'nodemailer';
-import { logger } from '../../core/logger.js';
-import config from '../../config/index.js';
+import { logger } from '../../../core/logger.js';
+import { config } from '../../../config/index.js';
 
+// Сервис для отправки email пользователям
 class EmailService {
     constructor() {
         // Настройка транспорта для отправки email
         this.transporter = nodemailer.createTransport({
-            service: 'gmail', // Можно изменить на другой сервис
+            host: 'smtp.mail.ru', // host используем mail.ru
+            port: 465,
+            secure: true, // использовать SSL
             auth: {
-                user: process.env.EMAIL_USER || 'your-email@gmail.com',
-                pass: process.env.EMAIL_PASS || 'your-app-password'
+            user: process.env.EMAIL_USER, //логин от почты
+            pass: process.env.EMAIL_PASS //пароль от почты (пароль специальный)
             }
         });
     }
 
-    /**
-     * Отправляет письмо с подтверждением email
-     * @param {string} email - Email пользователя
-     * @param {string} token - Токен подтверждения
-     * @param {string} username - Имя пользователя
-     */
     async sendConfirmationEmail(email, token, username) {
         try {
             const confirmationLink = `${config.frontendUrl || 'http://localhost:5173'}/confirm-email?token=${token}`;
@@ -55,18 +52,12 @@ class EmailService {
         }
     }
 
-    /**
-     * Отправляет письмо с восстановлением пароля
-     * @param {string} email - Email пользователя
-     * @param {string} token - Токен восстановления
-     * @param {string} username - Имя пользователя
-     */
     async sendPasswordResetEmail(email, token, username) {
         try {
             const resetLink = `${config.frontendUrl || 'http://localhost:5173'}/reset-password?token=${token}`;
             
             const mailOptions = {
-                from: process.env.EMAIL_USER || 'your-email@gmail.com',
+                from: process.env.EMAIL_USER,
                 to: email,
                 subject: 'Восстановление пароля',
                 html: `
