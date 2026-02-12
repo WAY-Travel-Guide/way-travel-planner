@@ -16,6 +16,7 @@
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dotenv": "^17.2.2",
 =======
     "dotenv": "^17.2.3",
@@ -26,6 +27,14 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.17.0",
 <<<<<<< HEAD
+=======
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "google-auth-library": "^10.3.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+>>>>>>> 841310617c0469cc073b3d5253d8b29681799e65
     "mongoose": "^8.18.2",
     "nodemailer": "^7.0.6",
     "nodemon": "^3.1.10",
@@ -39,6 +48,10 @@
 >>>>>>> pavel
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7",
+<<<<<<< HEAD
     "winston": "^3.19.0"
+=======
+    "winston": "^3.17.0"
+>>>>>>> 841310617c0469cc073b3d5253d8b29681799e65
   }
 }
