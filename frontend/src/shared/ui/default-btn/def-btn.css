@@ -8,14 +8,25 @@
 }
 
 .button {
-  width: var(--btn-width);
-  height: var(--btn-height);
+  max-width: var(--btn-width);
+  width: 100%;        
+
+  min-height: var(--btn-height);
+  height: auto;       
+
+  min-width: 0;       
+  flex: 1 1 auto;     
+
+  padding: 0 12px;
+  text-align: center;
+
+  white-space: normal;       
+  overflow-wrap: break-word; 
 
   border-color: var(--btn-border-color);
   color: var(--btn-text-color);
   background-color: var(--btn-color);
   border-radius: 30px;
-
   backdrop-filter: var(--btn-backdrop-filter);
 }
 
