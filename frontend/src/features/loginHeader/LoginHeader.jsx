@@ -1,54 +1,52 @@
-/**
- * @fileoverview
- * Компонент шапки входа/регистрации для главной страницы.
- * Отображает две кнопки: "Вход" и "Регистрация", которые ведут на соответствующие маршруты.
- *
- * @description
- * LoginHeader — React-компонент, отображающий две навигационные кнопки для перехода на страницы логина и регистрации.
- * Использует кастомный компонент Button (оранжевая кнопка) из UI-библиотеки приложения.
- * Используется, например, в HomeWidget на главной странице.
- *
- * @module LoginHeader
- */
-
 import { useNavigate } from "react-router-dom";
 import { DefaultButton } from "../../shared/";
 
-/**
- * Компонент для отображения кнопок "Вход" и "Регистрация".
- * Использует flex-контейнер для горизонтального расположения кнопок.
- *
- * @returns {JSX.Element}  - Контейнер с двумя кнопками для навигации.
- */
-const LoginHeader = function() {
-    const navigate = useNavigate();
-    return (
-        <div style={{
-            display: "flex",
-            flexDirection: "row", // Кнопки расположены по горизонтали
-            alignItems: "center",
-            gap: "70px" // Расстояние между кнопками
-        }}>
-            <DefaultButton
-            onClick={() => navigate("/login")}
-            style={{
-                bgColor: "#B95700",
-                borderColor: "#B95700",
-                textColor: "#ffffff"
-            }}>
-                Вход
-            </DefaultButton>
-            <DefaultButton
-            onClick={() => navigate("/register")}
-            style={{
-                bgColor: "#B95700",
-                borderColor: "#B95700",
-                textColor: "#ffffff"
-            }}>
-                Регистрация
-            </DefaultButton>
-        </div>
-    );
-}
+const LoginHeader = function () {
+  const navigate = useNavigate();
+
+  
+
+  
+  const labelStyle = {
+    fontSize: "clamp(14px, 1.6vw, 20px)",
+    fontWeight: 600,
+    lineHeight: 1,
+    whiteSpace: "nowrap",
+  };
+
+  return (
+    <div className="d-flex align-items-center justify-content-center gap-3 gap-md-4">
+      <div style={{width: "clamp(140px, 30vw, 345px)"}}>
+        <DefaultButton
+          onClick={() => navigate("/login")}
+          style={{
+            bgColor: "#B95700",
+            borderColor: "#B95700",
+            textColor: "#ffffff",
+            width: "100%",
+            height: "60px",
+          }}
+        >
+          <span style={labelStyle}>Вход</span>
+        </DefaultButton>
+      </div>
+
+      <div style={{width: "clamp(140px, 30vw, 345px)"}}>
+        <DefaultButton
+          onClick={() => navigate("/register")}
+          style={{
+            bgColor: "#B95700",
+            borderColor: "#B95700",
+            textColor: "#ffffff",
+            width: "100%",
+            height: "60px",
+          }}
+        >
+          <span style={labelStyle}>Регистрация</span>
+        </DefaultButton>
+      </div>
+    </div>
+  );
+};
 
 export { LoginHeader };
