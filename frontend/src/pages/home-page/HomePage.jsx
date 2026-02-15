@@ -17,10 +17,10 @@ const HomePage = function ({ user, onLogout }) {
 
         {/* Основной слайдер с популярными направлениями */}
         <TileBackground slides={slides} />
-        <Footer/>
+        {/* Гусеница с тремя слайдами */}
+        <CaterpillarSlider slides={slides} />
 
-        {/* Гусеница с тремя слайдами 
-        <CaterpillarSlider slides={slides} />*/}
+        <Footer/>
       </div>
 
       
