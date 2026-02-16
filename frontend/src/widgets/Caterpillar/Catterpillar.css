@@ -1,214 +1,157 @@
-/*контейнер для сегментов*/
-.slider-wrapper {
-  display: flex;
-  flex-direction: column;   /* сначала слайды, потом кнопки */
-  align-items: center;      /* центрируем по горизонтали */
-  gap: 20px;                /* расстояние между слайдами и кнопками */
-  width: min(90vw, 100rem); /* ширина контейнера */
-  margin: 0 auto;
+
+.cat-wrap {
+  padding-top: 2vh; /* место под стрелки */
 }
 
-.container-items {
-  display: flex;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-  width: min(90vw, 100rem);
-  aspect-ratio: 16 / 9;
-  max-height: min(78vh, 53.125rem); /* 100rem * 9/16 = 56.25rem для сохранения пропорций */
-  margin: 0 auto;                       /*центрирование контейнера*/
-  align-items: flex-start;
+.cat-icon-btn{
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
 }
 
-/*Каждый отдельный блок с цветом*/
-/*Проценты берутся именно от родителя (контейнера)*/
-.item-color {
-  position: relative;
-  flex-shrink: 0;
-  width: 35%;                           /*ширина каждого блока*/
-  height: 95%;
-  border: none;
-  outline: none;
-  transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.1);
-  cursor: pointer;
-  border-radius: 3%;                    /* Добавьте: скругление углов для всего блока (картинки и фона) */
-  overflow: hidden;                     /* Добавьте: обрезает содержимое (картинку и ::after) по границам с скруглением */
-
-  /*Фоновая часть каждого блока*/
-  &::after {
-    position: absolute;
-    content: "";
-    inset: 0;
-    width: 100%;
-    height: 100%;                                                     /*при наведении забираем 100 от color*/
-    background-color: var(--color);
-    transform: scale(1.2);
-    pointer-events: none;
-    transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.1);
-  }
-  /*Всплывающая метка при наведении*/
-  &::before {
-    position: absolute;
-    content: attr(aria-color);
-    left: 65%;
-    bottom: 52px;
-    font-size: 8px;
-    line-height: 12px;
-    transform: translateX(-50%);
-    padding: 2px 0.25rem;
-    background-color: #ffffff;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.1);
-  }
-
-  &:hover {
-    transform: scale(1.1);
-    z-index: 99999;
-
-    &::before {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  &:active::after {
-    transform: scale(1.1);
-  }
-
-  &:focus::before {
-    content: "";
-  }
+/* размер/цвет иконки */
+.cat-icon-btn .bi{
+  font-size: 48px;  /* размер круга */
+  line-height: 1;
+  color: #000;      /* цвет обводки и стрелки */
+  display: block;
 }
 
+.cat-row {
+  gap: clamp(20px, 2vw, 24px); 
+  display: flex;
+  align-items: stretch;
+}
 
-.slide-image {
+.cat-col {
+  flex: 1 1 0;
+  min-width: 0; /* важно, чтобы не распирало */
+}
+
+/* Карточка почти на весь экран, одинаковая высота */
+.cat-card {
+  height: min(80vh, 640px);   /* <- почти весь экран */
+  min-height: 420px;          /* <- чтобы даже на маленьких не была плоской */
+  position: relative;
+  transform: translateZ(0);   /* чуть стабильнее рендер */
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  will-change: transform;
+}
+
+/* Картинка занимает 100% карточки */
+.cat-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 3%;   /*скругление углов*/
-}
-/* Контейнер для всего текста  */
-.slide-text-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 16px;              /* ниже к низу карточки */
-  padding: 0 1.5rem;
-  text-align: center;
-  z-index: 2;
-
-  color: #ffffff;            /* весь текст внутри — белый */
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  object-fit: cover;      /* одинаковые размеры, без сплющивания */
+  object-position: center;
+  transition: transform 260ms ease;
 }
 
-/* Название города */
-.slide-city {
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-bottom: 0.3rem;
+/* Hover: увеличивается САМА карточка чуть-чуть + зум картинки */
+.cat-card:hover {
+  transform: scale(1.03);
+  z-index: 5;
 }
 
-/* Подзаголовок */
-.slide-label {
-  font-size: clamp(1rem, 1.2vw, 1.3rem);
-  font-weight: 500;
-  color: #ffffff;
+.cat-card:hover .cat-img {
+  transform: scale(1.06);
 }
 
-/* Описание */
-.slide-description {
-  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
-  font-weight: 400;
-  color: #ffffff;
-  margin-top: 0.2rem;
+/* Оверлей для читаемости */
+.cat-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.78),
+    rgba(0, 0, 0, 0)
+  );
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65);
 }
 
+/* Тексты можно подстроить под твой дизайн */
+.cat-title {
+  font-size: clamp(20px, 2.2vw, 34px);
+  line-height: 1.1;
+}
 
-.see-more {
-  background-color: #d9d9d9;
-  height: 15px;
+.cat-subtitle {
+  font-size: clamp(14px, 1.4vw, 18px);
+  margin-top: 6px;
+}
+
+.cat-desc {
+  font-size: clamp(12px, 1.2vw, 16px);
+  opacity: 0.95;
+  margin-top: 8px;
+}
+
+/* ===== MOBILE: блок ===== */
+.cat-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Свайп область */
+.cat-mobile-swipe {
+  touch-action: pan-y;
+}
+
+/* На мобиле показываем 1 карточку */
+.cat-col-mobile {
   width: 100%;
-  border-radius: 12px;
-  padding: 20px 25px;
+}
+
+/* Заголовок над точками */
+.cat-mobile-title {
+  line-height: 1.1;
+}
+
+/* Точки */
+.cat-dots {
   display: flex;
-  align-items: center;
-  justify-content: center;      /* было flex-start */
-  border: none;
-  margin-top: 12px;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 6px;
 }
 
-.see-more-text {
-  color: #000000;
-  font-size: 20px;
-  font-family: "SF Pro Display";
-  line-height: 1;
-  text-align: center;          /* можно оставить/добавить для надёжности */
+.cat-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 0;
 }
 
-
-.bottom-part
-{
-  display: flex;              /* Включаем Flexbox */
-  flex-direction: row;        /* Элементы на одной строке (по умолчанию row) */
-  justify-content: center;    /* Центрируем элементы горизонтально */
-  align-items: center;        /* Центрируем вертикально, если нужно */
-  max-width: 100%;                /* Родитель растягивается на всю ширину (опционально) */
-  gap:850px;                    /* Расстояние между элементами */
+.cat-dot.active {
+  background: rgba(255, 255, 255, 0.95);
 }
 
-
-.home-arrows {
-    position: relative;
-    /*background-color: black;
-    /*bottom: 30px;
-    right: 5vw;*/
-    z-index: 2;
-    display: flex;
-    gap: 12px;
+/* Адаптив: на md оставляем 2 карточки, на xs 1 (если надо именно всегда 3 — скажи) */
+@media (max-width: 991.98px) {
+  .cat-row {
+    flex-wrap: wrap;
+  }
+  .cat-col {
+    flex: 1 1 calc(50% - 12px);
+  }
+  .cat-card {
+    height: min(62vh, 560px);
+  }
 }
 
-.home-arrow {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background: rgba(217, 217, 217, 100);
-    border-radius: 50%;
-    padding: 6px;
-
-    border-radius: 100%;
-    transition: background 0.2s;
+@media (max-width: 575.98px) {
+  .cat-col {
+    flex: 1 1 100%;
+  }
+  .cat-card {
+    height: min(60vh, 520px);
+    min-height: 360px;
+  }
 }
-
-.home-arrow:hover {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-
-.see-much-more {
-  background-color: #d9d9d9;
-  height: 20px;
-  width: 430px;
-  border-radius: 15px;
-  padding: 20px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border: none;
-}
-
-.see-much-more-text {
-  color: #000000;
-  font-size: 20px;
-  font-family: "SF Pro Display";
-  line-height: 1;
-  text-align: left;
-}
-
